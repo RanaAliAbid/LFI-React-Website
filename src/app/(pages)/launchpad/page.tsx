@@ -26,7 +26,7 @@ export default function Launchpad() {
 
     return (
         <main>
-            <Header/>
+            <Header />
 
             <section className="wrapSection herosec">
                 <Container>
@@ -120,33 +120,50 @@ export default function Launchpad() {
                         <Tab eventKey="profile" title="For Startups">
                             <Row className="align-items-center startupsBox">
                                 <Col md="6" xs="12">
-                                    <div className="wrapTextBox">
-                                        <Image src={icon01.src} />
-                                        <h3> Secure your project’s funding </h3>
-                                        <h5> Attract a broader customer base and raise capital for your project’s development and operations.</h5>
+                                    <div className="wrapTextBox frame">
+                                        <div className="lines"></div>
+                                        <div className="angles"></div>
+                                        <article>
+                                            <Image src={icon01.src} />
+                                            <h3> Secure your project’s funding </h3>
+                                            <h5> Attract a broader customer base and raise capital for your project’s development and operations.</h5>
+                                        </article>
                                     </div>
                                 </Col>
 
                                 <Col md="6" xs="12">
-                                    <div className="wrapTextBox">
-                                        <Image src={icon01.src} />
-                                        <h3> Get the exposure you need   </h3>
-                                        <h5> Obtain the marketing and exposure you need through social media, newsletters, and events. </h5>
+                                    <div className="wrapTextBox frame">
+                                        <div className="lines"></div>
+                                        <div className="angles"></div>
+                                        <article>
+                                            <Image src={icon01.src} />
+                                            <h3> Get the exposure you need   </h3>
+                                            <h5> Obtain the marketing and exposure you need through social media, newsletters, and events. </h5>
+                                        </article>
                                     </div>
                                 </Col>
                                 <Col md="6" xs="12">
-                                    <div className="wrapTextBox">
-                                        <Image src={icon01.src} />
-                                        <h3> Strengthen your credibility  </h3>
-                                        <h5> Establish your credibility, legitimacy, and reputation within a wide crypto community.</h5>
+                                    <div className="wrapTextBox frame">
+                                        <div className="lines"></div>
+                                        <div className="angles"></div>
+                                        <article>
+                                            <Image src={icon01.src} />
+                                            <h3> Strengthen your credibility  </h3>
+                                            <h5> Establish your credibility, legitimacy, and reputation within a wide crypto community.</h5>
+                                        </article>
+
                                     </div>
                                 </Col>
 
                                 <Col md="6" xs="12">
-                                    <div className="wrapTextBox">
-                                        <Image src={icon01.src} />
-                                        <h3> Build your community </h3>
-                                        <h5> Foster thousands of crypto users, advocates, and adopters and create a strong customer base.</h5>
+                                    <div className="wrapTextBox frame">
+                                        <div className="lines"></div>
+                                        <div className="angles"></div>
+                                        <article>
+                                            <Image src={icon01.src} />
+                                            <h3> Build your community </h3>
+                                            <h5> Foster thousands of crypto users, advocates, and adopters and create a strong customer base.</h5>
+                                        </article>
                                     </div>
                                 </Col>
                             </Row>
@@ -171,7 +188,7 @@ export default function Launchpad() {
 
 
 
-           
+
 
             <Footer />
 

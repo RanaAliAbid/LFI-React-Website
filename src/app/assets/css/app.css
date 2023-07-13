@@ -718,7 +718,7 @@ section.wrapSection.tokensec {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    padding: 80px 0;
 }
 
 .tokenTabs {
@@ -750,6 +750,8 @@ section.wrapSection.tokensec {
 .tokenImg img {
     width: 100%;
 }
+
+
 
 .bridgeBoxWrap {
     border: 1px solid #424242;
@@ -969,11 +971,19 @@ section.wrapSection.tokensec {
         linear-gradient(180deg, rgba(18, 18, 18, 0.00) 20%, rgb(7 10 11 / 96%) 82.06%, #070A0B 100%);
 }
 
-.mobilePhoneHero h1 {
-    font-size: 66px;
-    line-height: 80px;
-    font-weight: 600;
-    margin: -50px 0 0 0;
+.mobilePhoneHero .mobilePhone h1 {
+    font-size: 88px;
+    line-height: 99px;
+    font-weight: 700;
+    position: relative;
+    margin: -90px 0 80px 0;
+}
+
+.mobilePhoneHero h2 {
+    font-size: 38px;
+    line-height: 50px;
+    font-weight: 500;
+    margin: 0;
     z-index: 100;
     position: relative;
 }
@@ -990,7 +1000,7 @@ section.wrapSection.tokensec {
 
 .mintInfoSec {
     background-image: url('../../../../public/img/mintToken.png');
-    background-position: center right;
+    background-position: center left;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -1000,7 +1010,7 @@ section.wrapSection.tokensec {
 
 
 .mintInfo {
-    padding: 25px 50px 25px 25px;
+    padding: 25px;
 }
 
 .mintInfo h2 {
@@ -1495,7 +1505,11 @@ section.wrapSection.tokensec {
 }
 
 .specsSec {
-    padding: 120px 0;
+    padding: 80px 0;
+}
+
+.specsSec .specsSecList {
+    margin-top: 60px;
 }
 
 .specsSec .specsSecList ul {
@@ -1508,23 +1522,42 @@ section.wrapSection.tokensec {
     list-style-type: none;
     text-align: center;
     display: inline-block;
+    vertical-align: middle;
     width: 20%;
     padding: 15px;
     margin: 35px 0;
 }
 
 .specsSec .specsSecList ul li h4 {
-    font-size: 18px;    
+    font-size: 18px;
     line-height: 32px;
     font-weight: 300;
     margin: 15px 0 0px 0;
 }
 
 .specsSec .specsSecList ul li h6 {
-    font-size: 15px;    
+    font-size: 15px;
     font-weight: 300;
     line-height: 24px;
     color: var(--gray-600);
+}
+
+
+@media (max-width: 424px) {
+
+    .visionSec .titleBox,
+    .visionSec .textBox {
+        padding: 7px 5px;
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+    .visionSec .titleBox,
+    .visionSec .textBox {
+        padding: 15px 20px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1655,11 +1688,6 @@ section.wrapSection.tokensec {
 
     .rowText {
         padding: 15px;
-    }
-
-    .visionSec .titleBox,
-    .visionSec .textBox {
-        padding: 15px 20px;
     }
 
     .visionSec h4 {
@@ -1882,12 +1910,17 @@ section.wrapSection.tokensec {
     }
 
     .bridgeBoxWrap {
-        margin: 80px 0;
+        margin: 10px 0 20px 0;
         padding: 25px;
     }
 
     .bridgeBoxWrap .wrapTextBox {
         padding: 25px 0;
+    }
+
+    .bridgeTextSec .bridgeBoxWrap:nth-child(2) .row,
+    .bridgeTextSec .bridgeBoxWrap:nth-child(4) .row {
+        flex-direction: column-reverse;
     }
 
 
@@ -1906,6 +1939,285 @@ section.wrapSection.tokensec {
     }
 
 
+    .mobilePhoneHero h1 {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 15px;
+    }
+
+    .mobilePhoneHero h3 {
+        font-size: 16px;
+        line-height: 26px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .mintInfo {
+        padding: 300px 10px 10px 10px;
+    }
+
+    .mintInfo h2 {
+        font-size: 26px;
+        line-height: 36px;
+        margin: 0px 0 15px 0;
+        width: 100%;
+    }
+
+    .mintInfoSec {
+        background-position: center top;
+    }
+
+    .mintListItem li {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+
+    .specsSection .specsBox {
+        margin-bottom: 20px;
+    }
+
+    .specsSection {
+        padding: 100px 0;
+    }
+
+    .specsSection .box1 h2 {
+        padding: 25px 25px 0 25px;
+    }
+
+    .specsSection h2,
+    .fhdTitle h2,
+    .processorSec .procesBulletList li h3,
+    .mainCameraSec .wrapTitle h4 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .specsSection .box5 .textWrap h2,
+    .mainCameraSec .wrapTitle h2 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .specsSection .box2 img {
+        margin: -2px 0 0 0;
+    }
+
+    .specsSection .box3 .textWrap h2 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .specsSection .box6 {
+        flex-direction: column;
+    }
+
+    .specsSection .box6 .textWrap h2 {
+        font-size: 76px;
+        line-height: 90px;
+    }
+
+    .specsSection .box6 .textWrap h3,
+    .fhdspec ul li {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .fhdTitle h2 {
+        margin: 0;
+    }
+
+    .fhdspec ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px 0 0 0px;
+    }
+
+    .fhdspec ul li {
+        margin: 5px 0;
+    }
+
+    .fhdspec .wrapImg {
+        margin: 50px 0;
+    }
+
+    .processorSec {
+        background-position: 5% 0;
+        background-size: 150%;
+    }
+
+    .processorSec .text-right {
+        text-align: center;
+    }
+
+    .processorSec .procesBulletList {
+        padding: 0;
+        margin: 220px 0 0 0;
+        display: block;
+    }
+
+    .processorSec .procesBulletList li {
+        margin: 25px 20px;
+        text-align: center;
+    }
+
+    .processorSec .procesBulletList li h3 {
+        margin-bottom: 2px;
+    }
+
+    .wlchargre {
+        background-position: 27px 0;
+        background-size: 100%;
+    }
+
+    .wcTextWrap {
+        margin-top: 250px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .wcTextWrap h2 {
+        font-size: 110px;
+        line-height: 120px;
+    }
+
+    .ramBannerImg {
+        padding-top: 50px;
+    }
+
+    .specsSection .box7 {
+        flex-direction: column-reverse;
+    }
+
+    .specsSection .box7 .textWrap,
+    .specsSection .box7 .ImageWrap {
+        width: 100%;
+    }
+
+    .specsSection .box7 .textWrap h2 {
+        font-size: 81px;
+        line-height: 90px;
+    }
+
+    .specsSection .box7 .textWrap h4 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .specsSection .box7 .textWrap {
+        margin: 50px 0;
+    }
+
+    .specsSection .box8 {
+        min-height: auto;
+    }
+
+    .specsSection .box8 img {
+        margin: 0;
+    }
+
+    .specsSection .textWrap h3 {
+        font-size: 18px;
+        line-height: 30px;
+        color: var(--gray-600);
+    }
+
+    .specsSection .box5 .textWrap {
+        width: 70%;
+    }
+
+    .mainCameraSec {
+        padding: 90px 0 0 0;
+    }
+
+
+    .cameraImgBox {
+        padding: 40px 0;
+        background-size: cover;
+    }
+
+    .cameraImgBox ul.cameraList h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 0 0 0;
+    }
+
+    .cameraImgBox ul.cameraList h5 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .cameraImgBox ul.cameraList {
+        padding: 0;
+        width: 70%;
+        margin: 0 0 0 auto;
+    }
+
+
+
+
+    .cameraImgBox ul.cameraList li {
+        margin: 0 0 0px 0;
+    }
+
+    .cameraImgBox ul.cameraList .text {
+        text-align: right;
+    }
+
+    .cameraImgBox ul.cameraList .line1::before,
+    .cameraImgBox ul.cameraList .line2::before,
+    .cameraImgBox ul.cameraList .line3::before {
+        left: 0;
+        width: 55%;
+    }
+
+    .cameraImgBox ul.cameraList .line2::before {
+        background-position: 49px 0;
+        top: 10px
+    }
+
+    .cameraImgBox ul.cameraList .line3::before {
+        background-position: 0 0;
+    }
+
+    .cameraImgBox ul.cameraList .line1::before {
+        top: 25px;
+    }
+
+    .mainCameraSec .wrapTitle h2,
+    .wrapTitle h3,
+    .wideangleSec .wrapTitle {
+        margin: 0;
+    }
+
+    .wrapTitle h5 {
+        font-size: 24px;
+        line-height: 34px;
+        margin: 0 0 10px 0;
+    }
+
+    .wrapImg {
+        margin: 10px 0;
+    }
+
+    .wideangleSec {
+        padding: 80px 0;
+    }
+
+    .wideangleSec .wrapTitle h2 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .wrapTitle h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .specsSec .specsSecList ul li {
+        width: 50%;
+        vertical-align: top;
+    }
 
 }
 
@@ -1981,6 +2293,10 @@ section.wrapSection.tokensec {
     section.wrapSection.herosec {
         height: calc(100vh - 74px);
         padding: 0;
+    }
+
+    .herosec .align-items-center.row {
+        flex-direction: column-reverse;
     }
 
     .infoText {

@@ -33,7 +33,26 @@ import continuousShots from "../../../../public/img/continuousShots.png";
 import mainCamera from "../../../../public/img/camera.png";
 import wideangle from "../../../../public/img/widealgo.png";
 import pro01 from "../../../../public/img/pro1.png";
+
 import Dimensions from "../../../../public/img/specsIcon/dimensions.svg";
+import Battery from "../../../../public/img/specsIcon/battery.svg";
+import Camera4kHD from "../../../../public/img/specsIcon/camera4kHD.svg";
+import Cpu from "../../../../public/img/specsIcon/cpu.svg";
+import Flash from "../../../../public/img/specsIcon/flash.svg";
+import Hdr from "../../../../public/img/specsIcon/hdr.svg";
+
+
+import Network from "../../../../public/img/specsIcon/network.svg";
+import Operatingsystem from "../../../../public/img/specsIcon/operating-system.svg";
+import Ram from "../../../../public/img/specsIcon/ram.svg";
+import Rearcamera from "../../../../public/img/specsIcon/rearcamera.svg";
+import Sensors from "../../../../public/img/specsIcon/sensors.svg";
+import Size from "../../../../public/img/specsIcon/size.svg";
+
+
+import Sound from "../../../../public/img/specsIcon/sound.svg";
+import VideoPlayback from "../../../../public/img/specsIcon/video-playback.svg";
+import WirelessCharger from "../../../../public/img/specsIcon/wireless-charger.svg";
 
 
 
@@ -80,8 +99,9 @@ export default function Lfione() {
                                 <div className="mobilePhone">
                                     <div className="overlay"></div>
                                     <Image src={lfiPhone.src} />
+                                    <h1> LFi One </h1>
                                 </div>
-                                <h1> Web3 in your pocket </h1>
+                                <h2> Web3 in your pocket </h2>
                                 <h3>A revolutionary smartphone that allows users to mint tokens and enter the crypto world seamlessly.</h3>
                             </div>
                         </Col>
@@ -92,7 +112,15 @@ export default function Lfione() {
             <section className="wrapSection mintInfoSec">
                 <Container>
                     <Row className="justify-content-center align-items-center">
-                        <Col md="6" className="">
+
+                        <Col md="7" className="">
+                            <div className="img-container">
+                                {/* <Image src={mintToken.src} />  */}
+                            </div>
+                        </Col>
+
+
+                        <Col md="5" className="">
                             <div className="mintInfo">
                                 <h2> Mint your TOKEN on phone </h2>
                                 <ul className="mintListItem">
@@ -102,12 +130,7 @@ export default function Lfione() {
                                     <li> Welcome to a new world of connected Finance! </li>
                                 </ul>
                             </div>
-                        </Col>
-                        <Col md="6" className="">
-                            <div className="img-container">
-                                {/* <Image src={mintToken.src} />  */}
-                            </div>
-                        </Col>
+                        </Col>                       
                     </Row>
                 </Container>
             </section>
@@ -419,6 +442,11 @@ export default function Lfione() {
                 <Container>
                     <Row>
                         <Col md="12">
+                            <div className="wrapTitle text-center">
+                                <h3> Specifications </h3>
+                                {/* <h5> Shoot like a pro ! </h5> */}
+                            </div>
+
                             <div className="specsSecList">
                                 <ul>
                                     <li>
@@ -428,87 +456,87 @@ export default function Lfione() {
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
+                                        <Cpu/>
                                         <h4> CPU </h4>
                                         <h6> Octa Cores </h6>
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
+                                        <Network/>
                                         <h4> Network </h4>
                                         <h6> 2G / 3G / 4G / 5G </h6>
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
+                                        <Ram/>
                                         <h4> Memory </h4>
                                         <h6> 12GB RAM / 256GB ROM </h6>
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
+                                        <Operatingsystem/>
                                         <h4> OS </h4>
                                         <h6> Android 13 </h6>
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
-                                        <h4> Dimensions </h4>
-                                        <h6> 168.7*76.9*11mm </h6>
+                                        <Size/>
+                                        <h4> Display </h4>
+                                        <h6> FHD+ @ 120Hz 396 DPI </h6>
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
-                                        <h4> CPU </h4>
-                                        <h6> Octa Cores </h6>
+                                        <Sensors/>
+                                        <h4> Sensors </h4>
+                                        <h6> Compass, Gyro, IR </h6>
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
-                                        <h4> Network </h4>
-                                        <h6> 2G / 3G / 4G / 5G </h6>
+                                        <Sound/>
+                                        <h4> Audio </h4>
+                                        <h6> Deep Audio System </h6>
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
-                                        <h4> Memory </h4>
-                                        <h6> 12GB RAM / 256GB ROM </h6>
+                                        <Battery/>
+                                        <h4> Battery </h4>
+                                        <h6> 6100mAh / Up to 15 hours </h6>
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
-                                        <h4> OS </h4>
-                                        <h6> Android 13 </h6>
+                                        <WirelessCharger/>
+                                        <h4> Charger </h4>
+                                        <h6> Wireless Charger / USB-C </h6>
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
-                                        <h4> Dimensions </h4>
-                                        <h6> 168.7*76.9*11mm </h6>
+                                        <Rearcamera/>
+                                        <h4> Rear Camera </h4>
+                                        <h6> Sony IMX686 , 64MP </h6>
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
-                                        <h4> CPU </h4>
-                                        <h6> Octa Cores </h6>
+                                        <Flash/>
+                                        <h4> Flash </h4>
+                                        <h6> Dual Flash LED </h6>
+                                    </li>                                    
+
+                                    <li>
+                                        <Hdr/>
+                                        <h4> Camera Modes </h4>
+                                        <h6> HDR / Super night view </h6>
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
-                                        <h4> Network </h4>
-                                        <h6> 2G / 3G / 4G / 5G </h6>
+                                        <Camera4kHD/>
+                                        <h4> Recording </h4>
+                                        <h6> 4K at 30fps </h6>
                                     </li>
 
                                     <li>
-                                        <Dimensions/>
-                                        <h4> Memory </h4>
-                                        <h6> 12GB RAM / 256GB ROM </h6>
-                                    </li>
-
-                                    <li>
-                                        <Dimensions/>
-                                        <h4> OS </h4>
-                                        <h6> Android 13 </h6>
+                                        <VideoPlayback/>
+                                        <h4> Playback </h4>
+                                        <h6> AVI, MP4, WMV, RMVB </h6>
                                     </li>
 
                                     

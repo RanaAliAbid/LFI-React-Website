@@ -50,7 +50,7 @@ export default function Bridge() {
             </section>
 
 
-            <section>
+            <section className="bridgeTextSec">
 
                 <Container>
                     <Row className="justify-content-center">

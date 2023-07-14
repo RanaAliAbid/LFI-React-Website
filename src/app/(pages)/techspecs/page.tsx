@@ -128,7 +128,7 @@ export default function TechSpecs() {
                                     </div>
                                     <div className="textWrap">                                        
                                         <ul className="subList">
-                                            <li> IPS 6.78" FHD+ @ 120Hz 396 DPI </li>
+                                            <li> IPS (6.7&Prime;) FHD+ @ 120Hz 396 DPI </li>
                                             <li> Gorilla Glass Type 5 </li>                                            
                                         </ul>
                                     </div>

@@ -7,20 +7,13 @@ import { useRef, useEffect } from "react";
 import { motion, MotionValue, useScroll, useSpring, useTransform, useInView } from "framer-motion";
 import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
-import WhiteLogo from "../../../../public/img/white-logo.svg";
-
 import Minter1000 from "../../../../public/img/minter1000.png";
-// import mintLogo from "../../public/img/mint-logo.png";
-
-// import LfiCoin from "../../public/img/lfi-coin.svg";
-
 
 
 export default function MintingMachine() {
 
     const ref = useRef(null);
     const { scrollYProgress } = useScroll();
-
 
     // top progressbar animation
     const scaleX = useSpring(scrollYProgress, {
@@ -29,19 +22,22 @@ export default function MintingMachine() {
         restDelta: 0.001
     });
 
-
+    const isInView = useInView(ref)
 
     const { scrollY } = useScroll();
     const scaleRight = useTransform(scrollY, [0, 500], [2, 1]);
     const yRight = useTransform(scrollY, [0, 500], ["0vh", "0vh"]);
     const xRight = useTransform(scrollY, [0, 500], ["0vw", "0vw"]);
-    
+
 
     const scaleRight2 = useTransform(scrollY, [0, 500], [2, 1]);
     const yRight2 = useTransform(scrollY, [0, 500], ["0vh", "0vh"]);
     const xRight2 = useTransform(scrollY, [0, 500], ["0vw", "0vw"]);
 
-    
+    useEffect(() => {
+        // const scrollPosition = window.scrollY
+        console.log("scrollPosition", scrollY)
+    }, [isInView, scrollY])
 
     return (
         <main>
@@ -80,36 +76,30 @@ export default function MintingMachine() {
                 <Container>
                     <Row className="justify-content-center align-items-center">
                         <Col md="10" className="text-center">
+                            <div
+                                style={{
+                                    height: "50vh",
+                                    width: "100%",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    position: "sticky",
+                                    top: "0px",
+                                }}
+                            >
 
-                            
-                                <div
+                                <motion.div
+                                    className="child"
                                     style={{
-                                        height: "50vh",
-                                        width:"100%",
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        position: "sticky",
-                                        top: "0px",
+                                        scale: scaleRight,
+                                        y: yRight,
+                                        x: xRight,
                                     }}
                                 >
-
-                                    <motion.div
-                                        className="child"
-                                        style={{                                           
-                                            scale: scaleRight,
-                                            y: yRight,
-                                            x: xRight,
-                                        }}
-                                    >
-                                        <div className="img">
-                                            <Image src={Minter1000.src} alt='LFi' />
-                                        </div>
-                                    </motion.div>
-                                </div>
-                            
-
-
-                            
+                                    <div className="img">
+                                        <Image src={Minter1000.src} alt='LFi' />
+                                    </div>
+                                </motion.div>
+                            </div>
                         </Col>
                     </Row>
                     <Row className="justify-content-center align-items-center">
@@ -118,7 +108,7 @@ export default function MintingMachine() {
                                 <h2> XLFi 1000 Minter  </h2>
                                 <p> <span> Mint </span> your way to a brighter future </p>
                                 <h3> Designed to provide you with a simple and hassle-free way to create LFi tokens right from the comfort of your own home </h3>
-                                <Button as="a" variant="primary" className="d-none d-sm-block">
+                                <Button as="a" variant="primary" className="d-none d-sm-block" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-xlfi1000">
                                     Explore More
                                 </Button>
                             </div>
@@ -127,36 +117,33 @@ export default function MintingMachine() {
                 </Container>
             </section>
 
-
-
-
-            <section className="wrapSection minter">
+            <section className="wrapSection minter" ref={ref}>
                 <Container>
                     <Row className="justify-content-center align-items-center">
                         <Col md="10" className="text-center">
-                        <div
+                            <div
+                                style={{
+                                    height: "50vh",
+                                    width: "100%",
+
+                                    position: "sticky",
+                                    top: "0px",
+                                }}
+                            >
+
+                                <motion.div
+                                    className="child"
                                     style={{
-                                        height: "50vh",
-                                        width:"100%",
-                                        
-                                        position: "sticky",
-                                        top: "0px",
+                                        scale: scaleRight2,
+                                        y: yRight2,
+                                        x: xRight2,
                                     }}
                                 >
-
-                                    <motion.div
-                                        className="child"
-                                        style={{                                           
-                                            scale: scaleRight2,
-                                            y: yRight2,
-                                            x: xRight2,
-                                        }}
-                                    >
-                                        <div className="img">
-                                            <Image src={Minter1000.src} alt='LFi' />
-                                        </div>
-                                    </motion.div>
-                                </div>
+                                    <div className="img">
+                                        <Image src={Minter1000.src} alt='LFi' />
+                                    </div>
+                                </motion.div>
+                            </div>
                         </Col>
                     </Row>
                     <Row className="justify-content-center align-items-center">
@@ -165,7 +152,7 @@ export default function MintingMachine() {
                                 <h2> XLFi 5000 Minter  </h2>
                                 <p> Discover new possibilities and unlock your financial future </p>
                                 <h3> Access a range of exciting features and functions that will take your financial game to the next level. </h3>
-                                <Button as="a" variant="primary" className="d-none d-sm-block">
+                                <Button as="a" variant="primary" className="d-none d-sm-block" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-plus-xlfi5000">
                                     Explore More
                                 </Button>
                             </div>
@@ -175,18 +162,6 @@ export default function MintingMachine() {
             </section>
 
             <Footer />
-
-
-
-
-
-
-
-
-
-
-
-
 
         </main>
     )

@@ -110,6 +110,21 @@ a:hover {
     border: 1px solid var(--btn-primary-hover);
 }
 
+
+.btn-text {
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+}
+
+.btn-text:hover,
+.btn-text:focus,
+.btn-text:active {
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+}
+
 .manifestoBtn {
     margin-top: -36px;
 }
@@ -169,6 +184,15 @@ a:hover {
     line-height: 24px;
 }
 
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: var(--primary);
+    color: var(--black);
+}
+
+section {
+    overflow-x: hidden;
+}
 
 section.wrapSection {
     height: 100vh;
@@ -252,6 +276,7 @@ section.wrapSection.herosec {
     right: 0;
     width: 100%;
     transform: translateY(-50%);
+    z-index: -1;
 
 }
 
@@ -315,7 +340,7 @@ section.wrapSection.herosec {
     background: var(--primary);
     transform-origin: 0%;
     z-index: 100;
-    
+
 }
 
 .bg {
@@ -442,6 +467,7 @@ section.wrapSection.tokensec {
 .stepSec h2 {
     font-size: 30px;
     line-height: 34px;
+    color: var(--gray-600);
 }
 
 .stepSec .rowText .textBox {
@@ -634,9 +660,7 @@ section.wrapSection.tokensec {
     padding: 0 15px;
 }
 
-.copyright .copyLinks ul li+li {
-    border-left: 1px solid var(--gray-600);
-}
+
 
 .copyright .copyLinks ul li a {
     font-size: 12px;
@@ -697,6 +721,9 @@ section.wrapSection.tokensec {
     z-index: 1;
 }
 
+.ldoSec {
+    padding: 150px 0 50px 0;
+}
 
 .ldoSec .infoText {
     margin-bottom: 100px;
@@ -762,6 +789,12 @@ section.wrapSection.tokensec {
     padding: 130px 50px;
     border-radius: 15px;
     margin: 150px 0;
+    transition: 0.5s;
+}
+
+.bridgeBoxWrap:hover {
+    border: 1px solid var(--primary);
+    transition: 0.5s;
 }
 
 .wrapTextBox h3 {
@@ -822,10 +855,10 @@ section.wrapSection.tokensec {
 
 
 .bussinessTabssec .wrapTextBox:hover {
-    background-color: #011d13;
+    background-color: #011a11;
 }
 
-.wrapTextBox img {
+.wrapTextBox svg {
     margin-bottom: 25px;
 }
 
@@ -898,8 +931,17 @@ section.wrapSection.tokensec {
     line-height: 65px;
 }
 
+.mintbtn {
+    z-index: 100;
+    position: relative;
+}
+
 .manifestoSection {
     padding: 100px 0;
+}
+
+.manifestoSection .infoText {
+    margin-bottom: 90px;
 }
 
 .manifestoSection .wrapTextBox {
@@ -907,6 +949,8 @@ section.wrapSection.tokensec {
     justify-content: center;
     align-items: center;
     min-height: 340px;
+    padding: 50px;
+    margin: 0 50px;
 }
 
 .aboutBeliveSec {
@@ -959,8 +1003,8 @@ section.wrapSection.tokensec {
 .mobileNameHead {
     position: sticky;
     top: 0px;
-    background-color: rgb(7 10 11 / 80%);    
-    z-index: 10;    
+    background-color: rgb(7 10 11 / 80%);
+    z-index: 10;
 }
 
 .mobileNameHead .navbar-brand:hover,
@@ -968,14 +1012,15 @@ section.wrapSection.tokensec {
 .mobileNameHead .navbar-brand:focus {
     color: var(--white);
 }
-.mobileNameHead  .navbar-nav .nav-link {
+
+.mobileNameHead .navbar-nav .nav-link {
     font-size: 16px;
     font-weight: 300;
     color: var(--gray-600);
 }
 
-.mobileNameHead  .navbar-nav .nav-link.active,
-.mobileNameHead  .navbar-nav .nav-link:hover {
+.mobileNameHead .navbar-nav .nav-link.active,
+.mobileNameHead .navbar-nav .nav-link:hover {
     color: var(--white);
 }
 
@@ -1033,6 +1078,7 @@ section.wrapSection.tokensec {
     width: 65%;
     margin: 15px auto;
 }
+
 
 .mintInfoSec {
     background-image: url('../../../../public/img/mintToken.png');
@@ -1280,6 +1326,10 @@ section.wrapSection.tokensec {
     width: 100%;
 }
 
+.fhdspec  .wrapImg {
+    margin: 50px 0;
+}
+
 .fhdspec ul {
     display: flex;
     justify-content: space-around;
@@ -1448,7 +1498,7 @@ section.wrapSection.tokensec {
 
 .cameraImgBox ul.cameraList .text {
     display: inline-block;
-    text-align: left;
+    text-align: right;
 }
 
 .cameraImgBox ul.cameraList h2 {
@@ -1463,8 +1513,8 @@ section.wrapSection.tokensec {
 
 
 .cameraImgBox ul.cameraList h5 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 36px;
     font-weight: 400;
     color: var(--gray-600);
 }
@@ -1472,7 +1522,7 @@ section.wrapSection.tokensec {
 .cameraImgBox ul.cameraList .line1::before {
     content: '';
     background-image: url('../../../../public/img/line64mp.svg');
-    background-position: 51% 0;
+    background-position: 57% 0;
     background-repeat: no-repeat;
     width: 100%;
     display: block;
@@ -1485,7 +1535,7 @@ section.wrapSection.tokensec {
 .cameraImgBox ul.cameraList .line2::before {
     content: '';
     background-image: url('../../../../public/img/line20mp.svg');
-    background-position: 63% 0;
+    background-position: 64% 0;
     background-repeat: no-repeat;
     width: 100%;
     display: block;
@@ -1499,13 +1549,13 @@ section.wrapSection.tokensec {
 .cameraImgBox ul.cameraList .line3::before {
     content: '';
     background-image: url('../../../../public/img/line5mp.svg');
-    background-position: 53% 0;
+    background-position: 57% 0;
     background-repeat: no-repeat;
     width: 100%;
     display: block;
-    height: 60px;
+    height: 75px;
     position: absolute;
-    top: -32px;
+    top: -50px;
     right: 0;
 }
 
@@ -1516,7 +1566,7 @@ section.wrapSection.tokensec {
 .wideangleSec .wrapTitle {
     margin-bottom: -150px;
     position: relative;
-    z-index: 100;
+    z-index: 1;
 }
 
 .wideangleSec .wrapTitle h2 {
@@ -1552,6 +1602,7 @@ section.wrapSection.tokensec {
     width: 20%;
     padding: 15px;
     margin: 35px 0;
+    cursor: pointer;
 }
 
 .specsSec .specsSecList ul li h4 {
@@ -1568,7 +1619,15 @@ section.wrapSection.tokensec {
     color: var(--gray-600);
 }
 
-.techSpecHero  {
+.specsSec .specsSecList ul li:hover svg path {
+    fill: var(--primary);
+} 
+.specsSec .specsSecList ul li:hover h4,
+.specsSec .specsSecList ul li:hover h6 {
+    color: var(--primary);
+} 
+
+.techSpecHero {
     padding: 80px 0;
 }
 
@@ -1579,16 +1638,18 @@ section.wrapSection.tokensec {
 
 .specList {
     margin-top: 50px;
+    padding: 0;
 }
 
 .specList li.item {
-    display: flex;    
+    display: flex;
     align-items: start;
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .specList li.item .titleBox {
     width: 25%;
+    padding: 15px;
 }
 
 .specList li.item .titleBox h5 {
@@ -1599,11 +1660,31 @@ section.wrapSection.tokensec {
 
 .specList li.item .textWrap {
     width: 75%;
+    padding: 15px;
 }
 
 .specList li.item .textWrap h6 {
     font-size: 18px;
     line-height: 26px;
+}
+
+.specList li.item .textWrap ul.subList {
+    padding: 5px 0 0 15px;    
+}
+
+.specList li.item .textWrap ul.subList li {
+    color: #e6e6e6;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    margin-bottom: 5px;
+}
+
+.herosec img {
+    width: 100%;
+}
+
+.bridgeTextSec {
+    padding: 100px 0 0 0;
 }
 
 @media (max-width: 424px) {
@@ -2201,18 +2282,22 @@ section.wrapSection.tokensec {
 
     .cameraImgBox ul.cameraList h2 {
         font-size: 20px;
-        line-height: 30px;
+        line-height: 22px;
         margin: 0 0 0 0;
     }
 
     .cameraImgBox ul.cameraList h5 {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 24px;
+    }
+
+    .cameraImgBox ul.cameraList .line3::before {
+        top: -40px;
     }
 
     .cameraImgBox ul.cameraList {
         padding: 0;
-        width: 70%;
+        width: 68%;
         margin: 0 0 0 auto;
     }
 
@@ -2224,7 +2309,8 @@ section.wrapSection.tokensec {
     }
 
     .cameraImgBox ul.cameraList .text {
-        text-align: right;
+        margin: 0 0 10px 0;
+
     }
 
     .cameraImgBox ul.cameraList .line1::before,
@@ -2280,6 +2366,46 @@ section.wrapSection.tokensec {
     .specsSec .specsSecList ul li {
         width: 50%;
         vertical-align: top;
+    }
+
+    .mobileNameHead a.navbar-brand {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .mobileNameHead .navbar {
+        padding: 5px 0;
+    }
+
+
+    .mobileNameHead .navbar-nav .nav-link {
+        font-size: 13px;
+        display: inline-block;
+        padding: 10px 3px;
+    }
+
+    .mobilePhoneHero .mobilePhone h1 {
+        font-size: 60px;
+        line-height: 70px;
+        margin: 0 0 50px 0;
+    }
+
+    .mobilePhoneHero h3 {
+        width: 100%;
+    }
+
+    .specList li.item {
+        padding: 20px 0;
+    }
+
+    .specList li.item .titleBox h5 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .specList li.item .textWrap h6 {
+        font-size: 14px;
+        line-height: 22px;
     }
 
 }
@@ -2425,6 +2551,20 @@ section.wrapSection.tokensec {
 
     .copyright .copyLinks ul li {
         padding: 0 10px;
+    }
+
+    .herosec img {
+        width: 100%;
+    }
+
+    .mobileNameHead .navbar-nav .nav-link {
+        font-size: 14px;
+        display: inline-block;
+        padding: 10px 10px;
+    }
+
+    .mobilePhoneHero h3 {
+        width: 100%;
     }
 
 }

@@ -8,16 +8,10 @@ import { useRef, useEffect } from "react";
 import { motion, MotionValue, useScroll, useSpring, useTransform, useInView } from "framer-motion";
 import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
-import WhiteLogo from "../../../../public/img/white-logo.svg";
-
 import ldoImg from "../../../../public/img/hero-ldo.png";
-// import mintLogo from "../../public/img/mint-logo.png";
-
 import ecosystem from "../../../../public/img/ecosystem.png";
 import smartContarct from "../../../../public/img/smartContarct.png";
 import power from "../../../../public/img/power.png";
-
-
 
 export default function MintingMachine() {
     const buttRef = useRef(null);
@@ -30,15 +24,11 @@ export default function MintingMachine() {
         restDelta: 0.001
     });
 
-
     // steps path animation
     const scrollvisionProgressBar = useScroll({
         target: buttRef,
         offset: ["end end", "start start"]
     }).scrollYProgress;
-
-
-
 
     return (
         <main>
@@ -65,18 +55,7 @@ export default function MintingMachine() {
                                     animate={{ opacity: 1, scale: 1 }}
                                 >
                                     <h3> Enjoy complete autonomy. L-DAO is an ecosystem that is built for you, controlled by you, and owned by you. </h3>
-                                </motion.div>
-
-                                <motion.div
-                                    transition={{ ease: "easeIn", duration: 0.6, delay: 0.3 }}
-                                    initial={{ opacity: 0, scale: 0.5 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                >
-                                    <Button as="a" variant="primary">
-                                        Learn More
-                                    </Button>
-                                </motion.div>
-
+                                </motion.div>                               
                             </div>
                         </Col>
                         <Col md="6" xs="12">
@@ -87,9 +66,6 @@ export default function MintingMachine() {
                     </Row>
                 </Container>
             </section>
-
-
-
 
             <section className="stepSec">
                 <Container>
@@ -105,13 +81,9 @@ export default function MintingMachine() {
                                             <stop offset="100%" stop-color="#04FCA3" />
                                         </linearGradient>
                                     </defs>
-
                                     <motion.path stroke="url(#gradient)" className="visionMissionPath" d="M473.5 0V73.5035C473.5 90.072 460.069 103.504 443.5 103.504H31C14.4315 103.504 1 116.935 1 133.504V292.011C1 308.579 14.4315 322.011 31 322.011H921.5C938.069 322.011 951.5 335.442 951.5 352.011V510.124C951.5 526.693 938.069 540.124 921.5 540.124H31C14.4315 540.124 1 553.556 1 570.124V726C1 742.569 14.4315 756 31 756H951.5" style={{ pathLength: scrollvisionProgressBar }} />
-
                                 </svg>
-
                                 <svg className="d-block d-sm-none" width="100%" height="100%" viewBox="0 0 400 579" fill="none" xmlns="http://www.w3.org/2000/svg">
-
                                 </svg>
                             </figure>
                             
@@ -127,8 +99,8 @@ export default function MintingMachine() {
                             <Row className="rowText justify-content-end">
                                 <Col md="6">
                                     <div className="textBox text-right">
-                                        <h2> <strong> Step 01 </strong> </h2>
-                                        <h4> A user’s voting power is dependent on the number of vLFi tokens they own.</h4>
+                                        <h2> <strong> Step 02 </strong> </h2>
+                                        <h4> The proposal that gets at least 51% of the total votes wins.</h4>
                                     </div>
                                 </Col>
                             </Row>
@@ -136,32 +108,24 @@ export default function MintingMachine() {
                             <Row className="rowText">
                                 <Col md="6">
                                     <div className="textBox">
-                                        <h2> <strong> Step 01 </strong> </h2>
-                                        <h4> A user’s voting power is dependent on the number of vLFi tokens they own.</h4>
+                                        <h2> <strong> Step 03 </strong> </h2>
+                                        <h4> The voting period runs for at least five days.</h4>
                                     </div>
                                 </Col>
                             </Row>
-
-
-
-
-
                         </Col>
                     </Row>
                 </Container>
             </section>
 
-
-            <section className="wrapSection ldoSec">
+            <section className="ldoSec">
                 <Container>
-
                     <Row className="justify-content-center">
                         <Col md="12">
                             <div className="infoText text-center">
                                 <h2> Why  L-DAO?  </h2>
                             </div>
                         </Col>
-
                     </Row>
                     <Row className="justify-content-center">
                         <Col md="4">
@@ -195,7 +159,7 @@ export default function MintingMachine() {
                             </div>
                         </Col>
                     </Row>
-                    <Row className="justify-content-center">
+                    {/* <Row className="justify-content-center">
                         <Col md="12">
                             <div className="text-center mt-5">
                                 <Button as="a" variant="primary">
@@ -203,13 +167,9 @@ export default function MintingMachine() {
                                 </Button>
                             </div>
                         </Col>
-
-                    </Row>
+                    </Row> */}
                 </Container>
             </section>
-
-
-
         <Footer />
 
         </main>

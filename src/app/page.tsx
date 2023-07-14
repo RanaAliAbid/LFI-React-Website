@@ -143,7 +143,7 @@ export default function Home() {
                                     initial={{ opacity: 0, scale: 0.5 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                 >
-                                    <Button as="a" variant="primary">
+                                    <Button as="a" variant="primary" href="/aboutus">
                                         Learn More
                                     </Button>
                                 </motion.div>
@@ -172,7 +172,7 @@ export default function Home() {
                                 <p> <span> Mint </span> Your Token </p>
                                 <h2> LFi One </h2>
                                 <h3> A revolutionary smartphone that allows users to mint tokens and enter the crypto world seamlessly. </h3>
-                                <Button as="a" variant="primary" className="d-none d-sm-block">
+                                <Button as="a" variant="primary" className="d-none d-sm-block" href="/lfione">
                                     Discover LFi One
                                 </Button>
                             </div>                            
@@ -224,8 +224,8 @@ export default function Home() {
                             </motion.div>
 
 
-                            <Button as="a" variant="primary">
-                                Start Minting
+                            <Button as="a" variant="primary" href="/minting-machine" className="mintbtn">
+                                Learn More
                             </Button>
 
                         </Col>
@@ -267,8 +267,8 @@ export default function Home() {
                                         <h4> Decentralized </h4>
                                         <Image src="/img/white-ldo.svg" />
                                         <h3> We are a decentralized autonomous organization that adapts to the decisions of its users through smart contracts. </h3>
-                                        <Button as="a" variant="primary">
-                                            Start Minting
+                                        <Button as="a" variant="primary" href="/ldo">
+                                            Learn More
                                         </Button>
                                     </div>
                                 </div>
@@ -296,7 +296,7 @@ export default function Home() {
                             <div className="tokenText">
                                 <LfiCoin />
                                 <h3> LFi </h3>
-                                <h5> A revolutionary smartphone that allows users to mint tokens and enter the crypto world seamlessly. </h5>
+                                <h5> LFi is the native token of the LFi ecosystem that provides users the access to the network’s services.  </h5>
                             </div>
                         </Col>
 
@@ -304,7 +304,7 @@ export default function Home() {
                             <div className="tokenText">
                                 <LfiCoin />
                                 <h3> cLFi  </h3>
-                                <h5> A revolutionary smartphone that allows users to mint tokens and enter the crypto world seamlessly. </h5>
+                                <h5> cLFi is the collateral token of LFi ecosystem, which allows users to participate in the Proof-of-coverage minting. </h5>
                             </div>
                         </Col>
 
@@ -312,14 +312,14 @@ export default function Home() {
                             <div className="tokenText">
                                 <LfiCoin />
                                 <h3> vLFi  </h3>
-                                <h5> A revolutionary smartphone that allows users to mint tokens and enter the crypto world seamlessly. </h5>
+                                <h5> vLFi holders will receive rewards, obtain discounts, get wider allocations in launchpad, and more. </h5>
                             </div>
                         </Col>
                     </Row>
                     <Row className="justify-content-center">
                         <Col md="12">
                             <div className="text-center mt-5">
-                                <Button as="a" variant="primary">
+                                <Button as="a" variant="primary" href="/tokens">
                                     Explore all
                                 </Button>
                             </div>
@@ -393,7 +393,7 @@ export default function Home() {
                             <Row className="justify-content-center manifestoBtn">
                                 <Col>
                                     <div className="text-center">
-                                        <Button as="a" variant="primary" size="lg">
+                                        <Button as="a" variant="primary" size="lg" href="/aboutus">
                                             Our Manifesto
                                         </Button>
                                     </div>

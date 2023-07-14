@@ -9,9 +9,17 @@ import { motion, MotionValue, useScroll, useSpring, useTransform, useInView } fr
 import { Container, Tab, Tabs, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
 import launchpadbanner from "../../../../public/img/launchpad.png";
+
 import icon01 from "../../../../public/img/icon01.png";
 
-
+import Analysis from "../../../../public/img/launchpad/analysis.svg";
+import Early from "../../../../public/img/launchpad/early.svg";
+import Exposure from "../../../../public/img/launchpad/exposure.svg";
+import Financial from "../../../../public/img/launchpad/financial.svg";
+import Strength from "../../../../public/img/launchpad/strength.svg";
+import Teamwork from "../../../../public/img/launchpad/teamwork.svg";
+import Unlock from "../../../../public/img/launchpad/unlock.svg";
+import Userprotection from "../../../../public/img/launchpad/user-protection.svg";
 
 
 
@@ -58,8 +66,6 @@ export default function Launchpad() {
                 </Container>
             </section>
 
-
-
             <section className="bussinessTabssec">
                 <Container>
                     <Tabs
@@ -74,7 +80,7 @@ export default function Launchpad() {
                                         <div className="lines"></div>
                                         <div className="angles"></div>
                                         <article>
-                                            <Image src={icon01.src} />
+                                            <Early  />
                                             <h3> Tap into early-stage projects </h3>
                                             <h5> Gain early access to promising crypto startups before they become widely available.</h5>
                                         </article>
@@ -86,7 +92,7 @@ export default function Launchpad() {
                                         <div className="lines"></div>
                                         <div className="angles"></div>
                                         <article>
-                                            <Image src={icon01.src} />
+                                            <Analysis />
                                             <h3> Extensive analysis  </h3>
                                             <h5> Only crypto projects with strong potential are featured in the platform.</h5>
                                         </article>
@@ -97,7 +103,7 @@ export default function Launchpad() {
                                         <div className="lines"></div>
                                         <div className="angles"></div>
                                         <article>
-                                            <Image src={icon01.src} />
+                                            <Userprotection />
                                             <h3> User protection </h3>
                                             <h5> Top-notch mechanisms to reduce fraudulent activities and other forms of risks.</h5>
                                         </article>
@@ -109,7 +115,7 @@ export default function Launchpad() {
                                         <div className="lines"></div>
                                         <div className="angles"></div>
                                         <article>
-                                            <Image src={icon01.src} />
+                                            <Unlock />
                                             <h3> Unlock opportunities </h3>
                                             <h5> Enter a community of like-minded crypto enthusiasts.</h5>
                                         </article>
@@ -124,7 +130,7 @@ export default function Launchpad() {
                                         <div className="lines"></div>
                                         <div className="angles"></div>
                                         <article>
-                                            <Image src={icon01.src} />
+                                            <Financial />
                                             <h3> Secure your project’s funding </h3>
                                             <h5> Attract a broader customer base and raise capital for your project’s development and operations.</h5>
                                         </article>
@@ -136,7 +142,7 @@ export default function Launchpad() {
                                         <div className="lines"></div>
                                         <div className="angles"></div>
                                         <article>
-                                            <Image src={icon01.src} />
+                                            <Exposure />
                                             <h3> Get the exposure you need   </h3>
                                             <h5> Obtain the marketing and exposure you need through social media, newsletters, and events. </h5>
                                         </article>
@@ -147,7 +153,7 @@ export default function Launchpad() {
                                         <div className="lines"></div>
                                         <div className="angles"></div>
                                         <article>
-                                            <Image src={icon01.src} />
+                                            <Strength />
                                             <h3> Strengthen your credibility  </h3>
                                             <h5> Establish your credibility, legitimacy, and reputation within a wide crypto community.</h5>
                                         </article>
@@ -160,7 +166,7 @@ export default function Launchpad() {
                                         <div className="lines"></div>
                                         <div className="angles"></div>
                                         <article>
-                                            <Image src={icon01.src} />
+                                            <Teamwork />
                                             <h3> Build your community </h3>
                                             <h5> Foster thousands of crypto users, advocates, and adopters and create a strong customer base.</h5>
                                         </article>
@@ -168,9 +174,7 @@ export default function Launchpad() {
                                 </Col>
                             </Row>
                         </Tab>
-
                     </Tabs>
-
 
                     <Row>
                         <Col xs="12" className="text-center">
@@ -178,17 +182,9 @@ export default function Launchpad() {
                                 LFi Launchpad
                             </Button>
                         </Col>
-                    </Row>
-
+                    </Row>                    
                 </Container>
             </section>
-
-
-
-
-
-
-
 
             <Footer />
 

@@ -1,6 +1,5 @@
 'use client'
 import React from "react";
-
 import Header from "@/app/components/common/header";
 import Footer from "@/app/components/common/footer";
 
@@ -8,14 +7,7 @@ import { useRef, useEffect } from "react";
 import { motion, MotionValue, useScroll, useSpring, useTransform, useInView } from "framer-motion";
 import { Container, Tab, Tabs, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
-import WhiteLogo from "../../../../public/img/white-logo.svg";
-
-import ldoImg from "../../../../public/img/hero-ldo.png";
 import tokenImg from "../../../../public/img/token.png";
-
-
-
-
 
 export default function Tokens() {
     const buttRef = useRef(null);
@@ -27,9 +19,6 @@ export default function Tokens() {
         damping: 20,
         restDelta: 0.001
     });
-
-
-
 
     return (
         <main>
@@ -49,8 +38,11 @@ export default function Tokens() {
                                     <div className="hero">
                                         <h1> LFi Token </h1>
                                         <h3> LFi is the native token of the LFi ecosystem that provides users the access to the network’s services.  </h3>
-                                        <Button as="a" variant="primary">
+                                        <Button as="a" variant="primary" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/lfi-token">
                                             More about LFi
+                                        </Button>
+                                        <Button as="a" variant="text" href="https://www.lyotrade.com/en_US/v5/trade/LFi_USDT?type=spot">
+                                            Trade LFi/USDT
                                         </Button>
                                     </div>
                                 </Col>
@@ -67,8 +59,11 @@ export default function Tokens() {
                                     <div className="hero">
                                         <h1> cLFi Token </h1>
                                         <h3> cLFi is the collateral token of LFi ecosystem, which allows users to participate in the Proof-of-coverage minting.  </h3>
-                                        <Button as="a" variant="primary">
+                                        <Button as="a" variant="primary" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/clfi-token">
                                             More about cLFi
+                                        </Button>
+                                        <Button as="a" variant="text" href="https://www.lyotrade.com/en_US/v5/trade/cLFi_USDT?type=spot">
+                                            Trade LFi/USDT
                                         </Button>
                                     </div>
                                 </Col>
@@ -85,7 +80,7 @@ export default function Tokens() {
                                     <div className="hero">
                                         <h1> vLFi Token </h1>
                                         <h3> vLFi holders will receive rewards, obtain discounts, get wider allocations in launchpad, and more.  </h3>
-                                        <Button as="a" variant="primary">
+                                        <Button as="a" variant="primary" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/vlfi-token">
                                             More about vLFi
                                         </Button>
                                     </div>

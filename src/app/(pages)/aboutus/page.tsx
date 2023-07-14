@@ -5,20 +5,13 @@ import { useRef, useEffect } from "react";
 import { motion, MotionValue, useScroll, useSpring, useTransform, useInView } from "framer-motion";
 import { Container, Tab, Tabs, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
-import WhiteLogo from "../../../../public/img/white-logo.svg";
 import Header from "@/app/components/common/header";
 import Footer from "@/app/components/common/footer";
 
-
-
-
 export default function Aboutus() {
-    const buttRef = useRef(null);
 
     const ldolRef = useRef(null);
     const ldaoRef = useRef(null);
-
-
     const { scrollYProgress } = useScroll();
 
     // top progressbar animation
@@ -28,18 +21,15 @@ export default function Aboutus() {
         restDelta: 0.001
     });
 
-
-      // ldo box border animation
-      const ldoborders = useScroll({
+    // ldo box border animation
+    const ldoborders = useScroll({
         target: ldolRef,
         offset: ["end end", "start start"]
     }).scrollYProgress;
 
-
-
     return (
         <main>
-            <Header/>
+            <Header />
 
             <section className="herosec bg-aboutus">
                 <Container>
@@ -48,7 +38,7 @@ export default function Aboutus() {
                             <div className="hero">
                                 <h1> LFi Ecosystem </h1>
                                 <h3> LFi is a decentralized platform designed to provide equal opportunities for wealth generation and financial independence. </h3>
-                                <Button as="a" variant="primary">
+                                <Button as="a" variant="primary" href="#headingText">
                                     Learn More
                                 </Button>
                             </div>
@@ -57,8 +47,7 @@ export default function Aboutus() {
                 </Container>
             </section>
 
-
-            <section className="headingSec">
+            <section className="headingSec" id="headingText">
                 <Container>
                     <Row className="align-items-center">
                         <Col xs="12">
@@ -108,7 +97,6 @@ export default function Aboutus() {
                 </Container>
             </section>
 
-
             <section className="aboutBeliveSec">
                 <Container>
                     <Row className="align-items-center">
@@ -131,9 +119,8 @@ export default function Aboutus() {
                 </Container>
             </section>
 
-
             <section className="ecosystemSec">
-                <div  ref={ldolRef}></div>
+                <div ref={ldolRef}></div>
                 <Container>
                     <Row className="justify-content-center">
                         <Col lg="10" md="11" sm="12" className="relative">
@@ -164,22 +151,15 @@ export default function Aboutus() {
                                         <h4> The LFi </h4>
                                         <Image src="/img/ecosystem.svg" />
                                         <h3> It is an innovative decentralized platform that will continue to grow with you, providing top-notch services that will adapt to your evolving needs. </h3>
-                                        
+
                                     </div>
                                 </div>
                             </div>
                         </Col>
                     </Row>
                 </Container>
-
             </section>
-
-
-            <Footer/>
-
-
-
-
+            <Footer />
         </main>
     )
 }

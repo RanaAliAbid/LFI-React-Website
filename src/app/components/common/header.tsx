@@ -1,15 +1,9 @@
 'use client'
 import React, { useState } from "react";
-
-
 import { motion, useScroll, useSpring, useTransform, useInView } from "framer-motion";
 import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
 import WhiteLogo from "../../../../public/img/white-logo.svg";
-
-
-
-
 
 export default function Header() {
     
@@ -20,12 +14,6 @@ export default function Header() {
         damping: 20,
         restDelta: 0.001
     });
-
-
-
-
-
-
 
     return (
         <>
@@ -44,13 +32,13 @@ export default function Header() {
                             <Nav.Link href="/lfione">LFi One</Nav.Link>
                             <Nav.Link href="/minting-machine">Minting Machine</Nav.Link>
                             <NavDropdown title="dApps" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#dao"> DAO </NavDropdown.Item>
+                                <NavDropdown.Item href="/ldao"> L - DAO </NavDropdown.Item>
                                 <NavDropdown.Item href="/bridge">LFi Bridge</NavDropdown.Item>
                                 <NavDropdown.Item href="/launchpad">Launchpad</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href="/tokens">Tokens</Nav.Link>
                             <Nav.Link href="/aboutus">About Us</Nav.Link>
-                            <Button as="a" variant="primary">
+                            <Button as="a" variant="primary" href="https://lyotechlabs.com">
                                 Store
                             </Button>
                         </Nav>

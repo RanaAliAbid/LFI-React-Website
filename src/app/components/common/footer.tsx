@@ -1,15 +1,9 @@
 'use client'
 import React, { useState } from "react";
-
-
 import { motion, useScroll, useSpring, useTransform, useInView } from "framer-motion";
 import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
 import WhiteLogo from "../../../../public/img/white-logo.svg";
-
-
-
-
 
 export default function Footer() {
     
@@ -20,12 +14,6 @@ export default function Footer() {
         damping: 20,
         restDelta: 0.001
     });
-
-
-
-
-
-
 
     return (
         <>
@@ -42,12 +30,12 @@ export default function Footer() {
                             <div className="footBox">
                                 <h3>LFi</h3>
                                 <ul className="footLink">
-                                    <li><a href="">LFi One</a></li>
-                                    <li><a href="">LFi Minting Machine </a></li>
-                                    <li><a href="">L-DAO</a></li>
-                                    <li><a href="">Launchpad</a></li>
-                                    <li><a href="">LFi Bridge</a></li>
-                                    <li><a href="">Tokens</a></li>
+                                    <li><a href="/lfione">LFi One</a></li>
+                                    <li><a href="/minting-machine">LFi Minting Machine </a></li>
+                                    <li><a href="/ldao">L-DAO</a></li>
+                                    <li><a href="/launchpad">Launchpad</a></li>
+                                    <li><a href="/bridge">LFi Bridge</a></li>
+                                    <li><a href="/tokens">Tokens</a></li>
                                 </ul>
                             </div>
                         </Col>
@@ -56,7 +44,7 @@ export default function Footer() {
                             <div className="footBox">
                                 <h3>Company</h3>
                                 <ul className="footLink">
-                                    <li><a href="">About Us</a></li>
+                                    <li><a href="/aboutus">About Us</a></li>
                                     <li><a href="">Blog </a></li>
                                     <li><a href="">White Paper</a></li>
                                     <li><a href="">Technical Docs</a></li>
@@ -70,7 +58,7 @@ export default function Footer() {
                             <div className="footBox contFoot">
                                 <h3>Contact us</h3>
                                 <ul className="footLink">
-                                    <li><a href="">supportlfi@gmail.com</a></li>
+                                    <li><a href="mailto:support@lfi.io">support@lfi.io</a></li>
                                 </ul>
                             </div>
                             <div className="footBox mt-5 socFoot" >
@@ -104,8 +92,6 @@ export default function Footer() {
                             </div>
                         </Col>
                     </Row>
-
-
                 </Container>
             </section>
 
@@ -121,18 +107,17 @@ export default function Footer() {
                         <Col lg="8" md="8" className="text-right">
                             <div className="copyLinks">
                                 <ul>
-                                    <li><a href=""> Terms </a></li>
-                                    <li><a href=""> Privacy & Cookie </a></li>
-                                    <li><a href=""> Minting Terms </a></li>
-                                    <li><a href=""> cLFi Terms </a></li>
-                                    <li><a href=""> Disclaimer </a></li>
+                                    <li><a href="https://docs.lfi.io/legal-documents/terms-and-conditions"> Terms </a></li>
+                                    <li><a href="https://docs.lfi.io/legal-documents/privacy-and-cookie-policy"> Privacy & Cookie </a></li>
+                                    <li><a href="https://docs.lfi.io/legal-documents/minting-terms-and-condition"> Minting Terms </a></li>
+                                    <li><a href="https://docs.lfi.io/legal-documents/clfi-terms-and-condition"> cLFi Terms </a></li>
+                                    <li><a href="https://docs.lfi.io/legal-documents/disclaimer"> Disclaimer </a></li>
                                 </ul>
                             </div>
                         </Col>
                     </Row>
                 </Container>
             </div>
-
         </>
     )
 }

@@ -35,7 +35,7 @@ export default function Bridge() {
                             <div className="hero">
                                 <h1> LFi Bridge </h1>
                                 <h3> Connecting multiple blockchains to bring more users together. </h3>
-                                <Button as="a" variant="primary">
+                                <Button as="a" variant="primary" href="#bridgeText">
                                     Learn More
                                 </Button>
                             </div>
@@ -49,9 +49,7 @@ export default function Bridge() {
                 </Container>
             </section>
 
-
-            <section className="bridgeTextSec">
-
+            <section className="bridgeTextSec" id="bridgeText">
                 <Container>
                     <Row className="justify-content-center">
                         <Col md="10" xs="12">
@@ -74,7 +72,6 @@ export default function Bridge() {
                                 </Row>
                             </div>
 
-
                             <div className="bridgeBoxWrap">
                                 <Row className="align-items-center">
                                     <Col md="6">
@@ -91,7 +88,6 @@ export default function Bridge() {
                                 </Row>
                             </div>
 
-
                             <div className="bridgeBoxWrap">
                                 <Row className="align-items-center">
                                     <Col md="6">
@@ -107,7 +103,6 @@ export default function Bridge() {
                                     </Col>
                                 </Row>
                             </div>
-
 
                             <div className="bridgeBoxWrap">
                                 <Row className="align-items-center">
@@ -127,12 +122,9 @@ export default function Bridge() {
                         </Col>
                     </Row>
                 </Container>
-
             </section>
 
             <Footer />
-
-
         </main>
     )
 }

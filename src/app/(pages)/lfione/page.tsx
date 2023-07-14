@@ -224,7 +224,7 @@ export default function Lfione() {
                     <Row className="justify-content-center">
                         <Col md="8">
                             <div className="fhdTitle">
-                                <h2> 16.7cm (6.7'') FHD Fullscreen Ultra-High Resolution </h2>
+                                <h2> 16.7cm (6.7&Prime;) FHD Fullscreen Ultra-High Resolution </h2>
                             </div>
                         </Col>
 

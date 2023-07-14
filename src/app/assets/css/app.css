@@ -145,6 +145,8 @@ a:hover {
 .navbar-expand .navbar-nav .nav-link,
 .nav-link {
     color: var(--white);
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 400;
     padding: 10px 15px;
 }
@@ -312,6 +314,8 @@ section.wrapSection.herosec {
     height: 5px;
     background: var(--primary);
     transform-origin: 0%;
+    z-index: 100;
+    
 }
 
 .bg {
@@ -951,6 +955,38 @@ section.wrapSection.tokensec {
 }
 
 
+
+.mobileNameHead {
+    position: sticky;
+    top: 0px;
+    background-color: rgb(7 10 11 / 80%);    
+    z-index: 10;    
+}
+
+.mobileNameHead .navbar-brand:hover,
+.mobileNameHead .navbar-brand:active,
+.mobileNameHead .navbar-brand:focus {
+    color: var(--white);
+}
+.mobileNameHead  .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--gray-600);
+}
+
+.mobileNameHead  .navbar-nav .nav-link.active,
+.mobileNameHead  .navbar-nav .nav-link:hover {
+    color: var(--white);
+}
+
+.mobileNameHead .nav-link.buybtn {
+    color: var(--primary);
+}
+
+.mobileNameHead .nav-link.buybtn:hover {
+    color: var(--btn-primary-hover);
+}
+
 .mobilePhoneHero {
     padding: 100px 0 150px 0;
 }
@@ -1042,6 +1078,7 @@ section.wrapSection.tokensec {
     margin-bottom: 30px;
     min-height: 330px;
     border-radius: 20px;
+    z-index: 0;
 }
 
 .specsSection h2 {
@@ -1492,17 +1529,6 @@ section.wrapSection.tokensec {
     padding: 150px 0;
 }
 
-.aliceCarouselSec .alice-carousel__stage-item {
-    padding: 0 15px;
-}
-
-.aliceCarouselSec .alice-carousel__stage-item img {
-    width: 100%;
-}
-
-.aliceCarouselSec .alice-carousel__dots {
-    display: none;
-}
 
 .specsSec {
     padding: 80px 0;
@@ -1542,6 +1568,43 @@ section.wrapSection.tokensec {
     color: var(--gray-600);
 }
 
+.techSpecHero  {
+    padding: 80px 0;
+}
+
+.specificationsSec {
+    padding: 150px 0 100px 0;
+}
+
+
+.specList {
+    margin-top: 50px;
+}
+
+.specList li.item {
+    display: flex;    
+    align-items: start;
+    padding: 80px 0;
+}
+
+.specList li.item .titleBox {
+    width: 25%;
+}
+
+.specList li.item .titleBox h5 {
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--gray-600);
+}
+
+.specList li.item .textWrap {
+    width: 75%;
+}
+
+.specList li.item .textWrap h6 {
+    font-size: 18px;
+    line-height: 26px;
+}
 
 @media (max-width: 424px) {
 

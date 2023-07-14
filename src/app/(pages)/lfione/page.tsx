@@ -1,13 +1,13 @@
 'use client'
-import React, { Children } from "react";
+import React, { useState } from "react";
+
+import jquery from "jquery";
 
 import Header from "@/app/components/common/header";
 import Footer from "@/app/components/common/footer";
 
-import AliceCarousel from 'react-alice-carousel';
-
 import { useRef, useEffect } from "react";
-import { motion, useAnimation, useTransform, useScroll } from "framer-motion";
+import { motion, useAnimation, useTransform, useScroll, useInView } from "framer-motion";
 
 import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
@@ -27,12 +27,12 @@ import fingerprint from "../../../../public/img/fingerprint.png";
 import audiosystem from "../../../../public/img/audiosystem.png";
 import nightview01 from "../../../../public/img/nightview-01.png";
 import nightview02 from "../../../../public/img/nightview-02.png";
-
 import continuousShots from "../../../../public/img/continuousShots.png";
-
 import mainCamera from "../../../../public/img/camera.png";
 import wideangle from "../../../../public/img/widealgo.png";
 import pro01 from "../../../../public/img/pro1.png";
+
+
 
 import Dimensions from "../../../../public/img/specsIcon/dimensions.svg";
 import Battery from "../../../../public/img/specsIcon/battery.svg";
@@ -40,57 +40,69 @@ import Camera4kHD from "../../../../public/img/specsIcon/camera4kHD.svg";
 import Cpu from "../../../../public/img/specsIcon/cpu.svg";
 import Flash from "../../../../public/img/specsIcon/flash.svg";
 import Hdr from "../../../../public/img/specsIcon/hdr.svg";
-
-
 import Network from "../../../../public/img/specsIcon/network.svg";
 import Operatingsystem from "../../../../public/img/specsIcon/operating-system.svg";
 import Ram from "../../../../public/img/specsIcon/ram.svg";
 import Rearcamera from "../../../../public/img/specsIcon/rearcamera.svg";
 import Sensors from "../../../../public/img/specsIcon/sensors.svg";
 import Size from "../../../../public/img/specsIcon/size.svg";
-
-
 import Sound from "../../../../public/img/specsIcon/sound.svg";
 import VideoPlayback from "../../../../public/img/specsIcon/video-playback.svg";
 import WirelessCharger from "../../../../public/img/specsIcon/wireless-charger.svg";
 
 
 
-
-
-
-
+import dynamic from "next/dynamic";
 
 export default function Lfione() {
 
-    const handleDragStart = (event: React.MouseEvent) => event.preventDefault();
 
-    const responsive = {
-        0: { items: 1 },
-        568: { items: 2 },
-        1024: { items: 3 },
-    };
 
-    const items = [
-        <img src={pro01.src} onDragStart={handleDragStart} role="presentation" />,
-        <img src={pro01.src} onDragStart={handleDragStart} role="presentation" />,
-        <img src={pro01.src} onDragStart={handleDragStart} role="presentation" />,
-        <img src={pro01.src} onDragStart={handleDragStart} role="presentation" />,
-        <img src={pro01.src} onDragStart={handleDragStart} role="presentation" />,
-        <img src={pro01.src} onDragStart={handleDragStart} role="presentation" />,
-        <img src={pro01.src} onDragStart={handleDragStart} role="presentation" />,
-        <img src={pro01.src} onDragStart={handleDragStart} role="presentation" />,
-        <img src={pro01.src} onDragStart={handleDragStart} role="presentation" />,
-        <img src={pro01.src} onDragStart={handleDragStart} role="presentation" />,
-        <img src={pro01.src} onDragStart={handleDragStart} role="presentation" />,
-        <img src={pro01.src} onDragStart={handleDragStart} role="presentation" />,
-    ];
+   
 
+    const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+        ssr: false,
+    });
+
+    const Responsive = {
+        0: {
+            item: 1,
+            margin: 25,
+        },
+
+        768: {
+            item: 2,
+            margin: 20,
+        },
+
+        1024: {
+            item: 4,
+            margin: 18,
+        }
+    }
+
+    useEffect(() => {
+        window.$ = window.jQuery = jquery;
+    })
 
 
     return (
         <main>
             <Header />
+            <section className="mobileNameHead">
+                <Container>
+                    <Navbar className="nameBar">
+                        <Navbar.Brand href="#">LFi Phone </Navbar.Brand>
+                        <Nav className="ms-auto">
+                            <Nav.Link href="/lfione" className="active">Overview</Nav.Link>
+                            <Nav.Link href="/techspecs">Tech Specs</Nav.Link>
+                            <Nav.Link href="https://lyotechlabs.com" className="buybtn">Buy Now</Nav.Link>
+                        </Nav>
+                    </Navbar>
+
+                </Container>
+            </section>
+
             <section className="herosec mobilePhoneHero">
                 <Container>
                     <Row className="justify-content-center">
@@ -130,7 +142,7 @@ export default function Lfione() {
                                     <li> Welcome to a new world of connected Finance! </li>
                                 </ul>
                             </div>
-                        </Col>                       
+                        </Col>
                     </Row>
                 </Container>
             </section>
@@ -434,7 +446,25 @@ export default function Lfione() {
                         </Col>
                     </Row>
                 </Container>
-                <AliceCarousel mouseTracking items={items} responsive={responsive} />
+                <OwlCarousel loop={true} responsive={Responsive}>
+                    <div className="item">
+                        <Image src={pro01.src} />
+                    </div>
+                    <div className="item">
+                        <Image src={pro01.src} />
+                    </div>
+                    <div className="item">
+                        <Image src={pro01.src} />
+                    </div>
+                    <div className="item">
+                        <Image src={pro01.src} />
+                    </div>
+                    <div className="item">
+                        <Image src={pro01.src} />
+                    </div>
+
+                </OwlCarousel>
+
             </section>
 
 
@@ -450,102 +480,102 @@ export default function Lfione() {
                             <div className="specsSecList">
                                 <ul>
                                     <li>
-                                        <Dimensions/>
+                                        <Dimensions />
                                         <h4> Dimensions </h4>
                                         <h6> 168.7*76.9*11mm </h6>
                                     </li>
 
                                     <li>
-                                        <Cpu/>
+                                        <Cpu />
                                         <h4> CPU </h4>
                                         <h6> Octa Cores </h6>
                                     </li>
 
                                     <li>
-                                        <Network/>
+                                        <Network />
                                         <h4> Network </h4>
                                         <h6> 2G / 3G / 4G / 5G </h6>
                                     </li>
 
                                     <li>
-                                        <Ram/>
+                                        <Ram />
                                         <h4> Memory </h4>
                                         <h6> 12GB RAM / 256GB ROM </h6>
                                     </li>
 
                                     <li>
-                                        <Operatingsystem/>
+                                        <Operatingsystem />
                                         <h4> OS </h4>
                                         <h6> Android 13 </h6>
                                     </li>
 
                                     <li>
-                                        <Size/>
+                                        <Size />
                                         <h4> Display </h4>
                                         <h6> FHD+ @ 120Hz 396 DPI </h6>
                                     </li>
 
                                     <li>
-                                        <Sensors/>
+                                        <Sensors />
                                         <h4> Sensors </h4>
                                         <h6> Compass, Gyro, IR </h6>
                                     </li>
 
                                     <li>
-                                        <Sound/>
+                                        <Sound />
                                         <h4> Audio </h4>
                                         <h6> Deep Audio System </h6>
                                     </li>
 
                                     <li>
-                                        <Battery/>
+                                        <Battery />
                                         <h4> Battery </h4>
                                         <h6> 6100mAh / Up to 15 hours </h6>
                                     </li>
 
                                     <li>
-                                        <WirelessCharger/>
+                                        <WirelessCharger />
                                         <h4> Charger </h4>
                                         <h6> Wireless Charger / USB-C </h6>
                                     </li>
 
                                     <li>
-                                        <Rearcamera/>
+                                        <Rearcamera />
                                         <h4> Rear Camera </h4>
                                         <h6> Sony IMX686 , 64MP </h6>
                                     </li>
 
                                     <li>
-                                        <Flash/>
+                                        <Flash />
                                         <h4> Flash </h4>
                                         <h6> Dual Flash LED </h6>
-                                    </li>                                    
+                                    </li>
 
                                     <li>
-                                        <Hdr/>
+                                        <Hdr />
                                         <h4> Camera Modes </h4>
                                         <h6> HDR / Super night view </h6>
                                     </li>
 
                                     <li>
-                                        <Camera4kHD/>
+                                        <Camera4kHD />
                                         <h4> Recording </h4>
                                         <h6> 4K at 30fps </h6>
                                     </li>
 
                                     <li>
-                                        <VideoPlayback/>
+                                        <VideoPlayback />
                                         <h4> Playback </h4>
                                         <h6> AVI, MP4, WMV, RMVB </h6>
                                     </li>
 
-                                    
+
                                 </ul>
                             </div>
                         </Col>
                     </Row>
                 </Container>
-                
+
             </section>
 
 

@@ -42,7 +42,7 @@ export default function Tokens() {
                                             More about LFi
                                         </Button>
                                         <Button as="a" variant="text" href="https://www.lyotrade.com/en_US/v5/trade/LFi_USDT?type=spot">
-                                            Trade LFi/USDT
+                                            Buy LFi
                                         </Button>
                                     </div>
                                 </Col>
@@ -63,7 +63,7 @@ export default function Tokens() {
                                             More about cLFi
                                         </Button>
                                         <Button as="a" variant="text" href="https://www.lyotrade.com/en_US/v5/trade/cLFi_USDT?type=spot">
-                                            Trade LFi/USDT
+                                            Buy cLFi
                                         </Button>
                                     </div>
                                 </Col>

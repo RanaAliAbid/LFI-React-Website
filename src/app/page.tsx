@@ -10,7 +10,10 @@ import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } fr
 import Header from "./components/common/header";
 import Footer from "./components/common/footer";
 
-import LfiCoin from "../../public/img/lfi-coin.svg";
+import LfiCoin from "../../public/img/lfi-token.svg";
+import CLfiCoin from "../../public/img/clfi-token.svg";
+import VLfiCoin from "../../public/img/vlfi-token.svg";
+
 
 const Box = ({ speed }: any) => {
     const { scrollYProgress } = useScroll();
@@ -115,7 +118,7 @@ export default function Home() {
         <main>
             <Header/>
 
-            <section className="wrapSection herosec">
+            <section className="wrapSection herosec herobanner">
                 <Container>
                     <Row className="justify-content-center">
                         <Col xxl="8" xl="9" lg="9" md="10" xs="12">
@@ -302,7 +305,7 @@ export default function Home() {
 
                         <Col md="4">
                             <div className="tokenText">
-                                <LfiCoin />
+                                <VLfiCoin />
                                 <h3> cLFi  </h3>
                                 <h5> cLFi is the collateral token of LFi ecosystem, which allows users to participate in the Proof-of-coverage minting. </h5>
                             </div>
@@ -310,7 +313,7 @@ export default function Home() {
 
                         <Col md="4">
                             <div className="tokenText">
-                                <LfiCoin />
+                                <CLfiCoin />
                                 <h3> vLFi  </h3>
                                 <h5> vLFi holders will receive rewards, obtain discounts, get wider allocations in launchpad, and more. </h5>
                             </div>

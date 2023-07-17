@@ -38,6 +38,9 @@ export default function Bridge() {
                                 <Button as="a" variant="primary" href="#bridgeText">
                                     Learn More
                                 </Button>
+                                <Button as="a" variant="text" href="https://bridge.lfi.io/">
+                                    Open Bridge
+                                </Button>
                             </div>
                         </Col>
                         <Col md="6" xs="12">
@@ -118,6 +121,12 @@ export default function Bridge() {
                                         </div>
                                     </Col>
                                 </Row>
+                            </div>
+
+                            <div className="text-center">
+                                <Button as="a" variant="primary" href="https://bridge.lfi.io/">
+                                    Open Bridge
+                                </Button>
                             </div>
                         </Col>
                     </Row>

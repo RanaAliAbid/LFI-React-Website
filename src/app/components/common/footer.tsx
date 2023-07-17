@@ -45,11 +45,11 @@ export default function Footer() {
                                 <h3>Company</h3>
                                 <ul className="footLink">
                                     <li><a href="/aboutus">About Us</a></li>
-                                    <li><a href="">Blog </a></li>
-                                    <li><a href="">White Paper</a></li>
-                                    <li><a href="">Technical Docs</a></li>
-                                    <li><a href="">Roadmap</a></li>
-                                    <li><a href="">FAQ</a></li>
+                                    {/* <li><a href="">Blog </a></li> */}
+                                    <li><a href="https://white-paper.lfi.io/introduction/lfi-ecosystem">White Paper</a></li>
+                                    <li><a href="https://docs.lfi.io/v/lfi-technical-docs/">Technical Docs</a></li>
+                                    <li><a href="https://white-paper.lfi.io/introduction/roadmap">Roadmap</a></li>
+                                    <li><a href="https://docs.lfi.io/help-center/general-project-faqs">FAQ</a></li>
                                 </ul>
                             </div>
                         </Col>

@@ -363,7 +363,7 @@ section.wrapSection.tokensec {
     flex-direction: column;
     justify-content: end;
     margin: 0 15px;
-    padding: 35px 35px;
+    padding: 35px 20px;
     border: 1px solid #2e2e2e;
     border-radius: 30px;
     min-height: 350px;
@@ -2039,8 +2039,7 @@ section.wrapSection.tokensec {
         flex-direction: column;
     }
 
-    .tokensBody .tokenTabs {
-        order: 2;
+    .tokensBody .tokenTabs {        
         margin: 80px 0 0 0;
     }
 

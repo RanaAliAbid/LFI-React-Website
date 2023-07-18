@@ -45,11 +45,13 @@ export default function Footer() {
                                 <h3>Company</h3>
                                 <ul className="footLink">
                                     <li><a href="/aboutus">About Us</a></li>
-                                    <li><a href="">Blog </a></li>
-                                    <li><a href="">White Paper</a></li>
-                                    <li><a href="">Technical Docs</a></li>
-                                    <li><a href="">Roadmap</a></li>
-                                    <li><a href="">FAQ</a></li>
+                                    {/* <li><a href="">Blog </a></li> */}                                    
+                                    <li><a href="https://docs.lfi.io/legal-documents/terms-and-conditions">Legal</a></li>
+                                    <li><a href="https://docs.lfi.io/introduction/manifesto">LFi Docs </a></li>
+                                    <li><a href="https://white-paper.lfi.io/introduction/lfi-ecosystem">White Paper</a></li>
+                                    <li><a href="https://docs.lfi.io/v/lfi-technical-docs/">Technical Docs</a></li>
+                                    <li><a href="https://white-paper.lfi.io/introduction/roadmap">Roadmap</a></li>
+                                    <li><a href="https://docs.lfi.io/help-center/general-project-faqs">FAQ</a></li>
                                 </ul>
                             </div>
                         </Col>
@@ -114,6 +116,11 @@ export default function Footer() {
                                     <li><a href="https://docs.lfi.io/legal-documents/disclaimer"> Disclaimer </a></li>
                                 </ul>
                             </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md="12" className="text-center"> 
+                            <p className="note"> Actual product may slightly vary in design, color and size. Please read the description of the product for complete understanding of its specifications. </p>
                         </Col>
                     </Row>
                 </Container>

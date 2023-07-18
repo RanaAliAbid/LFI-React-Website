@@ -38,7 +38,7 @@ export default function Header() {
                             </NavDropdown>
                             <Nav.Link href="/tokens">Tokens</Nav.Link>
                             <Nav.Link href="/aboutus">About Us</Nav.Link>
-                            <Button as="a" variant="primary" href="https://lyotechlabs.com">
+                            <Button as="a" variant="primary" href="https://lyotechlabs.com/lfi-build-your-independence/">
                                 Store
                             </Button>
                         </Nav>

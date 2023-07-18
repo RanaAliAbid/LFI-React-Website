@@ -211,6 +211,13 @@ section.wrapSection.herosec {
     height: calc(100vh - 70px);
 }
 
+section.herobanner {
+    background-image: url('../../../../public/img/herologo.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 35%;
+}
+
 .hero {
     padding: 0% 10%;
 }
@@ -415,6 +422,11 @@ section.wrapSection.tokensec {
     fill: var(--primary);
 }
 
+
+.stepProgressBar {
+    stroke: url(#gradienttt);
+    stroke-width: 2;
+}
 
 .visionMissionPath {
     stroke: url(#gradient);
@@ -1679,12 +1691,18 @@ section.wrapSection.tokensec {
     margin-bottom: 5px;
 }
 
-.herosec img {
+/* .herosec img {
     width: 100%;
-}
+} */
 
 .bridgeTextSec {
     padding: 100px 0 0 0;
+}
+
+p.note {
+    padding: 15px 0 0 0;
+    font-size: 12px;
+    color: var(--gray-600);
 }
 
 @media (max-width: 424px) {
@@ -1752,6 +1770,10 @@ section.wrapSection.tokensec {
 
     .herosec .heroImg {
         padding: 25px;
+    }
+
+    section.herobanner {
+        background-size: 80%;
     }
 
     section.wrapSection.herosec {
@@ -1869,7 +1891,17 @@ section.wrapSection.tokensec {
     .visionProgressBar {
         width: 90%;
         margin: 0 auto;
-        top: 2%
+        top: 2%;
+    }
+
+    .stepProgressBar {
+        width: 90%;
+        margin: 0 auto;
+        top: -15%;
+    }   
+
+    .stepSec .rowText .textBox {
+        padding: 45px 30px;
     }
 
     .footerSec .footBox ul li {
@@ -2407,6 +2439,10 @@ section.wrapSection.tokensec {
         line-height: 22px;
     }
 
+    .stepSec .rowText {
+        padding: 25px;
+    }
+
 }
 
 
@@ -2614,4 +2650,13 @@ section.wrapSection.tokensec {
 }
 
 
-@media (min-width: 1200px) and (max-width: 1399px) {}
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .rowText {
+        padding: 65px 20px;
+    }
+
+    .tokenText {
+        padding: 35px 15px;
+    }
+}

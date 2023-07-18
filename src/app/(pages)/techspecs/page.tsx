@@ -57,7 +57,7 @@ export default function TechSpecs() {
                         </Col>
                     </Row>                    
                     <Row>
-                        <Col md="12">
+                        <Col md="8">
                             <ul className="specList">
                                 <li className="item"> 
                                     <div className="titleBox">
@@ -290,7 +290,11 @@ export default function TechSpecs() {
 
 
                             </ul>
-                        </Col>                        
+                        </Col>     
+
+                        <Col md="4">
+
+                        </Col>                   
                     </Row>
                 </Container>
             </section>

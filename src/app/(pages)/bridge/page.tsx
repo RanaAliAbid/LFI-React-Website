@@ -35,7 +35,10 @@ export default function Bridge() {
                             <div className="hero">
                                 <h1> LFi Bridge </h1>
                                 <h3> Connecting multiple blockchains to bring more users together. </h3>
-                                <Button as="a" variant="primary" href="#bridgeText">
+                                <Button as="a" variant="primary" href="https://bridge.lfi.io/">
+                                    Open Bridge
+                                </Button>
+                                <Button as="a" variant="text" href="#bridgeText">
                                     Learn More
                                 </Button>
                             </div>
@@ -118,6 +121,12 @@ export default function Bridge() {
                                         </div>
                                     </Col>
                                 </Row>
+                            </div>
+
+                            <div className="text-center">
+                                <Button as="a" variant="primary" href="https://bridge.lfi.io/">
+                                    Open Bridge
+                                </Button>
                             </div>
                         </Col>
                     </Row>

@@ -9,6 +9,10 @@ import { Container, Tab, Tabs, Nav, Navbar, NavDropdown, Button, Image, Row, Col
 
 import tokenImg from "../../../../public/img/token.png";
 
+import LfiCoin from "../../../../public/img/lfi-token-mint.svg";
+import CLfiCoin from "../../../../public/img/clfi-token-mint.svg";
+import VLfiCoin from "../../../../public/img/vlfi-token-mint.svg";
+
 export default function Tokens() {
     const buttRef = useRef(null);
     const { scrollYProgress } = useScroll();
@@ -38,17 +42,18 @@ export default function Tokens() {
                                     <div className="hero">
                                         <h1> LFi Token </h1>
                                         <h3> LFi is the native token of the LFi ecosystem that provides users the access to the network’s services.  </h3>
-                                        <Button as="a" variant="primary" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/lfi-token">
-                                            More about LFi
+                                        <Button as="a" variant="primary" href="https://www.lyotrade.com/en_US/v5/trade/LFi_USDT?type=spot">
+                                            Buy LFi
                                         </Button>
-                                        <Button as="a" variant="text" href="https://www.lyotrade.com/en_US/v5/trade/LFi_USDT?type=spot">
-                                            Trade LFi/USDT
+                                        <Button as="a" variant="text" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/lfi-token">
+                                            More About LFi
                                         </Button>
                                     </div>
                                 </Col>
                                 <Col md="6" xs="12">
                                     <div className="text-center tokenImg">
-                                        <Image src={tokenImg.src} />
+                                        {/* <Image src={tokenImg.src} /> */}
+                                        <LfiCoin />
                                     </div>
                                 </Col>
                             </Row>
@@ -59,17 +64,18 @@ export default function Tokens() {
                                     <div className="hero">
                                         <h1> cLFi Token </h1>
                                         <h3> cLFi is the collateral token of LFi ecosystem, which allows users to participate in the Proof-of-coverage minting.  </h3>
-                                        <Button as="a" variant="primary" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/clfi-token">
-                                            More about cLFi
+                                        <Button as="a" variant="primary" href="https://www.lyotrade.com/en_US/v5/trade/cLFi_USDT?type=spot">
+                                            Buy cLFi
                                         </Button>
-                                        <Button as="a" variant="text" href="https://www.lyotrade.com/en_US/v5/trade/cLFi_USDT?type=spot">
-                                            Trade LFi/USDT
+                                        <Button as="a" variant="text" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/clfi-token">
+                                            More about cLFi
                                         </Button>
                                     </div>
                                 </Col>
                                 <Col md="6" xs="12">
                                     <div className="text-center tokenImg">
-                                        <Image src={tokenImg.src} />
+                                        {/* <Image src={tokenImg.src} /> */}
+                                        <CLfiCoin />
                                     </div>
                                 </Col>
                             </Row>
@@ -80,14 +86,15 @@ export default function Tokens() {
                                     <div className="hero">
                                         <h1> vLFi Token </h1>
                                         <h3> vLFi holders will receive rewards, obtain discounts, get wider allocations in launchpad, and more.  </h3>
-                                        <Button as="a" variant="primary" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/vlfi-token">
+                                        <Button as="a" variant="text" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/vlfi-token">
                                             More about vLFi
                                         </Button>
                                     </div>
                                 </Col>
                                 <Col md="6" xs="12">
                                     <div className="text-center tokenImg">
-                                        <Image src={tokenImg.src} />
+                                        {/* <Image src={tokenImg.src} /> */}
+                                        <VLfiCoin />
                                     </div>
                                 </Col>
                             </Row>

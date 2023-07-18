@@ -519,6 +519,12 @@ export default function Lfione() {
                                     </li>
                                 </ul>
                             </div>
+
+                            <div className="text-center mt-5">
+                                <Button as="a" variant="primary" href="https://lyotechlabs.com">
+                                    Buy Now
+                                </Button>
+                            </div>
                         </Col>
                     </Row>
                 </Container>

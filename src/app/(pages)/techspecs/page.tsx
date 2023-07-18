@@ -6,7 +6,31 @@ import Footer from "@/app/components/common/footer";
 import { motion, useScroll, useSpring, useTransform, useInView } from "framer-motion";
 import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
+
 import techSpecmobile from "../../../../public/img/lfispecs.png";
+
+import anatel from "../../../../public/img/certificates/anatel.png";
+import bluetooth from "../../../../public/img/certificates/bluetooth.png";
+import ce from "../../../../public/img/certificates/CE.png";
+import fc from "../../../../public/img/certificates/fc.png";
+import check from "../../../../public/img/certificates/check.png";
+import goi from "../../../../public/img/certificates/goi.png";
+import gsma from "../../../../public/img/certificates/gsma.png";
+import mark from "../../../../public/img/certificates/mark.png";
+import mintic from "../../../../public/img/certificates/mintic.png";
+import mtc from "../../../../public/img/certificates/mtc.png";
+import rohs from "../../../../public/img/certificates/rohs.png";
+import thunder from "../../../../public/img/certificates/thunder.png";
+import wifi from "../../../../public/img/certificates/wifi.png";
+
+
+
+
+
+
+
+
+
 
 export default function TechSpecs() {
 
@@ -18,8 +42,8 @@ export default function TechSpecs() {
                     <Navbar className="nameBar">
                         <Navbar.Brand href="#">LFi Phone </Navbar.Brand>
                         <Nav className="ms-auto">
-                            <Nav.Link href="/lfione" className="active">Overview</Nav.Link>
-                            <Nav.Link href="/techspecs">Tech Specs</Nav.Link>
+                            <Nav.Link href="/lfione">Overview</Nav.Link>
+                            <Nav.Link href="/techspecs" className="active">Tech Specs</Nav.Link>
                             <Nav.Link href="https://lyotechlabs.com" className="buybtn">Buy Now</Nav.Link>
                         </Nav>
                     </Navbar>
@@ -292,8 +316,48 @@ export default function TechSpecs() {
                             </ul>
                         </Col>     
 
-                        <Col md="4">
-
+                        <Col md="4" className="text-center">
+                            <ul className="certificatesList">
+                                <li>
+                                    <Image src={check.src} />
+                                </li>
+                                <li>
+                                    <Image src={thunder.src}/>
+                                </li>
+                                <li>
+                                    <Image src={goi.src}/>
+                                </li>
+                                <li>
+                                    <Image src={mark.src}/>
+                                </li>
+                                <li>
+                                    <Image src={mtc.src}/>
+                                </li>
+                                <li>
+                                    <Image src={mintic.src}/>
+                                </li>
+                                <li>
+                                    <Image src={ce.src}/>
+                                </li>
+                                <li>
+                                    <Image src={rohs.src}/>
+                                </li>
+                                <li>
+                                    <Image src={fc.src}/>
+                                </li>
+                                <li>
+                                    <Image src={anatel.src}/>
+                                </li>
+                                <li>
+                                    <Image src={bluetooth.src}/>
+                                </li>
+                                <li>
+                                    <Image src={wifi.src}/>
+                                </li>
+                                <li>
+                                    <Image src={gsma.src}/>
+                                </li>
+                            </ul>
                         </Col>                   
                     </Row>
                 </Container>

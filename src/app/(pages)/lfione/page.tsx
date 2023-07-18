@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import jquery from "jquery";
 
+import Head from "next/head";
 import Header from "@/app/components/common/header";
 import Footer from "@/app/components/common/footer";
 
@@ -49,9 +50,31 @@ import Sound from "../../../../public/img/specsIcon/sound.svg";
 import VideoPlayback from "../../../../public/img/specsIcon/video-playback.svg";
 import WirelessCharger from "../../../../public/img/specsIcon/wireless-charger.svg";
 
+import lyotechlabs from "../../../../public/img/certs-lyotechlabs.png";
+
+
 import dynamic from "next/dynamic";
 
 export default function Lfione() {
+
+    const [dynamicClass, setDynamicClass] = useState('');
+    const changevalueonScroll=()=>{
+        const scrollvalue=document.documentElement.scrollTop;        
+        if(scrollvalue > 100){
+            setDynamicClass('show');
+        }
+        else {
+            setDynamicClass('');
+        }
+    }
+
+    useEffect(() => {       
+        window.addEventListener('scroll', changevalueonScroll);
+        return ()=>{
+            window.removeEventListener('scroll', changevalueonScroll);
+        }
+        
+    },[]);
 
     const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
         ssr: false,
@@ -81,10 +104,15 @@ export default function Lfione() {
 
     return (
         <main>
+            <Head>
+                <title> Home - TitleMetaNextjs </title>
+                <meta name="description" content="Meta description for the Home page" />                               
+            </Head>
+
             <Header />
             <section className="mobileNameHead">
                 <Container>
-                    <Navbar className="nameBar">
+                    <Navbar className={`nameBar ${dynamicClass}`} >
                         <Navbar.Brand href="#">LFi Phone </Navbar.Brand>
                         <Nav className="ms-auto">
                             <Nav.Link href="/lfione" className="active">Overview</Nav.Link>
@@ -235,7 +263,7 @@ export default function Lfione() {
             <section className="processorSec">
                 <Container>
                     <Row>
-                        <Col md="12" className="text-right">
+                        <Col md="12">
                             <ul className="procesBulletList">
                                 <li>
                                     <h3> Octa Cores </h3>
@@ -521,6 +549,11 @@ export default function Lfione() {
                             </div>
 
                             <div className="text-center mt-5">
+
+                                <div className="powerImg mb-5">
+                                    <Image src={lyotechlabs.src} />
+                                </div>
+
                                 <Button as="a" variant="primary" href="https://lyotechlabs.com">
                                     Buy Now
                                 </Button>

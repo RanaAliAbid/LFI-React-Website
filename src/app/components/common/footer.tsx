@@ -31,11 +31,14 @@ export default function Footer() {
                                 <h3>LFi</h3>
                                 <ul className="footLink">
                                     <li><a href="/lfione">LFi One</a></li>
-                                    <li><a href="/minting-machine">LFi Minting Machine </a></li>
-                                    <li><a href="/ldao">L-DAO</a></li>
-                                    <li><a href="/launchpad">Launchpad</a></li>
-                                    <li><a href="/bridge">LFi Bridge</a></li>
+                                    <li><a href="/minting-machine"> Minting Machine </a></li>
+                                    <li><a href="/blockchain"> Blockchanin  </a></li>
                                     <li><a href="/tokens">Tokens</a></li>
+                                    <li><a href="/aboutus">About Us </a></li>
+
+                                    {/* <li><a href="/ldao">L-DAO</a></li> */}
+                                    {/* <li><a href="/launchpad">Launchpad</a></li> */}
+                                    {/* <li><a href="/bridge">LFi Bridge</a></li> */}
                                 </ul>
                             </div>
                         </Col>
@@ -44,8 +47,6 @@ export default function Footer() {
                             <div className="footBox">
                                 <h3>Company</h3>
                                 <ul className="footLink">
-                                    <li><a href="/aboutus">About Us</a></li>
-                                    {/* <li><a href="">Blog </a></li> */}                                    
                                     <li><a href="https://docs.lfi.io/legal-documents/terms-and-conditions">Legal</a></li>
                                     <li><a href="https://docs.lfi.io/introduction/manifesto">LFi Docs </a></li>
                                     <li><a href="https://white-paper.lfi.io/introduction/lfi-ecosystem">White Paper</a></li>

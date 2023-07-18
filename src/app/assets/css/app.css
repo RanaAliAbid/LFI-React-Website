@@ -216,6 +216,12 @@ section.herobanner {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 35%;
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .hero {
@@ -790,9 +796,7 @@ section.wrapSection.tokensec {
     color: var(--white);
 }
 
-.tokenImg img {
-    width: 100%;
-}
+
 
 
 
@@ -963,6 +967,7 @@ section.wrapSection.tokensec {
     min-height: 340px;
     padding: 50px;
     margin: 0 50px;
+    border: 1px solid #1d1d1d;
 }
 
 .aboutBeliveSec {
@@ -1038,10 +1043,17 @@ section.wrapSection.tokensec {
 
 .mobileNameHead .nav-link.buybtn {
     color: var(--primary);
+    border-radius: 20px;
 }
 
 .mobileNameHead .nav-link.buybtn:hover {
     color: var(--btn-primary-hover);
+}
+
+.mobileNameHead .show .nav-link.buybtn {
+    background-color: var(--primary);
+    color: var(--black);    
+    border-radius: 20px;
 }
 
 .mobilePhoneHero {
@@ -1362,7 +1374,7 @@ section.wrapSection.tokensec {
 .processorSec {
     padding: 120px 0;
     background-image: url('../../../../public/img/processor.png');
-    background-position: center left;
+    background-position: center right;
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -1613,8 +1625,7 @@ section.wrapSection.tokensec {
     vertical-align: middle;
     width: 20%;
     padding: 15px;
-    margin: 35px 0;
-    cursor: pointer;
+    margin: 35px 0;    
 }
 
 .specsSec .specsSecList ul li h4 {
@@ -1666,7 +1677,7 @@ section.wrapSection.tokensec {
 
 .specList li.item .titleBox h5 {
     font-size: 22px;
-    line-height: 32px;
+    line-height: 26px;
     color: var(--gray-600);
 }
 
@@ -1681,7 +1692,7 @@ section.wrapSection.tokensec {
 }
 
 .specList li.item .textWrap ul.subList {
-    padding: 5px 0 0 15px;    
+    padding: 0px 0 0 15px;    
 }
 
 .specList li.item .textWrap ul.subList li {
@@ -1703,6 +1714,29 @@ p.note {
     padding: 15px 0 0 0;
     font-size: 12px;
     color: var(--gray-600);
+}
+
+.certificatesList {
+    padding: 25px;
+    margin: 40px 0 0 0;
+    
+}
+
+.certificatesList li {
+    display: inline-flex;
+    vertical-align: middle;
+    width: 40%;
+    height: 110px;
+    /* border: 1px solid #333; */
+    margin: 10px;
+}
+
+.certificatesList li img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    object-fit: scale-down;
+
 }
 
 @media (max-width: 424px) {
@@ -1962,15 +1996,18 @@ p.note {
 
     .img-container .btn {
         margin-top: 50px;
+        z-index: 100;
+        position: relative;
     }
 
 
 
     .phone-shadow {
         width: 100%;
-        height: 50%;
+        height: 40%;
         top: auto;
         bottom: 0;
+        
     }
 
     .headingTitle {
@@ -2441,6 +2478,20 @@ p.note {
 
     .stepSec .rowText {
         padding: 25px;
+    }
+
+    .specList li.item .titleBox {
+        width: 30%;
+        padding: 10px;
+    }
+
+    .specList li.item .textWrap {
+        width: 65%;
+        padding: 11px;
+    }
+
+    .navbar-collapse {
+        z-index: 1000;
     }
 
 }

@@ -1,15 +1,15 @@
 'use client'
 import React, { useState } from "react";
+import Head from "next/head";
+
+import { Metadata } from 'next';
 
 import { useRef, useEffect } from "react";
 import { motion, MotionValue, useScroll, useSpring, useTransform, useInView } from "framer-motion";
 import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
-
-
 import Header from "./components/common/header";
 import Footer from "./components/common/footer";
-
 import LfiCoin from "../../public/img/lfi-token.svg";
 import CLfiCoin from "../../public/img/clfi-token.svg";
 import VLfiCoin from "../../public/img/vlfi-token.svg";
@@ -23,20 +23,9 @@ const Box = ({ speed }: any) => {
         [0, 100 * speed]
     );
     return (
-        <motion.div
-            style={{ y: yValue }}
-            transition={{ ease: "easeIn", duration: 0.5, delay: 1 }}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            whileInView={{ opacity: 1, x: 0, visibility: 'visible' }}
-            viewport={{ once: true }}
-        >
-            <Image src="/img/green-lfi-one.png" alt='LFi' />
-        </motion.div>
+        <Image src="/img/green-lfi-one.png" alt='LFi' />
     )
 }
-
-
 
 
 export default function Home() {
@@ -115,8 +104,13 @@ export default function Home() {
 
 
     return (
-        <main>
-            <Header/>
+        <>
+            <Head>
+                <title> Home - TitleMetaNextjs </title>
+                
+            </Head>
+
+            <Header />
 
             <section className="wrapSection herosec herobanner">
                 <Container>
@@ -170,7 +164,7 @@ export default function Home() {
                                 </Button>
                             </div>
                         </Col>
-                        <Col md="6" className="orederOne">                           
+                        <Col md="6" className="orederOne">
                             <div className="infoText mobInfoText">
                                 <p> <span> Mint </span> Your Token </p>
                                 <h2> LFi One </h2>
@@ -178,7 +172,7 @@ export default function Home() {
                                 <Button as="a" variant="primary" className="d-none d-sm-block" href="/lfione">
                                     Discover LFi One
                                 </Button>
-                            </div>                            
+                            </div>
                         </Col>
                     </Row>
                 </Container>
@@ -270,7 +264,7 @@ export default function Home() {
                                         <h4> Decentralized </h4>
                                         <Image src="/img/white-ldo.svg" />
                                         <h3> We are a decentralized autonomous organization that adapts to the decisions of its users through smart contracts. </h3>
-                                        <Button as="a" variant="primary" href="/ldo">
+                                        <Button as="a" variant="primary" href="/ldao">
                                             Learn More
                                         </Button>
                                     </div>
@@ -413,9 +407,9 @@ export default function Home() {
 
 
 
-            <Footer/>
+            <Footer />
 
 
-        </main>
+        </>
     )
 }

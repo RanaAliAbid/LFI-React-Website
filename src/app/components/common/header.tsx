@@ -31,9 +31,10 @@ export default function Header() {
                         <Nav className="ms-auto my-2 my-lg-0">
                             <Nav.Link href="/lfione">LFi One</Nav.Link>
                             <Nav.Link href="/minting-machine">Minting Machine</Nav.Link>
+                            <Nav.Link href="/blockchain">Blockchain</Nav.Link>                            
                             <NavDropdown title="dApps" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/ldao"> L - DAO </NavDropdown.Item>
-                                <NavDropdown.Item href="/bridge">LFi Bridge</NavDropdown.Item>
+                                <NavDropdown.Item href="/ldao"> L-DAO </NavDropdown.Item>
+                                <NavDropdown.Item href="/bridge">Bridge</NavDropdown.Item>
                                 <NavDropdown.Item href="/launchpad">Launchpad</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href="/tokens">Tokens</Nav.Link>

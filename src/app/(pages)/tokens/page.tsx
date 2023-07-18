@@ -1,5 +1,9 @@
 'use client'
 import React from "react";
+import Head from "next/head";
+
+import { Metadata } from 'next';
+
 import Header from "@/app/components/common/header";
 import Footer from "@/app/components/common/footer";
 
@@ -9,9 +13,15 @@ import { Container, Tab, Tabs, Nav, Navbar, NavDropdown, Button, Image, Row, Col
 
 import tokenImg from "../../../../public/img/token.png";
 
-import LfiCoin from "../../../../public/img/lfi-token-mint.svg";
-import CLfiCoin from "../../../../public/img/clfi-token-mint.svg";
-import VLfiCoin from "../../../../public/img/vlfi-token-mint.svg";
+import tokenlfi from "../../../../public/img/token-lfi.png";
+import tokenclfi from "../../../../public/img/token-clfi.png";
+import tokenvlfi from "../../../../public/img/token-vlfi.png";
+
+export const metadata = {
+    title:'tokens page',
+  }
+
+
 
 export default function Tokens() {
     const buttRef = useRef(null);
@@ -25,7 +35,11 @@ export default function Tokens() {
     });
 
     return (
-        <main>
+        <>
+             <Head>
+                <title> Tokens page </title>
+                
+            </Head>
             <Header/>
 
             <section className="herosec tokenSec">
@@ -52,8 +66,7 @@ export default function Tokens() {
                                 </Col>
                                 <Col md="6" xs="12">
                                     <div className="text-center tokenImg">
-                                        {/* <Image src={tokenImg.src} /> */}
-                                        <LfiCoin />
+                                        <Image src={tokenlfi.src} />                                        
                                     </div>
                                 </Col>
                             </Row>
@@ -74,8 +87,7 @@ export default function Tokens() {
                                 </Col>
                                 <Col md="6" xs="12">
                                     <div className="text-center tokenImg">
-                                        {/* <Image src={tokenImg.src} /> */}
-                                        <CLfiCoin />
+                                        <Image src={tokenclfi.src} />                                        
                                     </div>
                                 </Col>
                             </Row>
@@ -93,8 +105,7 @@ export default function Tokens() {
                                 </Col>
                                 <Col md="6" xs="12">
                                     <div className="text-center tokenImg">
-                                        {/* <Image src={tokenImg.src} /> */}
-                                        <VLfiCoin />
+                                        <Image src={tokenvlfi.src} />                                        
                                     </div>
                                 </Col>
                             </Row>
@@ -106,6 +117,6 @@ export default function Tokens() {
             </section>
 
             <Footer/>
-        </main>
+        </>
     )
 }

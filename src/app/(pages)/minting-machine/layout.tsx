@@ -1,6 +1,6 @@
 export const metadata = {
     title: {
-        default: 'LFi | Minting Machine'
+        default: 'LFi - Minting Machine'
     },
 }
 

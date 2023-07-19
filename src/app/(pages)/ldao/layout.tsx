@@ -1,6 +1,6 @@
 export const metadata = {
     title: {
-        default: 'LFi | L-DAO'
+        default: 'LFi - L-DAO'
     },
 }
 

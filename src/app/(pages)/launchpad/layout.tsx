@@ -1,6 +1,6 @@
 export const metadata = {
     title: {
-        default: 'LFi | Launchpad'
+        default: 'LFi - Launchpad'
     },
 }
 

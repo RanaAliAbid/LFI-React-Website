@@ -17,11 +17,6 @@ import tokenlfi from "../../../../public/img/token-lfi.png";
 import tokenclfi from "../../../../public/img/token-clfi.png";
 import tokenvlfi from "../../../../public/img/token-vlfi.png";
 
-export const metadata = {
-    title:'tokens page',
-  }
-
-
 
 export default function Tokens() {
     const buttRef = useRef(null);

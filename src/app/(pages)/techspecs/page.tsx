@@ -40,7 +40,7 @@ export default function TechSpecs() {
             <section className="mobileNameHead">
                 <Container>
                     <Navbar className="nameBar">
-                        <Navbar.Brand href="#">LFi Phone </Navbar.Brand>
+                        <Navbar.Brand href="#">LFi One </Navbar.Brand>
                         <Nav className="ms-auto">
                             <Nav.Link href="/lfione">Overview</Nav.Link>
                             <Nav.Link href="/techspecs" className="active">Tech Specs</Nav.Link>

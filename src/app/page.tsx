@@ -14,6 +14,9 @@ import LfiCoin from "../../public/img/lfi-token.svg";
 import CLfiCoin from "../../public/img/clfi-token.svg";
 import VLfiCoin from "../../public/img/vlfi-token.svg";
 
+import blockchain from "../../public/img/blockchainbanner.png";
+
+
 
 const Box = ({ speed }: any) => {
     const { scrollYProgress } = useScroll();
@@ -136,7 +139,7 @@ export default function Home() {
                                     initial={{ opacity: 0, scale: 0.5 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                 >
-                                    <Button as="a" variant="primary" href="/aboutus">
+                                    <Button as="a" variant="primary" href="#lfiMob">
                                         Learn More
                                     </Button>
                                 </motion.div>
@@ -148,7 +151,7 @@ export default function Home() {
 
 
 
-            <section className={mobileSecClass ? "wrapSection relative show" : "wrapSection relative"} ref={mobileRef}>
+            <section id="lfiMob" className={mobileSecClass ? "wrapSection relative show" : "wrapSection relative"} ref={mobileRef}>
                 <div className="phone-shadow"></div>
                 <Container>
                     <Row className="justify-content-center align-items-center">
@@ -226,6 +229,30 @@ export default function Home() {
                 <div className="minting-shadow"></div>
             </section>
 
+            <section className="wrapSection herosec">
+                <Container>
+                    <Row className="align-items-center">
+                        <Col md="6" sm="6" xs="12">
+                            <div className="hero">
+                                <h1> LFi Blockchain </h1>
+                                <h3> An independent blockchain boasting Smart Contract capabilities, dApps and compatibility with the Ethereum Virtual Machine (EVM).</h3>
+                                <Button as="a" variant="primary" href="/blockchain">
+                                    Learn More
+                                </Button>
+                                {/* <Button as="a" variant="text" href="#bridgeText">
+                                    Learn More
+                                </Button> */}
+                            </div>
+                        </Col>
+                        <Col md="6" sm="6" xs="12">
+                            <div className="text-center heroImg">
+                                <Image src={blockchain.src} className="rot" />
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
 
             <section className="wrapSection ldaosec">
                 <div className="height100" ref={ldolRef}></div>
@@ -256,10 +283,10 @@ export default function Home() {
                             <div className="ldaoBox">
                                 <div className="ldaoInnerBox">
                                     <div className="textInfo">
-                                        <h4> Decentralized </h4>
-                                        <Image src="/img/white-ldo.svg" />
-                                        <h3>We are a decentralized autonomous organization that adapts to the decisions of its users through voting system. </h3>
-                                        <Button as="a" variant="primary" href="/ldao">
+                                        <h4> LFi Blockchain </h4>
+                                        <Image src="/img/dApps.svg" />
+                                        <h3>Decentralized applications running on our own proprietary LFi Blockchain and public networks.</h3>
+                                        <Button as="a" variant="primary" href="/blockchain#lfidappSec">
                                             Learn More
                                         </Button>
                                     </div>
@@ -385,8 +412,8 @@ export default function Home() {
                             <Row className="justify-content-center manifestoBtn">
                                 <Col>
                                     <div className="text-center">
-                                        <Button as="a" variant="primary" size="lg" href="/aboutus">
-                                            Our Manifesto
+                                        <Button as="a" variant="primary"  href="/aboutus">
+                                            About Us
                                         </Button>
                                     </div>
                                 </Col>

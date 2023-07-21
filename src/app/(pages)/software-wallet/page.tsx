@@ -29,10 +29,10 @@ export default function softwareWallet() {
             <section className="wrapSection herosec fullView">
                 <Container>
                     <Row className="align-items-center">
-                        <Col md="6" xs="12">
+                        <Col md="7" xs="12">
                             <div className="hero">
-                                <h1> Software Wallet </h1>
-                                <h3> Welcome to the LFi Software Wallet, a free, secure, and decentralized app that puts over 1,000 cryptocurrencies at your fingertips!. </h3>
+                                <h1> LFi Software Wallet </h1>
+                                <h3> Free, secure, and decentralized app that puts over 1,000 cryptocurrencies at your fingertips. </h3>
                                 {/* <Button as="a" variant="primary" href="https://bridge.lfi.io/">
                                     Open Bridge
                                 </Button>
@@ -41,7 +41,7 @@ export default function softwareWallet() {
                                 </Button> */}
                             </div>
                         </Col>
-                        <Col md="6" xs="12">
+                        <Col md="5" xs="12">
                             <div className="text-center heroImg">
                                 <Image src={softwareWalletBanner.src} className="rot" />
                             </div>

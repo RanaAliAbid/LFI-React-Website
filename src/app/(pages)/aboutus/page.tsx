@@ -11,6 +11,8 @@ import Footer from "@/app/components/common/footer";
 
 export default function Aboutus() {
 
+    const buttRef = useRef(null);
+
     const ldolRef = useRef(null);
     const ldaoRef = useRef(null);
     const { scrollYProgress } = useScroll();
@@ -28,6 +30,13 @@ export default function Aboutus() {
         offset: ["end end", "start start"]
     }).scrollYProgress;
 
+     // vision mission path animation
+     const scrollvisionProgressBar = useScroll({
+        target: buttRef,
+        offset: ["end end", "start start"]
+    }).scrollYProgress;
+
+
     return (
         <main>
             <Header />
@@ -41,6 +50,9 @@ export default function Aboutus() {
                                 <h3> LFi is a decentralized platform designed to provide equal opportunities for wealth generation and financial independence. </h3>
                                 <Button as="a" variant="primary" href="#headingText">
                                     Learn More
+                                </Button>
+                                <Button as="a" variant="text" href="https://white-paper.lfi.io/introduction/lfi-ecosystem">
+                                    White Paper
                                 </Button>
                             </div>
                         </Col>
@@ -61,39 +73,38 @@ export default function Aboutus() {
                 </Container>
             </section>
 
-            <section className="manifestoSection">
+
+           
+
+            <section className="aboutBeliveSec financialSec">
                 <Container>
-                    <Row className="align-items-center">
-                        <Col xs="12">
-                            <div className="infoText text-center">
+                <Row className="justify-content-center">
+                        <Col md="12">
+                            <div className="infoText text-center mb-5">
                                 <h2> Manifesto </h2>
                             </div>
                         </Col>
                     </Row>
                     <Row className="align-items-center">
-                        <Col md="6" xs="12">
-                            <div className="wrapTextBox frame">
-                                <div className="lines"></div>
-                                <div className="angles"></div>
-                                <article>
 
-                                    <h3> Equal opportunities </h3>
-                                    <h5> Everyone should have equal opportunities for wealth generation and financial independence.</h5>
-                                </article>
+                        <Col md="6">
+                            <div className="transSec">
+                                <h2>Inclusive </h2>
+                                <h4> Financial system</h4>
+                                <h6> The time has come to bring a more inclusive financial system to the world, where the control and ownership of assets lie with the people.</h6>
+
                             </div>
                         </Col>
 
-                        <Col md="6" xs="12">
-                            <div className="wrapTextBox frame">
-                                <div className="lines"></div>
-                                <div className="angles"></div>
-                                <article>
 
-                                    <h3> Financial system  </h3>
-                                    <h5> The time has come to bring a more inclusive financial system to the world, where the control and ownership of assets lie with the people.</h5>
-                                </article>
+                        <Col md="6">
+                            <div className="headingTitle">
+                                <h3> Everyone should have equal opportunities for wealth generation and financial independence.  </h3>
+
                             </div>
                         </Col>
+
+
                     </Row>
                 </Container>
             </section>
@@ -110,9 +121,9 @@ export default function Aboutus() {
 
                         <Col md="6">
                             <div className="transSec">
-                                <h2>Transparency, </h2>
-                                <h4>Transparency, </h4>
-                                <h6> where transactions are publicly verifiable, must prevail and the security and safety of user data are the top priority.</h6>
+                                <h2>Public </h2>
+                                <h4>Transparency </h4>
+                                <h6> Where transactions are publicly verifiable, must prevail and the security and safety of user data are the top priority.</h6>
 
                             </div>
                         </Col>
@@ -120,46 +131,90 @@ export default function Aboutus() {
                 </Container>
             </section>
 
-            <section className="ecosystemSec">
-                <div ref={ldolRef}></div>
+           
+
+            
+            <section className="wrapSection visionSec aboutVisionsec">
+                <div className="visionHeight" ref={buttRef} > </div>
                 <Container>
                     <Row className="justify-content-center">
-                        <Col lg="10" md="11" sm="12" className="relative">
-                            <div className="bgLdao" ref={ldaoRef}>
-                                <svg width="50%" height="100%" className="ldoBorder left" viewBox="0 0 466 542" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <Col lg="10" md="11" className="relative">
+                            <figure className="visionProgressBar">
+                                <svg className="d-none d-sm-block" width="100%" height="100%" viewBox="0 0 1101 596" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                            <stop offset="10%" stop-color="#1F1F1F" />
+                                            <stop offset="0%" stop-color="#070A0B" />
                                             {/* <stop offset="15%" stop-color="#464646" />  */}
                                             <stop offset="20%" stop-color="#464646" />
                                             <stop offset="100%" stop-color="#04FCA3" />
                                         </linearGradient>
                                     </defs>
-                                    {/* <path className="" d="M466 1H31C14.4315 1 1 14.4315 1 31V511C1 527.569 14.4315 541 31 541H466" /> */}
-                                    <motion.path className="ldaoPath" stroke="url(#gradient)" d="M466 1H31C14.4315 1 1 14.4315 1 31V511C1 527.569 14.4315 541 31 541H466" style={{ pathLength: ldoborders }} />
+                                    <path className="" d="M1 0.5V266.5C1 283.069 14.4315 296.5 31 296.5H1070C1086.57 296.5 1100 309.931 1100 326.5V565C1100 581.569 1086.57 595 1070 595H931.289H762.577" />
+                                    <motion.path stroke="url(#gradient)" className="visionMissionPath" d="M1 0.5V266.5C1 283.069 14.4315 296.5 31 296.5H1070C1086.57 296.5 1100 309.931 1100 326.5V565C1100 581.569 1086.57 595 1070 595H931.289H762.577" style={{ pathLength: scrollvisionProgressBar }} />
 
                                 </svg>
 
-                                <svg width="50%" height="100%" className="ldoBorder right" viewBox="0 0 466 542" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    {/* <path className="" d="M0 1H435C451.569 1 465 14.4315 465 31V511C465 527.569 451.569 541 435 541H0" /> */}
-                                    <motion.path className="ldaoPath" stroke="url(#gradient)" d="M0 1H435C451.569 1 465 14.4315 465 31V511C465 527.569 451.569 541 435 541H0" style={{ pathLength: ldoborders }} />
+                                <svg className="d-block d-sm-none" width="100%" height="100%" viewBox="0 0 400 579" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#070A0B" />
+                                            {/* <stop offset="15%" stop-color="#464646" />  */}
+                                            <stop offset="20%" stop-color="#464646" />
+                                            <stop offset="100%" stop-color="#04FCA3" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path className="" d="M1 0.5V231.173C1 247.742 14.4315 261.173 31 261.173H369C385.569 261.173 399 274.605 399 291.173V548C399 564.569 385.569 578 369 578H337.902H276.803" />
+                                    <motion.path stroke="url(#gradient)" className="visionMissionPath" d="M1 0.5V231.173C1 247.742 14.4315 261.173 31 261.173H369C385.569 261.173 399 274.605 399 291.173V548C399 564.569 385.569 578 369 578H337.902H276.803" style={{ pathLength: scrollvisionProgressBar }} />
+
                                 </svg>
-                            </div>
-
-                            <div className="ldaoBox">
-                                <div className="ldaoInnerBox">
-                                    <div className="textInfo">
-                                        <h4> The LFi </h4>
-                                        <Image src="/img/ecosystem.svg" />
-                                        <h3> It is a revolutionary, user-friendly decentralized platform that grows alongside you. We are committed to delivering top-tier products, constantly adapting to meet your changing needs. </h3>
-
+                            </figure>
+                            <Row className="rowText" >
+                                <Col md="4">
+                                    <div className="titleBox">
+                                        <h3>Our</h3>
+                                        <h2> <strong> Vision </strong> </h2>
                                     </div>
-                                </div>
-                            </div>
+                                </Col>
+                                <Col md="8">
+                                    <div className="textBox">
+                                        <h4>A decentralized, sustainable, and fair global economy where everyone has the chance to achieve financial independence and participate in wealth creation.</h4>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row className="rowText missionMob">
+                                <Col md="8" className="miPeraText">
+                                    <div className="textBox text-right">
+                                        <h4>To empower individuals to take control of their wealth by providing accessible financial opportunities through a decentralized, transparent, and secure platform driven by a DAO community.</h4>
+                                    </div>
+                                </Col>
+                                <Col md="4" className="miTitleText">
+                                    <div className="titleBox">
+                                        <h3>Became</h3>
+                                        <h2> <strong> Mission </strong> </h2>
+                                    </div>
+                                </Col>
+                            </Row>
+
+                            <Row className="justify-content-center manifestoBtn">
+                                <Col>
+                                    <div className="text-center">
+                                        <Button as="a" variant="primary"  href="https://white-paper.lfi.io/introduction/roadmap">
+                                            Our Roadmap
+                                        </Button>
+                                    </div>
+                                </Col>
+                            </Row>
+
+
+
                         </Col>
                     </Row>
                 </Container>
             </section>
+
+
+
+
             <Footer />
         </main>
     )

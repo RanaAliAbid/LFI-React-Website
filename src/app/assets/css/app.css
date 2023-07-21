@@ -139,12 +139,11 @@ a:hover {
 }
 
 .manifestoBtn {
-    margin-top: -36px;
+    margin-top: -30px;
 }
 
-.manifestoBtn .btn {
-    padding: 15px 52px;
-    border-radius: 50px;
+.manifestoBtn .btn {    
+    
 }
 
 
@@ -227,6 +226,10 @@ section {
 
 section.wrapSection {
     padding: 100px 0;
+}
+
+section.wrapSection.tokensec {
+    padding: 150px 0;
 }
 
 
@@ -398,7 +401,7 @@ section.herobanner {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 0 15px;
+    margin: 20px 15px;
     padding: 35px 20px;
     border: 1px solid #2e2e2e;
     border-radius: 30px;
@@ -834,7 +837,7 @@ section.herobanner {
     font-size: 24px;
     line-height: 36px;
     font-weight: 400;
-    width: 60%;
+    width: 70%;
     margin-bottom: 25px;
 }
 
@@ -988,12 +991,12 @@ section.herobanner {
 }
 
 .aboutBeliveSec {
-    padding: 150px 0;
+    padding: 80px 0;
 }
 
 .aboutBeliveSec .headingTitle {
     text-align: left;
-    padding: 50px 150px 50px 50px;
+    padding: 50px 80px 50px 50px;
 }
 
 .aboutBeliveSec .headingTitle h3 {
@@ -1009,7 +1012,7 @@ section.herobanner {
     font-size: 120px;
     font-weight: 500;
     color: var(--black);
-    -webkit-text-stroke: 1px #4B4B4B;
+    -webkit-text-stroke: 1px #04FCA340;
     -webkit-text-fill-color: var(--black);
     margin: 0 0 -20px 0;
 }
@@ -1024,6 +1027,7 @@ section.herobanner {
     font-size: 16px;
     line-height: 26px;
     font-weight: 300;
+    color: var(--gray-600);
     width: 90%;
 }
 
@@ -1795,6 +1799,48 @@ p.note {
     margin-top: 25px;
 }
 
+.aboutVisionsec.visionSec .textBox {
+    padding: 15px 10px;
+
+} 
+
+.lfidappSec {
+    padding: 80px 0;
+}
+
+
+.lfidappSec .wrapTextBox {
+    border: 1px solid #1d1d1d;
+    padding: 50px 50px;
+    margin: 30px 35px;
+    
+    
+}
+
+.lfidappSec .wrapTextBox h3 {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.lfidappSec .wrapTextBox h5 {
+    padding-right: 10px;
+    margin-bottom: 25px;
+}
+
+.lfidappSec .wrapTextBox .btn {
+    background-color: #141616;
+    color: var(--gray-800);
+}
+
+.lfidappSec .wrapTextBox:hover .btn {
+    background-color: var(--btn-primary-hover);
+    color: var(--black);
+}
+.lfidappSec .wrapTextBox article {
+    z-index: 1000;
+    position: relative;
+
+}
 
 
 
@@ -2586,6 +2632,15 @@ p.note {
     .ldoBoxWrap {
         margin: 0 15px 50px 15px;
 
+    }
+
+    .financialSec .align-items-center.row  {
+        flex-direction: column-reverse;   
+    }
+
+    .lfidappSec .wrapTextBox {
+        padding: 25px;
+        margin: 15px;
     }
 
 }

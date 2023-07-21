@@ -465,6 +465,11 @@ section.herobanner {
     stroke-width: 2;
 }
 
+.aboutVMPath {
+    stroke: url(#gradientttt);
+    stroke-width: 2;
+}
+
 .relative {
     position: relative;
 }
@@ -1842,6 +1847,10 @@ p.note {
 
 }
 
+.desktopHide {
+    display: none;
+}
+
 
 
 @media (max-height: 450px) {
@@ -1875,6 +1884,14 @@ p.note {
 }
 
 @media (max-width: 767px) {
+
+    .mobileHide {
+        display: none;
+    }
+
+    .desktopHide {
+        display: block;
+    }
 
     .navbar-nav {
         display: block;
@@ -2040,6 +2057,11 @@ p.note {
         width: 90%;
         margin: 0 auto;
         top: 2%;
+    }
+
+    .visionProgressBar .desktopHide .btn {
+        margin: -25px 0 0 0;
+
     }
 
     .stepProgressBar {

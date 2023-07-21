@@ -381,6 +381,12 @@ export default function Home() {
                                     <motion.path stroke="url(#gradient)" className="visionMissionPath" d="M1 0.5V231.173C1 247.742 14.4315 261.173 31 261.173H369C385.569 261.173 399 274.605 399 291.173V548C399 564.569 385.569 578 369 578H337.902H276.803" style={{ pathLength: scrollvisionProgressBar }} />
 
                                 </svg>
+
+                                <div className="text-center desktopHide">
+                                    <Button as="a" variant="primary"  href="/aboutus">
+                                        About Us
+                                    </Button>
+                                </div>
                             </figure>
                             <Row className="rowText" >
                                 <Col md="4">
@@ -409,7 +415,7 @@ export default function Home() {
                                 </Col>
                             </Row>
 
-                            <Row className="justify-content-center manifestoBtn">
+                            <Row className="justify-content-center manifestoBtn mobileHide">
                                 <Col>
                                     <div className="text-center">
                                         <Button as="a" variant="primary"  href="/aboutus">

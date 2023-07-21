@@ -30,7 +30,7 @@ export default function Header() {
                 <Container>
                     <Navbar.Brand href="/">	<WhiteLogo /> </Navbar.Brand>
                     <div>
-                        <Button as="a" variant="primary" className="mobbtn">
+                        <Button as="a"  href="https://lyotechlabs.com/" variant="primary" className="mobbtn">
                             Store
                         </Button>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />

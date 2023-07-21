@@ -110,7 +110,7 @@ export default function Lfione() {
             <section className="mobileNameHead">
                 <Container>
                     <Navbar className={`nameBar ${dynamicClass}`} >
-                        <Navbar.Brand href="#">LFi Phone </Navbar.Brand>
+                        <Navbar.Brand href="#">LFi One </Navbar.Brand>
                         <Nav className="ms-auto">
                             <Nav.Link href="/lfione" className="active">Overview</Nav.Link>
                             <Nav.Link href="/techspecs">Tech Specs</Nav.Link>

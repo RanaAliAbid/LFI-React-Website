@@ -42,7 +42,7 @@ export default function MintingMachine() {
     return (
         <main>
             <Header />
-            <section className="wrapSection herosec">
+            <section className="wrapSection herosec fullView">
                 <Container>
                     <Row className="justify-content-center">
                         <Col xxl="8" xl="9" lg="9" md="10" xs="12">
@@ -62,7 +62,7 @@ export default function MintingMachine() {
                                     initial={{ opacity: 0, scale: 0.5 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                 >
-                                    <h3>Different types of cutting-edge hardware to mint tokens, authenticate data, and add new blocks of information onto the blockchain</h3>
+                                    <h3>Cutting-edge hardware to mint LFi tokens</h3>
                                 </motion.div>
 
                             </div>

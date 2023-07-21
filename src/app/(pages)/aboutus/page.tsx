@@ -151,7 +151,7 @@ export default function Aboutus() {
                                     <div className="textInfo">
                                         <h4> The LFi </h4>
                                         <Image src="/img/ecosystem.svg" />
-                                        <h3> It is an innovative decentralized platform that will continue to grow with you, providing top-notch services that will adapt to your evolving needs. </h3>
+                                        <h3> It's a revolutionary, user-friendly decentralized platform that grows alongside you. We're committed to delivering top-tier products, constantly adapting to meet your changing needs. </h3>
 
                                     </div>
                                 </div>

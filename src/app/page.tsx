@@ -105,14 +105,10 @@ export default function Home() {
 
     return (
         <>
-            <Head>
-                <title> Home - TitleMetaNextjs </title>
-                
-            </Head>
-
+           
             <Header />
 
-            <section className="wrapSection herosec herobanner">
+            <section className="wrapSection herosec herobanner fullView">
                 <Container>
                     <Row className="justify-content-center">
                         <Col xxl="8" xl="9" lg="9" md="10" xs="12">
@@ -124,7 +120,7 @@ export default function Home() {
                                     whileInView={{ opacity: 1, x: 0, visibility: 'visible' }}
                                     viewport={{ once: true }}
                                 >
-                                    <h1> Unlock Your Financial Independence </h1>
+                                    <h1> Build Your Independence </h1>
                                 </motion.div>
 
                                 <motion.div
@@ -166,7 +162,7 @@ export default function Home() {
                         </Col>
                         <Col md="6" className="orederOne">
                             <div className="infoText mobInfoText">
-                                <p> <span> Mint </span> Your Token </p>
+                                <p> <span> Ecosystem </span>  Smartphone </p>
                                 <h2> LFi One </h2>
                                 <h3> A revolutionary smartphone that allows users to mint tokens and enter the crypto world seamlessly. </h3>
                                 <Button as="a" variant="primary" className="d-none d-sm-block" href="/lfione">
@@ -180,7 +176,6 @@ export default function Home() {
 
 
             <section className={hardwareSecClass ? "wrapSection mintingSec relative show" : "wrapSection mintingSec"} ref={hardwareRef}>
-
                 <Container>
                     <Row className="justify-content-center">
                         <Col xxl="8" xl="9" lg="9" md="9" xs="12">
@@ -263,7 +258,7 @@ export default function Home() {
                                     <div className="textInfo">
                                         <h4> Decentralized </h4>
                                         <Image src="/img/white-ldo.svg" />
-                                        <h3> We are a decentralized autonomous organization that adapts to the decisions of its users through smart contracts. </h3>
+                                        <h3>We are a decentralized autonomous organization that adapts to the decisions of its users through voting system. </h3>
                                         <Button as="a" variant="primary" href="/ldao">
                                             Learn More
                                         </Button>

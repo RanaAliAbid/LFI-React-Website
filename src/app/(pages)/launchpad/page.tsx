@@ -36,7 +36,7 @@ export default function Launchpad() {
         <main>
             <Header />
 
-            <section className="wrapSection herosec">
+            <section className="wrapSection herosec fullView">
                 <Container>
                     <Row className="justify-content-center">
                         <Col md="10" xs="12">
@@ -56,7 +56,7 @@ export default function Launchpad() {
                                     initial={{ opacity: 0, scale: 0.5 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                 >
-                                    <h3>Accelerate your business to new heights.</h3>
+                                    <h3> If you own a token, propel your business to new levels by utilizing the LFi Launchpad. For those seeking new tokens and projects, this is your ideal platform for selection.</h3>
                                 </motion.div>
 
                                 <Image src={launchpadbanner.src} />
@@ -73,7 +73,7 @@ export default function Launchpad() {
                         id="uncontrolled-tab-example"
                         className="bussinessTabs justify-content-center"
                     >
-                        <Tab eventKey="home" title="For Investors">
+                        <Tab eventKey="home" title="For Crypto Users">
                             <Row className="align-items-center">
                                 <Col md="6" xs="12">
                                     <div className="wrapTextBox frame">

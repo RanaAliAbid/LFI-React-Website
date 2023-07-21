@@ -60,7 +60,8 @@ export default function Lfione() {
     const [dynamicClass, setDynamicClass] = useState('');
     const changevalueonScroll=()=>{
         const scrollvalue=document.documentElement.scrollTop;        
-        if(scrollvalue > 100){
+        
+        if(scrollvalue > 70){
             setDynamicClass('show');
         }
         else {
@@ -103,11 +104,7 @@ export default function Lfione() {
 
 
     return (
-        <main>
-            <Head>
-                <title> Home - TitleMetaNextjs </title>
-                <meta name="description" content="Meta description for the Home page" />                               
-            </Head>
+        <main>        
 
             <Header />
             <section className="mobileNameHead">
@@ -283,7 +280,7 @@ export default function Lfione() {
                 </Container>
             </section>
 
-            <section className="wirelessChargerSec wrapSection wlchargre">
+            <section className="wirelessChargerSec wrapSection wlchargre fullView">
                 <Container>
                     <Row>
                         <Col md="6">

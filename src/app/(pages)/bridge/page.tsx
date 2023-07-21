@@ -28,7 +28,7 @@ export default function Bridge() {
         <main>
             <Header />
 
-            <section className="wrapSection herosec">
+            <section className="wrapSection herosec fullView">
                 <Container>
                     <Row className="align-items-center">
                         <Col md="6" xs="12">
@@ -64,7 +64,7 @@ export default function Bridge() {
                                     <Col md="6">
                                         <div className="wrapTextBox">
                                             <h3> Switch between blockchains with ease </h3>
-                                            <h5> LFi Bridge is a technology that connects multiple blockchain networks, enabling seamless communication and transfer of data or assets between two or more  blockchains.</h5>
+                                            <h5> LFi Bridge facilitates listing and trading LFi tokens across various chains. Users can convert their LFi tokens from Polygon to other chains like ERC20 using decentralized wallets. Post conversion, these tokens can be traded on any exchange where LFi is listed.</h5>
                                         </div>
                                     </Col>
                                     <Col md="6">

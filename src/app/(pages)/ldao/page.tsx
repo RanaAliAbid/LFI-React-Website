@@ -34,7 +34,7 @@ export default function MintingMachine() {
         <main>
             <Header />
 
-            <section className="wrapSection herosec">
+            <section className="wrapSection herosec fullView">
                 <Container>
                     <Row className="align-items-center">
                         <Col md="6" xs="12">
@@ -156,8 +156,8 @@ export default function MintingMachine() {
                                 <Image src={smartContarct.src}/>
                             </div>
                             <div className="ldoBoxWrap greenBorder">
-                                <h3> Smart Contract  </h3>
-                                <h5> A smart contract is a program that automates complex transactions on a blockchain without third-party involvement. </h5>
+                                <h3> Voting  </h3>
+                                <h5> Vote for the approval or rejection of proposals and contribute to shaping the ecosystem's development. </h5>
                             </div>
                         </Col>
 

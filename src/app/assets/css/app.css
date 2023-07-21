@@ -16,6 +16,19 @@ body {
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+    width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(48, 48, 48);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #02ce83;
+    border-radius: 1px;
+}
+
 body {
     background-color: #070A0B;
     color: var(--white);
@@ -178,6 +191,16 @@ a:hover {
     display: none;
 }
 
+.navbar .dropdown-toggle::after {
+    margin: 9px 0 0 5px;
+    transition: 0.5s;
+}
+
+.navbar .dropdown-toggle.show::after {
+    transform: rotate(-180deg);
+    transition: 0.5s;
+}
+
 .dropdown-item {
     color: var(--gray-600);
     font-size: 14px;
@@ -191,25 +214,22 @@ a:hover {
 }
 
 section {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-section.wrapSection {
-    height: 100vh;
+.fullView {
+    height: calc(100vh - 70px);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.ldaosec,
-.visionSec {
-    height: 100vh;
+section.wrapSection {
+    padding: 100px 0;
 }
 
-section.wrapSection.herosec {
-    height: calc(100vh - 70px);
-}
+
 
 section.herobanner {
     background-image: url('../../../../public/img/herologo.png');
@@ -220,8 +240,13 @@ section.herobanner {
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .hero {
@@ -366,15 +391,13 @@ section.herobanner {
     stroke-width: 2;
 }
 
-section.wrapSection.tokensec {
-    height: 100vh;
-}
+
 
 
 .tokenText {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-start;
     margin: 0 15px;
     padding: 35px 20px;
     border: 1px solid #2e2e2e;
@@ -402,7 +425,7 @@ section.wrapSection.tokensec {
 }
 
 .tokenText h5 {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 26px;
     font-weight: 300;
     letter-spacing: 1px;
@@ -762,13 +785,7 @@ section.wrapSection.tokensec {
     color: var(--gray-600);
 }
 
-.tokenSec {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 80px 0;
-}
+
 
 .tokenTabs {
     margin-bottom: 40px;
@@ -1052,7 +1069,7 @@ section.wrapSection.tokensec {
 
 .mobileNameHead .show .nav-link.buybtn {
     background-color: var(--primary);
-    color: var(--black);    
+    color: var(--black);
     border-radius: 20px;
 }
 
@@ -1350,7 +1367,7 @@ section.wrapSection.tokensec {
     width: 100%;
 }
 
-.fhdspec  .wrapImg {
+.fhdspec .wrapImg {
     margin: 50px 0;
 }
 
@@ -1418,7 +1435,7 @@ section.wrapSection.tokensec {
 
 
 .wcTextWrap {
-    padding-left: 50px;
+    margin: 50px;
 }
 
 .wcTextWrap h2 {
@@ -1625,7 +1642,7 @@ section.wrapSection.tokensec {
     vertical-align: middle;
     width: 20%;
     padding: 15px;
-    margin: 35px 0;    
+    margin: 35px 0;
 }
 
 .specsSec .specsSecList ul li h4 {
@@ -1644,11 +1661,12 @@ section.wrapSection.tokensec {
 
 .specsSec .specsSecList ul li:hover svg path {
     fill: var(--primary);
-} 
+}
+
 .specsSec .specsSecList ul li:hover h4,
 .specsSec .specsSecList ul li:hover h6 {
     color: var(--primary);
-} 
+}
 
 .techSpecHero {
     padding: 80px 0;
@@ -1692,7 +1710,7 @@ section.wrapSection.tokensec {
 }
 
 .specList li.item .textWrap ul.subList {
-    padding: 0px 0 0 15px;    
+    padding: 0px 0 0 15px;
 }
 
 .specList li.item .textWrap ul.subList li {
@@ -1719,7 +1737,7 @@ p.note {
 .certificatesList {
     padding: 25px;
     margin: 40px 0 0 0;
-    
+
 }
 
 .certificatesList li {
@@ -1736,6 +1754,60 @@ p.note {
     height: 100%;
     padding: 10px;
     object-fit: scale-down;
+
+}
+
+.lfiLimitationSec {
+    padding: 50px 0;
+}
+
+.lfiLimitationSec ul.list li {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    color: var(--gray-600);
+}
+
+.lfiLimitationSec .bridgeBoxWrap {
+    margin: 50px 0;
+    padding: 70px 50px;
+}
+
+.lfiLimitationSec .bridgeBoxWrap img {
+    width: 100%;
+}
+
+.keyFeaturesSec {
+    padding: 100px 0;
+}
+
+.keyFeaturesSec .wrapTextBox {
+    border: 1px solid #1d1d1d;
+    padding: 50px 30px;
+    margin: 30px 25px;
+    min-height: 350px;
+    text-align: center;
+}
+
+.keyFeaturesSec .wrapTextBox h3 {
+    width: 100%;
+    margin-top: 25px;
+}
+
+
+
+
+@media (max-height: 450px) {
+
+    .section.wrapSection {
+        padding: 50px 0;
+    }
+
+    .fullView {
+        display: block;
+        height: auto;
+    }
 
 }
 
@@ -1757,7 +1829,6 @@ p.note {
 }
 
 @media (max-width: 767px) {
-
 
     .navbar-nav {
         display: block;
@@ -1810,10 +1881,7 @@ p.note {
         background-size: 80%;
     }
 
-    section.wrapSection.herosec {
-        height: calc(100vh - 75px);
-        padding: 0;
-    }
+
 
     section.wrapSection,
     section.wrapSection.tokensec {
@@ -1932,7 +2000,7 @@ p.note {
         width: 90%;
         margin: 0 auto;
         top: -15%;
-    }   
+    }
 
     .stepSec .rowText .textBox {
         padding: 45px 30px;
@@ -1943,11 +2011,15 @@ p.note {
     }
 
     .footerSec .footBox .logo {
-        margin-bottom: 70px;
+        margin-bottom: 20px;
+    }
+
+    .footerSec .footBox h3 {
+        margin-bottom: 8px;
     }
 
     .footBox {
-        padding: 0 25px;
+        padding: 0 25px 25px 15px;
         text-align: center;
     }
 
@@ -1972,6 +2044,10 @@ p.note {
     .copyright .copyLinks ul li {
         display: inline-block;
         padding: 0 5px;
+    }
+
+    p.note {
+        line-height: 18px;
     }
 
 
@@ -2007,7 +2083,7 @@ p.note {
         height: 40%;
         top: auto;
         bottom: 0;
-        
+
     }
 
     .headingTitle {
@@ -2108,7 +2184,7 @@ p.note {
         flex-direction: column;
     }
 
-    .tokensBody .tokenTabs {        
+    .tokensBody .tokenTabs {
         margin: 80px 0 0 0;
     }
 
@@ -2494,6 +2570,15 @@ p.note {
         z-index: 1000;
     }
 
+    .lfiLimitationSec .bridgeBoxWrap img {
+        width: 100%;
+    }
+
+    .lfiLimitationSec .bridgeBoxWrap {
+        margin: 10px 0 20px 0;
+        padding: 25px;
+    }
+
 }
 
 
@@ -2512,6 +2597,15 @@ p.note {
     h3 {
         font-size: 16px;
         line-height: 26px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 22px;
+    }
+
+    .hero h3 {
+        margin: 10px 0 20px 0;
     }
 
     .navbar-nav {
@@ -2561,13 +2655,7 @@ p.note {
 
     section.wrapSection,
     section.wrapSection.tokensec {
-        height: 80vh;
         padding: 80px 0;
-    }
-
-    section.wrapSection.herosec {
-        height: calc(100vh - 74px);
-        padding: 0;
     }
 
     .herosec .align-items-center.row {
@@ -2678,8 +2766,17 @@ p.note {
         margin: 20px 0 35px 0;
     }
 
+    .tokenText {
+        margin: 0;
+        padding: 20px 10px;
+    }
+
     .rowText {
         padding: 32px 20px;
+    }
+
+    .stepSec .rowText {
+        padding: 8px 20px;
     }
 
     .visionSec .titleBox {
@@ -2698,6 +2795,38 @@ p.note {
         margin-top: 0;
     }
 
+    .hero h3 {
+        margin: 15px 0;
+    }
+
+    .herosec img {
+        width: 100%;
+    }
+
+    .bridgeBoxWrap {
+        padding: 30px;
+        margin: 80px 0;
+    }
+
+    .wrapTextBox h3 {
+        width: 80%;
+    }
+
+    .footerSec .footBox .socialLink li {
+        padding: 7px;
+    }
+
+    .lfiLimitationSec .bridgeBoxWrap {
+        
+        padding: 50px 35px;
+    }
+
+    .headingTitle h2 {
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+
 }
 
 
@@ -2708,6 +2837,14 @@ p.note {
     }
 
     .tokenText {
-        padding: 35px 15px;
+        padding: 35px 5px;
+    }
+
+    .stepSec .rowText {
+        padding: 30px 20px;
+    }
+
+    .footerSec .footBox .socialLink li {
+        padding: 7px;
     }
 }

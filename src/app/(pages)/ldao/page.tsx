@@ -39,23 +39,12 @@ export default function MintingMachine() {
                     <Row className="align-items-center">
                         <Col md="6" xs="12">
                             <div className="hero">
-                                <motion.div
-                                    transition={{ ease: "easeIn", duration: 0.5 }}
-                                    initial={{ opacity: 0, scale: 0.5 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    whileInView={{ opacity: 1, x: 0, visibility: 'visible' }}
-                                    viewport={{ once: true }}
-                                >
-                                    <h1> L-DAO </h1>
-                                </motion.div>
 
-                                <motion.div
-                                    transition={{ ease: "easeIn", duration: 0.5, delay: 0.2 }}
-                                    initial={{ opacity: 0, scale: 0.5 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                >
-                                    <h3> Enjoy complete autonomy. L-DAO is an ecosystem that is built for you, controlled by you, and owned by you. </h3>
-                                </motion.div>                               
+                                <h1> L-DAO </h1>
+
+
+                                <h3> Enjoy complete autonomy. L-DAO is an ecosystem that is built for you, controlled by you, and owned by you. </h3>
+
                             </div>
                         </Col>
                         <Col md="6" xs="12">
@@ -94,11 +83,11 @@ export default function MintingMachine() {
                                             <stop offset="100%" stop-color="#04FCA3" />
                                         </linearGradient>
                                     </defs>
-                               
+
                                     <motion.path stroke="url(#gradient)" className="stepProgressBar" d="M229.5 0.5V108.5C229.5 125.621 215.621 139.5 198.5 139.5H32C14.8792 139.5 1 153.379 1 170.5V402.5C1 419.621 14.8792 433.5 32 433.5H442.5C459.621 433.5 473.5 447.379 473.5 464.5V696.5C473.5 713.621 459.621 727.5 442.5 727.5H32C14.8792 727.5 1 741.379 1 758.5V989.5C1 1006.62 14.8792 1020.5 32 1020.5H473.5" style={{ pathLength: scrollvisionProgressBar }} />
                                 </svg>
                             </figure>
-                            
+
                             <Row className="rowText" >
                                 <Col md="6">
                                     <div className="textBox">
@@ -142,10 +131,10 @@ export default function MintingMachine() {
                     <Row className="justify-content-center">
                         <Col md="4">
                             <div className="ldoIconBox">
-                                <Image src={ecosystem.src}/>
+                                <Image src={ecosystem.src} />
                             </div>
                             <div className="greenGrad"> </div>
-                            <div className="ldoBoxWrap greenBorder">                                
+                            <div className="ldoBoxWrap greenBorder">
                                 <h3> An ecosystem that is for you </h3>
                                 <h5> LFi is a decentralized autonomous organization that adapts to the decisions of its users through smart contracts.  </h5>
                             </div>
@@ -153,17 +142,17 @@ export default function MintingMachine() {
 
                         <Col md="4">
                             <div className="ldoIconBox">
-                                <Image src={smartContarct.src}/>
+                                <Image src={smartContarct.src} />
                             </div>
                             <div className="ldoBoxWrap greenBorder">
                                 <h3> Voting  </h3>
-                                <h5> Vote for the approval or rejection of proposals and contribute to shaping the ecosystem's development. </h5>
+                                <h5> Vote for the approval or rejection of proposals and contribute to shaping the ecosystem&apos;s development. </h5>
                             </div>
                         </Col>
 
                         <Col md="4">
                             <div className="ldoIconBox">
-                                <Image src={power.src}/>
+                                <Image src={power.src} />
                             </div>
                             <div className="ldoBoxWrap greenBorder">
                                 <h3> You have the power  </h3>
@@ -182,7 +171,7 @@ export default function MintingMachine() {
                     </Row> */}
                 </Container>
             </section>
-        <Footer />
+            <Footer />
 
         </main>
     )

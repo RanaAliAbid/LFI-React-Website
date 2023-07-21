@@ -2579,6 +2579,10 @@ p.note {
         padding: 25px;
     }
 
+    .keyFeaturesSec .wrapTextBox {
+        margin: 20px 25px; 
+    }
+
 }
 
 

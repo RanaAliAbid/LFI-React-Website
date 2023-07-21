@@ -85,7 +85,7 @@ export default function softwareWallet() {
                                 <article>
                                     <Image src={securenetworkIcon.src} className="rot" />
                                     <h3> Secure </h3>
-                                    <h5> Peace of mind, always. We've got you covered with passphrase protection, security passwords, and even fingerprint and pattern locks.</h5>
+                                    <h5> Peace of mind, always. We have got you covered with passphrase protection, security passwords, and even fingerprint and pattern locks.</h5>
                                 </article>
                             </div>
                         </Col>

@@ -108,7 +108,7 @@ export default function Blockchain() {
                     <Row className="align-items-center">
                         <Col xs="12">
                             <div className="headingTitle">
-                                <h2> Starting out, our ecosystem's native tokens and dApps will take their first steps on the Polygon Chain. But by late 2023, we're pushing boundaries by launching our very own blockchain, a fork of the Matic Chain, named the LFi Chain. </h2>
+                                <h2> Starting out, our ecosystem&apos;s native tokens and dApps will take their first steps on the Polygon Chain. But by late 2023, we are pushing boundaries by launching our very own blockchain, a fork of the Matic Chain, named the LFi Chain. </h2>
 
                             </div>
                         </Col>

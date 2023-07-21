@@ -103,7 +103,7 @@ export default function MintingMachine() {
                                 <Col md="6">
                                     <div className="textBox">
                                         <h2> <strong> Step 01 </strong> </h2>
-                                        <h4> A user’s voting power is dependent on the number of vLFi tokens they own.</h4>
+                                        <h4> A user&apos;s voting power is dependent on the number of vLFi tokens they own.</h4>
                                     </div>
                                 </Col>
                             </Row>

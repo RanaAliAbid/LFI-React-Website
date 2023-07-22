@@ -44,7 +44,7 @@ export default function TechSpecs() {
                         <Nav className="ms-auto">
                             <Nav.Link href="/lfione">Overview</Nav.Link>
                             <Nav.Link href="/techspecs" className="active">Tech Specs</Nav.Link>
-                            <Nav.Link href="https://lyotechlabs.com" className="buybtn">Buy Now</Nav.Link>
+                            <Nav.Link href="https://lyotechlabs.com/product/lfi-smartphone/" className="buybtn">Buy Now</Nav.Link>
                         </Nav>
                     </Navbar>
 

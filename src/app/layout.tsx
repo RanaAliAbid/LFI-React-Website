@@ -7,7 +7,7 @@ import './globals.css'
 
 export const metadata = {
     title: {
-      default: 'LFi - Build your indenpendence'
+      default: 'LFi - Build Your Independence'
     },
   }
 

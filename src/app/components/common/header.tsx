@@ -30,7 +30,7 @@ export default function Header() {
                 <Container>
                     <Navbar.Brand href="/">	<WhiteLogo /> </Navbar.Brand>
                     <div>
-                        <Button as="a"  href="https://lyotechlabs.com/product/lfi-smartphone/" variant="primary" className="mobbtn">
+                        <Button as="a"  href="https://lyotechlabs.com/lfi-build-your-independence/" variant="primary" className="mobbtn">
                             Store
                         </Button>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -54,7 +54,7 @@ export default function Header() {
                             <Nav.Link href="/tokens" as={Link} className={pathname === "/tokens" ? "active" : ""}>Tokens</Nav.Link>
                             <Nav.Link href="/aboutus" as={Link} className={pathname === "/aboutus" ? "active" : ""}>About Us</Nav.Link>
 
-                            <Button as="a" href="https://lyotechlabs.com/product/lfi-smartphone/" variant="primary" className="">
+                            <Button as="a" href="https://lyotechlabs.com/lfi-build-your-independence/" variant="primary" className="">
                                 Store
                             </Button>
 

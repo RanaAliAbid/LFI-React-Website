@@ -158,7 +158,7 @@ export default function Home() {
                         <Col md="6" className="orederTwo">
                             <div className="img-container">
                                 <Box speed={-10} />
-                                <Button as="a" variant="primary" className="d-block d-sm-none">
+                                <Button as="a" variant="primary" className="d-block d-sm-none" href="/lfione">
                                     Discover LFi One
                                 </Button>
                             </div>

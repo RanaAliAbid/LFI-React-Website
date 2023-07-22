@@ -149,7 +149,7 @@ export default function MintingMachine() {
                     <Row className="justify-content-center align-items-center">
                         <Col md="6" className="">
                             <div className="infoText text-center">
-                                <h2> XLFi 5000 Minter  </h2>
+                                <h2> XLFi 5000 Minter </h2>
                                 <p> Discover new possibilities and unlock your financial future </p>
                                 <h3> Access a range of exciting features and functions that will take your financial game to the next level. </h3>
                                 <Button as="a" variant="primary" className="d-none d-sm-block" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-plus-xlfi5000">

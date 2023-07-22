@@ -2601,6 +2601,9 @@ p.note {
         /* font-size: 13px; */
         display: inline-block;
         /* padding: 10px 8px; */
+        font-size: 14px;
+        padding: 4px 16px;
+        font-weight: 500;
     }
 
     .mobilePhoneHero .mobilePhone h1 {

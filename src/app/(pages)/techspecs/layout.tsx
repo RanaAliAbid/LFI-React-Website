@@ -1,6 +1,6 @@
 export const metadata = {
     title: {
-        default: 'LFi - One - Tech Specifications'
+        default: 'LFi One Tech Specifications'
     },
 }
 

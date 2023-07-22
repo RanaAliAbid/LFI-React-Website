@@ -1,6 +1,6 @@
 export const metadata = {
     title: {
-        default: 'LFi - Tokens'
+        default: 'LFi Tokens'
     },
 }
 

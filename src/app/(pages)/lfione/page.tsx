@@ -152,12 +152,12 @@ export default function Lfione() {
 
                         <Col md="5" className="">
                             <div className="mintInfo">
-                                <h2> Mint your TOKEN on phone </h2>
+                                <h2> Mint your LFi token on phone </h2>
                                 <ul className="mintListItem">
                                     <li>LFi blockchain powered smart phone.</li>
                                     <li> Mint your LFi tokens from your hand held phone that can be used access 1000s of financial instruments. </li>
                                     <li> Have a real time monitoring of your investments return and new opportunities. </li>
-                                    <li> Welcome to a new world of connected Finance! </li>
+                                    {/* <li> Welcome to a new world of connected Finance! </li> */}
                                 </ul>
                             </div>
                         </Col>

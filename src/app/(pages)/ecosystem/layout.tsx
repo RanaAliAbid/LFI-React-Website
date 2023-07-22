@@ -1,6 +1,6 @@
 export const metadata = {
     title: {
-        default: 'LFi - About US'
+        default: 'LFi Ecosystem'
     },
 }
 

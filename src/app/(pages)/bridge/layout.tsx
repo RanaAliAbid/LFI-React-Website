@@ -1,6 +1,6 @@
 export const metadata = {
     title: {
-        default: 'LFi - Bridge'
+        default: 'LFi Bridge'
     },
 }
 

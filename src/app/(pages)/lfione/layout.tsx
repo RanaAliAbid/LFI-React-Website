@@ -1,7 +1,7 @@
 
 export const metadata = {
     title: {
-        default: 'LFi - One'
+        default: 'LFi One'
     },
 }
 

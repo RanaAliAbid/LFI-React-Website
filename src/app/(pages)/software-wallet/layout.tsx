@@ -1,6 +1,6 @@
 export const metadata = {
     title: {
-        default: 'LFi - Software Wallet'
+        default: 'LFi Software Wallet'
     },
 }
 

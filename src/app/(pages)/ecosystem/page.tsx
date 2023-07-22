@@ -9,7 +9,7 @@ import Header from "@/app/components/common/header";
 import Footer from "@/app/components/common/footer";
 
 
-export default function Aboutus() {
+export default function Ecosystem() {
 
     const buttRef = useRef(null);
 
@@ -170,7 +170,7 @@ export default function Aboutus() {
 
                                 <div className="text-center desktopHide">
                                     <Button as="a" variant="primary" href="https://white-paper.lfi.io/introduction/roadmap">
-                                        Our Roadmap
+                                        Roadmap
                                     </Button>
                                 </div>
                             </figure>
@@ -205,7 +205,7 @@ export default function Aboutus() {
                                 <Col>
                                     <div className="text-center">
                                         <Button as="a" variant="primary" href="https://white-paper.lfi.io/introduction/roadmap">
-                                            Our Roadmap
+                                            Roadmap
                                         </Button>
                                     </div>
                                 </Col>

@@ -36,7 +36,7 @@ export default function Footer() {
                                             <li><a href="/minting-machine"> Minting Machine </a></li>
                                             <li><a href="/blockchain"> Blockchain  </a></li>
                                             <li><a href="/tokens">Tokens</a></li>
-                                            <li><a href="/aboutus">About Us </a></li>
+                                            <li><a href="/ecosystem">Ecosystem </a></li>
 
                                             {/* <li><a href="/ldao">L-DAO</a></li> */}
                                             {/* <li><a href="/launchpad">Launchpad</a></li> */}

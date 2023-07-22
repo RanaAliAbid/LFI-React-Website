@@ -1,6 +1,6 @@
 export const metadata = {
     title: {
-        default: 'LFi - Blockchain'
+        default: 'LFi Blockchain'
     },
 }
 

@@ -305,7 +305,7 @@ export default function Home() {
                     <Row className="justify-content-center">
                         <Col md="12">
                             <div className="infoText text-center mb-5">
-                                <h2> Our Tokens  </h2>
+                                <h2> LFi Tokens  </h2>
                             </div>
                         </Col>
 
@@ -383,8 +383,8 @@ export default function Home() {
                                 </svg>
 
                                 <div className="text-center desktopHide">
-                                    <Button as="a" variant="primary"  href="/aboutus">
-                                        About Us
+                                    <Button as="a" variant="primary"  href="/ecosystem">
+                                        Ecosystem
                                     </Button>
                                 </div>
                             </figure>
@@ -418,8 +418,8 @@ export default function Home() {
                             <Row className="justify-content-center manifestoBtn mobileHide">
                                 <Col>
                                     <div className="text-center">
-                                        <Button as="a" variant="primary"  href="/aboutus">
-                                            About Us
+                                        <Button as="a" variant="primary"  href="/ecosystem">
+                                            Ecosystem
                                         </Button>
                                     </div>
                                 </Col>

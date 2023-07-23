@@ -14,6 +14,7 @@ body {
     font-family: 'Archivo', sans-serif;
     letter-spacing: 0.5px;
     scroll-behavior: smooth;
+    position: relative;
 }
 
 body::-webkit-scrollbar {
@@ -123,6 +124,13 @@ a:hover {
     border: 1px solid var(--btn-primary-hover);
 }
 
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    background-color: var(--primary);
+    color: var(--black);
+    border: 1px solid var(--primary);
+    cursor: not-allowed;
+}
+
 
 .btn-text {
     background-color: var(--black);
@@ -142,9 +150,102 @@ a:hover {
     margin-top: -30px;
 }
 
-.manifestoBtn .btn {    
+.cookieModal .modal-dialog {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0; 
     
 }
+
+.cookieModal .modal-header .btn-close {
+    display: none;
+}
+
+.cookieModal .modal-content {
+    background-color: #131313;
+    color: var(--white);
+}
+
+.cookieModal h4 {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+    letter-spacing: 0.6px;
+}
+
+.cookieModal .modal-content .modal-header {
+    padding: 10px;
+    border-bottom: 1px solid #363636;
+}
+
+.cookieModal .modal-content .modal-footer {
+    border-top: 1px solid #363636;
+}
+
+.cookieModal .modal-content .modal-body,
+.cookieModal .modal-footer {
+    padding: 10px;
+}
+
+
+
+.cookieModal .form-check-input:checked {
+    background-color: #00a76a;
+    border-color: #00a76a;
+}
+
+.cookieModal .form-switch .form-check-input:focus {
+    --bs-form-switch-bg:url('../../../../public/img/checkbg.svg');
+}
+
+.cookieModal .form-check-input {
+    --bs-form-check-bg: #474747;
+    border: 1px solid #474747;
+}
+
+.cookieModal .form-check-input:focus {
+    border-color: #00643f;
+    box-shadow: 0px 0px 3px 2px rgba(13, 253, 141, 0.25);
+}
+
+.cookieModal p {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 200;
+    letter-spacing: 0.7px;
+    margin-bottom: 15px;
+}
+
+.cookieModal p a {
+    color: var(--primary);
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.cookieModal .formSec .form-switch {
+    display: inline-block;
+    margin-right: 25px;
+    
+}
+
+.cookieModal .formSec .form-switch label {
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 0.6px;
+}
+
+.cookieModal .modal-footer .btn {
+    padding: 5px 15px;
+    font-size: 12px;
+    margin: 0 0 0 10px;
+    letter-spacing: 0.6px;
+}
+
 
 
 .text-right {

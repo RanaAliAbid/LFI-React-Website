@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 
 import { useRef, useEffect } from "react";
 import { motion, MotionValue, useScroll, useSpring, useTransform, useInView } from "framer-motion";
-import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
+import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col, Modal } from 'react-bootstrap';
 
 import Header from "./components/common/header";
 import Footer from "./components/common/footer";
@@ -15,8 +15,7 @@ import CLfiCoin from "../../public/img/clfi-token.svg";
 import VLfiCoin from "../../public/img/vlfi-token.svg";
 
 import blockchain from "../../public/img/blockchainbanner.png";
-
-
+import { getTermsAndCondition } from "./action";
 
 const Box = ({ speed }: any) => {
     const { scrollYProgress } = useScroll();
@@ -31,9 +30,7 @@ const Box = ({ speed }: any) => {
 }
 
 
-export default function Home() {
-
-
+export default function Home() {    
     // const ref = useRef(null);
     const buttRef = useRef(null);
     const ldolRef = useRef(null);
@@ -42,6 +39,13 @@ export default function Home() {
     const ldaoRef = useRef(null);
     const hardwareImgRef = useRef(null);
 
+    const [cookieShow, setCookieShow] = useState(false);
+    
+    const [isMarketingCookie, setIsMarketingCookie] = useState(false);
+    const [isPersonalizationCookie, setIsPersonalizationCookie] = useState(false);
+    const [isAnalysysCookie, setIsAnalysysCookie] = useState(false);
+
+    const [isCookieAccept, setIsCookieAccept] = useState(true);
     const [mobileSecClass, setMobileSecClass] = useState(false);
     const [hardwareSecClass, setHardwareSecClass] = useState(false);
 
@@ -49,7 +53,7 @@ export default function Home() {
     const isInHardwareView = useInView(hardwareRef);
     const isInldaoView = useInView(ldaoRef);
     const inHardwareTextView = useInView(hardwareImgRef);
-
+    
     const { scrollYProgress } = useScroll();
     // top progressbar animation
     const scaleX = useSpring(scrollYProgress, {
@@ -57,7 +61,7 @@ export default function Home() {
         damping: 20,
         restDelta: 0.001
     });
-
+    
     const mobileRefScroll = useScroll({
         target: mobileRef
     }).scrollYProgress;
@@ -67,14 +71,17 @@ export default function Home() {
         target: ldolRef,
         offset: ["end end", "start start"]
     }).scrollYProgress;
-
+    
     // vision mission path animation
     const scrollvisionProgressBar = useScroll({
         target: buttRef,
         offset: ["end end", "start start"]
     }).scrollYProgress;
-
-
+    
+    const handleClose = () => {
+        setCookieShow(false)
+    };
+    
     useEffect(() => {
         // console.log( isInMobileView, isInHardwareView, isInldaoView)
         setMobileSecClass(false);
@@ -94,6 +101,9 @@ export default function Home() {
         } else if (isInldaoView) {
             setHardwareSecClass(false);
         }
+
+        setCookieShow(true);
+        console.log(getTermsAndCondition());
     }, [
         isInMobileView,
         isInHardwareView,
@@ -101,14 +111,64 @@ export default function Home() {
         inHardwareTextView,
     ])
 
-
-
-
-
-
     return (
         <>
-           
+
+            <Modal className="cookieModal" show={cookieShow} onHide={() => {
+                return false;
+            }}>
+                <Modal.Header closeButton>
+                    <h4>Terms Consent</h4>
+                </Modal.Header>
+                <Modal.Body>
+                    <p>Our Website stores data such as cookies to enable
+                        essential site functionality as well as marketing,
+                        personalization and analytics. You may change your
+                        settings at any time or accept the default settings. We also
+                        have a comprehensive privacy policy which governs how
+                        we collect, use and protect your personal information. By
+                        clicking proceed you agree to be bound by our
+                        <a href="https://docs.lfi.io/legal-documents/privacy-and-cookie-policy"> Privacy and Cookies Policy. </a> </p>
+                    <div className="formSec">
+                        <Form.Check // prettier-ignore
+                            type="switch"
+                            id="custom-switch"
+                            label="Marketing"
+                            checked={isMarketingCookie}
+                            onChange={(e) => {
+                                setIsMarketingCookie(e.target.checked);
+                            }}
+                        />
+                        <Form.Check // prettier-ignore
+                            type="switch"
+                            id="custom-switch"
+                            label="Personalization"
+                            checked={isPersonalizationCookie}
+                            onChange={(e) => {
+                                setIsPersonalizationCookie(e.target.checked)
+                            }}
+                        />
+                        <Form.Check // prettier-ignore
+                            type="switch"
+                            id="custom-switch"
+                            label="Analytics"
+                            checked={isAnalysysCookie}
+                            onChange={(e) => {
+                                setIsAnalysysCookie(e.target.checked)
+                            }}
+                        />
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Reject
+                    </Button>
+                    <Button variant="primary" onClick={handleClose} disabled={(!isMarketingCookie || !isPersonalizationCookie || !isAnalysysCookie) ? true : false}>
+                        Accept
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+
             <Header />
 
             <section className="wrapSection herosec herobanner fullView">
@@ -231,6 +291,7 @@ export default function Home() {
 
             <section className="wrapSection herosec">
                 <Container>
+
                     <Row className="align-items-center">
                         <Col md="6" sm="6" xs="12">
                             <div className="hero">
@@ -383,7 +444,7 @@ export default function Home() {
                                 </svg>
 
                                 <div className="text-center desktopHide">
-                                    <Button as="a" variant="primary"  href="/ecosystem">
+                                    <Button as="a" variant="primary" href="/ecosystem">
                                         Ecosystem
                                     </Button>
                                 </div>
@@ -418,7 +479,7 @@ export default function Home() {
                             <Row className="justify-content-center manifestoBtn mobileHide">
                                 <Col>
                                     <div className="text-center">
-                                        <Button as="a" variant="primary"  href="/ecosystem">
+                                        <Button as="a" variant="primary" href="/ecosystem">
                                             Ecosystem
                                         </Button>
                                     </div>

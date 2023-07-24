@@ -3,7 +3,7 @@ const nextConfig = {
 
 	experimental: {
 		serverActions: true,
-	  },
+	},
 
 	reactStrictMode: true,
 
@@ -14,8 +14,6 @@ const nextConfig = {
 			use: ['@svgr/webpack'],	
 
 		});
-
-		
 
 		return config;
 	}

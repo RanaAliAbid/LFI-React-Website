@@ -156,7 +156,7 @@ export default function Ecosystem() {
 
                                 <svg className="d-block d-sm-none" width="100%" height="100%" viewBox="0 0 400 579" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
-                                        <linearGradient id="gradientttt" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <linearGradient id="#gradientmob" x1="0%" y1="0%" x2="0%" y2="100%">
                                             <stop offset="0%" stop-color="#070A0B" />
                                             {/* <stop offset="15%" stop-color="#464646" />  */}
                                             <stop offset="20%" stop-color="#464646" />
@@ -164,7 +164,7 @@ export default function Ecosystem() {
                                         </linearGradient>
                                     </defs>
                                     <path className="" d="M1 0.5V231.173C1 247.742 14.4315 261.173 31 261.173H369C385.569 261.173 399 274.605 399 291.173V548C399 564.569 385.569 578 369 578H337.902H276.803" />
-                                    <motion.path stroke="url(#gradientttt)" className="aboutVMPath" d="M1 0.5V231.173C1 247.742 14.4315 261.173 31 261.173H369C385.569 261.173 399 274.605 399 291.173V548C399 564.569 385.569 578 369 578H337.902H276.803" style={{ pathLength: scrollvisionProgressBar }} />
+                                    <motion.path stroke="url(#gradientmob)" className="aboutVMPathmob" d="M1 0.5V231.173C1 247.742 14.4315 261.173 31 261.173H369C385.569 261.173 399 274.605 399 291.173V548C399 564.569 385.569 578 369 578H337.902H276.803" style={{ pathLength: scrollvisionProgressBar }} />
 
                                 </svg>
 

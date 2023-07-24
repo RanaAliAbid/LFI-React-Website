@@ -37,7 +37,7 @@ export default function Tokens() {
             </Head>
             <Header/>
 
-            <section className="herosec tokenSec fullView">
+            <section className="herosec tokenSec">
                 <Container>
                     <div className="tokensBody">                    
                     <Tabs

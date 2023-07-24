@@ -353,8 +353,8 @@ section.wrapSection {
     padding: 100px 0;
 }
 
-section.wrapSection.tokensec {
-    padding: 150px 0;
+section.tokenSec {
+    padding: 110px 0;
 }
 
 
@@ -592,6 +592,11 @@ section.herobanner {
 
 .aboutVMPath {
     stroke: url(#gradientttt);
+    stroke-width: 2;
+}
+
+.aboutVMPathmob {
+    stroke: url(#gradientmob);
     stroke-width: 2;
 }
 
@@ -2009,6 +2014,8 @@ body.modal-open .CookieChangeIcon {
     .visionSec .textBox {
         padding: 7px 5px;
     }
+
+   
     
     .navbar-nav {
         width: 100%;
@@ -2019,11 +2026,32 @@ body.modal-open .CookieChangeIcon {
 
 }
 
+@media (max-width: 320px) {
+    .stepSec .rowText .textBox {
+        padding: 7px 11px;
+    }
+} 
+
+@media (min-width: 321px) and (max-width: 374px) {
+    .stepSec .rowText .textBox {
+        padding: 20px 15px;
+    }
+} 
+@media (min-width: 375px) and (max-width: 425px) {
+    .stepSec .rowText .textBox {
+        padding: 25px 26px;
+    }
+}
+
 @media (min-width: 425px) and (max-width: 767px) {
 
     .visionSec .titleBox,
     .visionSec .textBox {
         padding: 15px 20px;
+    }
+
+    .stepSec .rowText .textBox {
+        padding: 45px 30px;
     }
 }
 
@@ -2090,10 +2118,13 @@ body.modal-open .CookieChangeIcon {
 
 
 
-    section.wrapSection,
-    section.wrapSection.tokensec {
+    section.wrapSection {
         height: auto;
         padding: 80px 0;
+    }
+
+    section.tokenSec {
+        padding: 20px 0;
     }
 
     .wrapSection.ldaosec .height100 {
@@ -2110,9 +2141,9 @@ body.modal-open .CookieChangeIcon {
         padding: 25px 0 0 0;
     }
 
-    .infoText .d-sm-block {
+    /* .infoText .d-sm-block {
         display: none !important;
-    }
+    } */
 
 
     .img-container .d-block {
@@ -2214,9 +2245,8 @@ body.modal-open .CookieChangeIcon {
         top: -15%;
     }
 
-    .stepSec .rowText .textBox {
-        padding: 45px 30px;
-    }
+   
+    
 
     .footerSec .footBox ul li {
         margin-bottom: 4px;
@@ -2373,6 +2403,10 @@ body.modal-open .CookieChangeIcon {
         padding: 0 15px;
     }
 
+    .tokenTabs.nav-tabs .nav-link {
+        padding: 8px 25px;
+    }
+
     .tokenSec {
         display: block;
         padding: 0px 0 100px 0;
@@ -2387,6 +2421,8 @@ body.modal-open .CookieChangeIcon {
         text-align: center;
     }
 
+    
+
     .tokenSec .order2 {
         order: 2;
     }
@@ -2397,7 +2433,7 @@ body.modal-open .CookieChangeIcon {
     }
 
     .tokensBody .tokenTabs {
-        margin: 80px 0 0 0;
+        margin: 10px 0 0 0;
     }
 
 
@@ -2542,7 +2578,7 @@ body.modal-open .CookieChangeIcon {
     }
 
     .processorSec {
-        background-position: 5% 0;
+        background-position: top right;
         background-size: 150%;
     }
 
@@ -2830,6 +2866,8 @@ body.modal-open .CookieChangeIcon {
         right: 15px;
     }
 
+   
+
 }
 
 
@@ -2904,8 +2942,7 @@ body.modal-open .CookieChangeIcon {
         padding: 0;
     }
 
-    section.wrapSection,
-    section.wrapSection.tokensec {
+    section.wrapSection {
         padding: 80px 0;
     }
 
@@ -3075,6 +3112,14 @@ body.modal-open .CookieChangeIcon {
     .headingTitle h2 {
         font-size: 34px;
         line-height: 48px;
+    }
+
+    section.tokenSec {
+        padding: 60px 0;
+    }
+
+    .hero {
+        padding: 0%;
     }
 
 

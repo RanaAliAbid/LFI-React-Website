@@ -108,7 +108,7 @@ export default function MintingMachine() {
                                 <h2> XLFi 1000 Minter  </h2>
                                 <p> <span> Mint </span> your way to a brighter future </p>
                                 <h3> Designed to provide you with a simple and hassle-free way to create LFi tokens right from the comfort of your own home </h3>
-                                <Button as="a" variant="primary" className="d-none d-sm-block" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-xlfi1000">
+                                <Button as="a" variant="primary" className="d-none d-sm-block" target= "_blank" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-xlfi1000">
                                     Explore More
                                 </Button>
                             </div>
@@ -152,7 +152,7 @@ export default function MintingMachine() {
                                 <h2> XLFi 5000 Minter </h2>
                                 <p> Discover new possibilities and unlock your financial future </p>
                                 <h3> Access a range of exciting features and functions that will take your financial game to the next level. </h3>
-                                <Button as="a" variant="primary" className="d-none d-sm-block" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-plus-xlfi5000">
+                                <Button as="a" variant="primary" className="d-none d-sm-block" target= "_blank" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-plus-xlfi5000">
                                     Explore More
                                 </Button>
                             </div>

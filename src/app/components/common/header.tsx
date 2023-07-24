@@ -21,13 +21,24 @@ export default function Header() {
     const pathname = usePathname();
 
     return (
-        <>
+        <>      
+        
+            <iframe 
+                src="https://www.googletagmanager.com/ns.html?id=GTM-PM28Q6F"
+                height="0" 
+                width="0" 
+                style={{display:"none", visibility:"hidden"}}>                
+            </iframe>
+        
+       
+
+
             <motion.div className="progress-barr" style={{ scaleX }} />
             <Navbar expand="lg" >
                 <Container>
                     <Navbar.Brand href="/">	<WhiteLogo /> </Navbar.Brand>
                     <div>
-                        <Button as="a"  href="https://lyotechlabs.com/lfi-build-your-independence/" variant="primary" className="mobbtn">
+                        <Button as="a" target= "_blank"  href="https://lyotechlabs.com/lfi-build-your-independence/" variant="primary" className="mobbtn">
                             Store
                         </Button>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -51,7 +62,7 @@ export default function Header() {
                             <Nav.Link href="/tokens" as={Link} className={pathname === "/tokens" ? "active" : ""}>Tokens</Nav.Link>
                             <Nav.Link href="/ecosystem" as={Link} className={pathname === "/ecosystem" ? "active" : ""}>Ecosystem</Nav.Link>
 
-                            <Button as="a" href="https://lyotechlabs.com/lfi-build-your-independence/" variant="primary" className="">
+                            <Button as="a" target= "_blank" href="https://lyotechlabs.com/lfi-build-your-independence/" variant="primary" className="">
                                 Store
                             </Button>
 

@@ -150,6 +150,17 @@ a:hover {
     margin-top: -30px;
 }
 
+.leagalModal.cookieModal .modal-dialog {
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    width: 50%;
+    max-width: 50%;
+    transform: translate(-50%, -50%); 
+}
+
 .cookieModal .modal-dialog {
     position: absolute;
     top: auto;
@@ -178,18 +189,17 @@ a:hover {
     letter-spacing: 0.6px;
 }
 
-.cookieModal .modal-content .modal-header {
-    padding: 10px;
+.cookieModal .modal-content .modal-header {    
     border-bottom: 1px solid #363636;
 }
 
 .cookieModal .modal-content .modal-footer {
     border-top: 1px solid #363636;
 }
-
+.cookieModal .modal-content .modal-header,
 .cookieModal .modal-content .modal-body,
 .cookieModal .modal-footer {
-    padding: 10px;
+    padding: 10px 15px;
 }
 
 
@@ -230,13 +240,14 @@ a:hover {
 .cookieModal .formSec .form-switch {
     display: inline-block;
     margin-right: 25px;
-    
+    cursor: pointer;
 }
 
 .cookieModal .formSec .form-switch label {
     font-size: 13px;
     font-weight: 200;
     letter-spacing: 0.6px;
+    cursor: pointer;
 }
 
 .cookieModal .modal-footer .btn {
@@ -2774,6 +2785,10 @@ p.note {
     .lfidappSec .wrapTextBox {
         padding: 25px;
         margin: 15px;
+    }
+
+    .cookieModal .formSec .form-switch {
+        display: block;
     }
 
 }

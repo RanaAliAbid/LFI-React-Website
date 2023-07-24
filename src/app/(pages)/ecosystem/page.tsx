@@ -51,7 +51,7 @@ export default function Ecosystem() {
                                 <Button as="a" variant="primary" href="#headingText">
                                     Learn More
                                 </Button>
-                                <Button as="a" variant="text" href="https://white-paper.lfi.io/introduction/lfi-ecosystem">
+                                <Button as="a" variant="text" target= "_blank" href="https://white-paper.lfi.io/introduction/lfi-ecosystem">
                                     White Paper
                                 </Button>
                             </div>
@@ -204,7 +204,7 @@ export default function Ecosystem() {
                             <Row className="justify-content-center manifestoBtn mobileHide">
                                 <Col>
                                     <div className="text-center">
-                                        <Button as="a" variant="primary" href="https://white-paper.lfi.io/introduction/roadmap">
+                                        <Button as="a" variant="primary" target= "_blank" href="https://white-paper.lfi.io/introduction/roadmap">
                                             Roadmap
                                         </Button>
                                     </div>

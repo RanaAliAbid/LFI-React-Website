@@ -178,7 +178,7 @@ export default function Launchpad() {
 
                     <Row>
                         <Col xs="12" className="text-center">
-                            <Button as="a" variant="primary" href="https://white-paper.lfi.io/layer-3-dapps/l-pad">
+                            <Button as="a" variant="primary" href="https://white-paper.lfi.io/layer-3-dapps/l-pad" target= "_blank">
                                 Learn More
                             </Button>
                         </Col>

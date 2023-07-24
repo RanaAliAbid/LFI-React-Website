@@ -38,7 +38,7 @@ export default function Blockchain() {
                             <div className="hero">
                                 <h1> LFi Blockchain </h1>
                                 <h3> An independent blockchain boasting Smart Contract capabilities, dApps and compatibility with the Ethereum Virtual Machine (EVM). </h3>
-                                <Button as="a" variant="primary" href="https://scan.lfi.io/">
+                                <Button as="a" variant="primary" href="https://scan.lfi.io/" target= "_blank">
                                     Open Explorer
                                 </Button>
                                 {/*<Button as="a" variant="text" href="#bridgeText">

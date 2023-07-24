@@ -152,7 +152,7 @@ export default function softwareWallet() {
 
                     <Row>
                         <Col xs="12" className="text-center mt-5">
-                            <Button as="a" variant="primary" href="https://white-paper.lfi.io/layer-3-dapps/lfi-software-wallet">
+                            <Button as="a" variant="primary" href="https://white-paper.lfi.io/layer-3-dapps/lfi-software-wallet" target= "_blank">
                                 Learn More
                             </Button>
                         </Col>

@@ -10,7 +10,17 @@ async function setTermsAndCondition(value: string) {
   return cookies().set('termsAndCondition', value);
 }
 
+async function getLegalDesclaimerCookie() {
+  return cookies().get('legalDesclaimerCookie');
+}
+
+async function setLegalDesclaimerCookie(value: string) {
+  return cookies().set('legalDesclaimerCookie', value);
+}
+
 export {
     getTermsAndCondition,
     setTermsAndCondition,
+    getLegalDesclaimerCookie,
+    setLegalDesclaimerCookie,
 }

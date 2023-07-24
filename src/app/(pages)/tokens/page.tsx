@@ -51,10 +51,10 @@ export default function Tokens() {
                                     <div className="hero">
                                         <h1> LFi Token </h1>
                                         <h3> LFi is the native token of the LFi ecosystem that provides users the access to the network’s services.  </h3>
-                                        <Button as="a" variant="primary" href="https://www.lyotrade.com/en_US/v5/trade/LFi_USDT?type=spot">
+                                        <Button as="a" variant="primary" target= "_blank" href="https://www.lyotrade.com/en_US/v5/trade/LFi_USDT?type=spot">
                                             Buy LFi
                                         </Button>
-                                        <Button as="a" variant="text" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/lfi-token">
+                                        <Button as="a" variant="text" target= "_blank" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/lfi-token">
                                             More About LFi
                                         </Button>
                                     </div>
@@ -72,10 +72,10 @@ export default function Tokens() {
                                     <div className="hero">
                                         <h1> cLFi Token </h1>
                                         <h3> cLFi is the collateral token of LFi ecosystem, which allows users to participate in the Proof-of-coverage minting.  </h3>
-                                        <Button as="a" variant="primary" href="https://www.lyotrade.com/en_US/v5/trade/cLFi_USDT?type=spot">
+                                        <Button as="a" variant="primary" target= "_blank" href="https://www.lyotrade.com/en_US/v5/trade/cLFi_USDT?type=spot">
                                             Buy cLFi
                                         </Button>
-                                        <Button as="a" variant="text" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/clfi-token">
+                                        <Button as="a" variant="text" target= "_blank" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/clfi-token">
                                             More about cLFi
                                         </Button>
                                     </div>
@@ -93,7 +93,7 @@ export default function Tokens() {
                                     <div className="hero">
                                         <h1> vLFi Token </h1>
                                         <h3> vLFi holders will receive rewards, obtain discounts, get wider allocations in launchpad, and more.  </h3>
-                                        <Button as="a" variant="text" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/vlfi-token">
+                                        <Button as="a" variant="text" target= "_blank" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/vlfi-token">
                                             More about vLFi
                                         </Button>
                                     </div>

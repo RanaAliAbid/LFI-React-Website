@@ -114,7 +114,7 @@ export default function Lfione() {
                         <Nav className="ms-auto">
                             <Nav.Link href="/lfione" className="active">Overview</Nav.Link>
                             <Nav.Link href="/techspecs">Tech Specs</Nav.Link>
-                            <Nav.Link href="https://lyotechlabs.com/product/lfi-smartphone/" className="buybtn">Buy Now</Nav.Link>
+                            <Nav.Link href="https://lyotechlabs.com/product/lfi-smartphone/" className="buybtn" target= "_blank">Buy Now</Nav.Link>
                         </Nav>
                     </Navbar>
 
@@ -551,7 +551,7 @@ export default function Lfione() {
                                     <Image src={lyotechlabs.src} />
                                 </div>
 
-                                <Button as="a" variant="primary" href="https://lyotechlabs.com/product/lfi-smartphone/">
+                                <Button as="a" variant="primary" href="https://lyotechlabs.com/product/lfi-smartphone/" target= "_blank">
                                     Buy Now
                                 </Button>
                             </div>

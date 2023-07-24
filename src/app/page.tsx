@@ -1,12 +1,9 @@
 'use client'
 import React, { useState } from "react";
-import Head from "next/head";
-
-import { Metadata } from 'next';
 
 import { useRef, useEffect } from "react";
 import { motion, MotionValue, useScroll, useSpring, useTransform, useInView } from "framer-motion";
-import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col, Modal } from 'react-bootstrap';
+import { Container, Form, Button, Image, Row, Col, Modal } from 'react-bootstrap';
 
 import Header from "./components/common/header";
 import Footer from "./components/common/footer";
@@ -15,7 +12,7 @@ import CLfiCoin from "../../public/img/clfi-token.svg";
 import VLfiCoin from "../../public/img/vlfi-token.svg";
 
 import blockchain from "../../public/img/blockchainbanner.png";
-import { getTermsAndCondition, setTermsAndCondition } from "./actions";
+import { getLegalDesclaimerCookie, getTermsAndCondition, setLegalDesclaimerCookie, setTermsAndCondition } from "./actions";
 
 const Box = ({ speed }: any) => {
     const { scrollYProgress } = useScroll();
@@ -30,7 +27,7 @@ const Box = ({ speed }: any) => {
 }
 
 
-export default function Home() {    
+export default function Home() {
     // const ref = useRef(null);
     const buttRef = useRef(null);
     const ldolRef = useRef(null);
@@ -40,7 +37,8 @@ export default function Home() {
     const hardwareImgRef = useRef(null);
 
     const [cookieShow, setCookieShow] = useState(false);
-    
+    const [legalDisclaimerShow, setLegalDisclaimerShow] = useState(false);
+
     const [isMarketingCookie, setIsMarketingCookie] = useState(false);
     const [isPersonalizationCookie, setIsPersonalizationCookie] = useState(false);
     const [isAnalysysCookie, setIsAnalysysCookie] = useState(false);
@@ -53,15 +51,10 @@ export default function Home() {
     const isInHardwareView = useInView(hardwareRef);
     const isInldaoView = useInView(ldaoRef);
     const inHardwareTextView = useInView(hardwareImgRef);
-    
+
     const { scrollYProgress } = useScroll();
-    // top progressbar animation
-    const scaleX = useSpring(scrollYProgress, {
-        stiffness: 100,
-        damping: 20,
-        restDelta: 0.001
-    });
-    
+
+
     const mobileRefScroll = useScroll({
         target: mobileRef
     }).scrollYProgress;
@@ -71,18 +64,26 @@ export default function Home() {
         target: ldolRef,
         offset: ["end end", "start start"]
     }).scrollYProgress;
-    
+
     // vision mission path animation
     const scrollvisionProgressBar = useScroll({
         target: buttRef,
         offset: ["end end", "start start"]
     }).scrollYProgress;
-    
+
     const handleClose = (isAccept: boolean) => {
         setCookieShow(false);
-        if(isAccept === true) {
+        if (isAccept === true) {
             setTermsAndCondition('true');
         }
+    };
+
+    const handleLegalDesclaimerClose = (isAccept: boolean) => {
+        setLegalDisclaimerShow(false);
+        if (isAccept === true) {
+            setLegalDesclaimerCookie('true');
+        }
+        checkTermsAndCondition();
     };
 
     const checkTermsAndCondition = async () => {
@@ -91,7 +92,16 @@ export default function Home() {
             setCookieShow(true);
         }
     }
-    
+
+    const checkLegalDesclaimerCookie = async () => {
+        const isLegalDesclaimerCookie = await getLegalDesclaimerCookie();
+        if (isLegalDesclaimerCookie?.value !== 'true') {
+            setLegalDisclaimerShow(true);
+        } else {
+            checkTermsAndCondition();
+        }
+    }
+
     useEffect(() => {
         // console.log( isInMobileView, isInHardwareView, isInldaoView)
         setMobileSecClass(false);
@@ -112,7 +122,7 @@ export default function Home() {
             setHardwareSecClass(false);
         }
 
-        checkTermsAndCondition();
+        checkLegalDesclaimerCookie();
     }, [
         isInMobileView,
         isInHardwareView,
@@ -122,6 +132,37 @@ export default function Home() {
 
     return (
         <>
+
+            <Modal className="leagalModal cookieModal" show={legalDisclaimerShow} onHide={() => {
+                return false;
+            }}>
+                <Modal.Header closeButton>
+                    <h4> LEGAL DISCLAIMER </h4>
+                </Modal.Header>
+                <Modal.Body>
+                    <p>
+                        The usage of LFi&apos;s Services in no way constitutes an offer to buy or sell cryptocurrency nor are we offering any investment services or advice. You acknowledge and agree that dealing in cryptocurrency is highly volatile, and that buying, selling, trading and the holding of cryptocurrencies can involve a high risk. In considering whether to buy, sell, trade or hold cryptocurrencies, you should be aware that the price or value of cryptocurrencies can change rapidly, decrease, and potentially even fall to zero. If you are unable to bear the financial risk of loss, please do not use or access LFi&apos;s services. You agree that you are solely responsible for any transactions and the use of the LFi&apos;s Services.
+                    </p>
+                    <p>
+                        LFi disclaims all liability for any losses or damages whatsoever, including but not limited to any direct, indirect, special, incidental, consequential, or punitive damages, arising out of or in connection with your use or reliance of the services offered by us. 
+                    </p>
+                    <p>
+                        LFi makes no representations, warranties or guarantees of any kind, express or implied, about the completeness, accuracy, reliability, suitability, availability of any outcomes with respect to the usage of our services for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+                    </p> 
+                    <p>
+                        By clicking 	&acute;Proceed&apos;, you will be confirming that you have read and agreed to the terms above.
+                    </p>
+
+                </Modal.Body>
+                <Modal.Footer>
+                   
+                    <Button variant="primary" onClick={() => {
+                        handleLegalDesclaimerClose(true);
+                    }}>
+                        Proceed
+                    </Button>
+                </Modal.Footer>
+            </Modal>
 
             <Modal className="cookieModal" show={cookieShow} onHide={() => {
                 return false;
@@ -141,7 +182,7 @@ export default function Home() {
                     <div className="formSec">
                         <Form.Check // prettier-ignore
                             type="switch"
-                            id="custom-switch"
+                            id="marketing-switch"
                             label="Marketing"
                             checked={isMarketingCookie}
                             onChange={(e) => {
@@ -150,7 +191,7 @@ export default function Home() {
                         />
                         <Form.Check // prettier-ignore
                             type="switch"
-                            id="custom-switch"
+                            id="personalization-switch"
                             label="Personalization"
                             checked={isPersonalizationCookie}
                             onChange={(e) => {
@@ -159,7 +200,7 @@ export default function Home() {
                         />
                         <Form.Check // prettier-ignore
                             type="switch"
-                            id="custom-switch"
+                            id="analytics-switch"
                             label="Analytics"
                             checked={isAnalysysCookie}
                             onChange={(e) => {
@@ -172,7 +213,7 @@ export default function Home() {
                     <Button variant="secondary" onClick={() => handleClose(false)}>
                         Reject
                     </Button>
-                    <Button variant="primary" onClick={() => handleClose(true)} disabled={(!isMarketingCookie || !isPersonalizationCookie || !isAnalysysCookie) ? true : false}>
+                    <Button variant="primary" onClick={() => handleClose(true)} disabled={(!isMarketingCookie && !isPersonalizationCookie && !isAnalysysCookie) ? true : false}>
                         Accept
                     </Button>
                 </Modal.Footer>
@@ -252,27 +293,8 @@ export default function Home() {
                     <Row className="justify-content-center">
                         <Col xxl="8" xl="9" lg="9" md="9" xs="12">
                             <div className="infoText mintTitle">
-                                <motion.div
-                                    initial={{ opacity: 0, y: "0%", visibility: 'hidden', scale: 0.5 }}
-                                    whileInView={{ opacity: 1, y: "0%", visibility: 'visible' }}
-                                    transition={{ fade: "fadeIn", duration: 1, delay: 0.1 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: false }}
-                                >
-                                    <h2> LFi Minting Machine  </h2>
-                                </motion.div>
-
-                                <motion.div
-                                    transition={{ ease: "easeIn", duration: 0.5, delay: 0.2 }}
-                                    initial={{ opacity: 0, scale: 0.5 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                >
-                                    <h3>Different types of cutting-edge hardware to mint tokens, authenticate data, and collect rewards in LFi. </h3>
-                                </motion.div>
-
-
-
-
+                                <h2> LFi Minting Machine  </h2>
+                                <h3>Different types of cutting-edge hardware to mint tokens, authenticate data, and collect rewards in LFi. </h3>
                             </div>
                         </Col>
                         <Col md="12" className="text-center relative">

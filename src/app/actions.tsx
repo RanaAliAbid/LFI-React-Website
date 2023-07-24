@@ -18,9 +18,40 @@ async function setLegalDesclaimerCookie(value: string) {
   return cookies().set('legalDesclaimerCookie', value);
 }
 
+async function getMarketingCookie() {
+  return cookies().get('marketingCookie');
+}
+
+async function setMarketingCookie(value: string) {
+  return cookies().set('marketingCookie', value);
+}
+
+async function getPersonalizationCookie() {
+  return cookies().get('personalizationCookie');
+}
+
+async function setPersonalizationCookie(value: string) {
+  return cookies().set('personalizationCookie', value);
+}
+
+async function getAnalyticsCookie() {
+  return cookies().get('analyticsCookie');
+}
+
+async function setAnalyticsCookie(value: string) {
+  return cookies().set('analyticsCookie', value);
+}
+
 export {
     getTermsAndCondition,
     setTermsAndCondition,
     getLegalDesclaimerCookie,
     setLegalDesclaimerCookie,
+    getMarketingCookie,
+    setMarketingCookie,
+    getPersonalizationCookie,
+    setPersonalizationCookie,
+    getAnalyticsCookie,
+    setAnalyticsCookie,
+
 }

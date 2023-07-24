@@ -202,6 +202,19 @@ a:hover {
     padding: 10px 15px;
 }
 
+.leagalModal.cookieModal .modal-content .modal-body {
+    padding: 0;
+}
+
+.leagalModal.cookieModal .modal-content .modal-body .bodywrap {
+    padding: 10px 15px;
+}
+
+.leagalModal.cookieModal .modalFoot {
+    border-top: 1px solid #363636;
+    padding: 10px 15px;
+}
+
 
 
 .cookieModal .form-check-input:checked {
@@ -250,7 +263,7 @@ a:hover {
     cursor: pointer;
 }
 
-.cookieModal .modal-footer .btn {
+.cookieModal .btn {
     padding: 5px 15px;
     font-size: 12px;
     margin: 0 0 0 10px;
@@ -1963,6 +1976,18 @@ p.note {
     display: none;
 }
 
+.CookieChangeIcon {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+body.modal-open .CookieChangeIcon {
+    right: 18px;
+}
 
 
 @media (max-height: 450px) {
@@ -2789,6 +2814,20 @@ p.note {
 
     .cookieModal .formSec .form-switch {
         display: block;
+    }
+
+    .leagalModal.cookieModal .modal-dialog {
+        width: 96%;
+        max-width: 96%;
+    }
+
+    .leagalModal.cookieModal .modal-body  {
+        height: 410px;
+        overflow-y: scroll;
+    }
+
+    body.modal-open .CookieChangeIcon {
+        right: 15px;
     }
 
 }

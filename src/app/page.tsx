@@ -11,8 +11,11 @@ import LfiCoin from "../../public/img/lfi-token.svg";
 import CLfiCoin from "../../public/img/clfi-token.svg";
 import VLfiCoin from "../../public/img/vlfi-token.svg";
 
+import CookieIcon from "../../public/img/cookies.svg";
+
 import blockchain from "../../public/img/blockchainbanner.png";
-import { getLegalDesclaimerCookie, getTermsAndCondition, setLegalDesclaimerCookie, setTermsAndCondition } from "./actions";
+import { getAnalyticsCookie, getLegalDesclaimerCookie, getMarketingCookie, getPersonalizationCookie, getTermsAndCondition, setAnalyticsCookie, setLegalDesclaimerCookie, setMarketingCookie, setPersonalizationCookie, setTermsAndCondition } from "./actions";
+import Link from "next/link";
 
 const Box = ({ speed }: any) => {
     const { scrollYProgress } = useScroll();
@@ -102,6 +105,19 @@ export default function Home() {
         }
     }
 
+    const checkCookieValues = async () => {
+        const marketingCookie = await getMarketingCookie();
+        const personalizationCookie = await getPersonalizationCookie();
+        const analyticsCookie = await getAnalyticsCookie();
+
+        setIsMarketingCookie(marketingCookie?.value === 'true' ? true : false);
+
+        setIsPersonalizationCookie(personalizationCookie?.value === 'true' ? true : false);
+
+        setIsAnalysysCookie(analyticsCookie?.value === 'true' ? true : false);
+
+    }
+
     useEffect(() => {
         // console.log( isInMobileView, isInHardwareView, isInldaoView)
         setMobileSecClass(false);
@@ -122,6 +138,7 @@ export default function Home() {
             setHardwareSecClass(false);
         }
 
+        checkCookieValues();
         checkLegalDesclaimerCookie();
     }, [
         isInMobileView,
@@ -140,28 +157,30 @@ export default function Home() {
                     <h4> LEGAL DISCLAIMER </h4>
                 </Modal.Header>
                 <Modal.Body>
-                    <p>
-                        The usage of LFi&apos;s Services in no way constitutes an offer to buy or sell cryptocurrency nor are we offering any investment services or advice. You acknowledge and agree that dealing in cryptocurrency is highly volatile, and that buying, selling, trading and the holding of cryptocurrencies can involve a high risk. In considering whether to buy, sell, trade or hold cryptocurrencies, you should be aware that the price or value of cryptocurrencies can change rapidly, decrease, and potentially even fall to zero. If you are unable to bear the financial risk of loss, please do not use or access LFi&apos;s services. You agree that you are solely responsible for any transactions and the use of the LFi&apos;s Services.
-                    </p>
-                    <p>
-                        LFi disclaims all liability for any losses or damages whatsoever, including but not limited to any direct, indirect, special, incidental, consequential, or punitive damages, arising out of or in connection with your use or reliance of the services offered by us. 
-                    </p>
-                    <p>
-                        LFi makes no representations, warranties or guarantees of any kind, express or implied, about the completeness, accuracy, reliability, suitability, availability of any outcomes with respect to the usage of our services for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
-                    </p> 
-                    <p>
-                        By clicking 	&acute;Proceed&apos;, you will be confirming that you have read and agreed to the terms above.
-                    </p>
+                    <div className="bodywrap">
+                        <p>
+                            The usage of LFi&apos;s Services in no way constitutes an offer to buy or sell cryptocurrency nor are we offering any investment services or advice. You acknowledge and agree that dealing in cryptocurrency is highly volatile, and that buying, selling, trading and the holding of cryptocurrencies can involve a high risk. In considering whether to buy, sell, trade or hold cryptocurrencies, you should be aware that the price or value of cryptocurrencies can change rapidly, decrease, and potentially even fall to zero. If you are unable to bear the financial risk of loss, please do not use or access LFi&apos;s services. You agree that you are solely responsible for any transactions and the use of the LFi&apos;s Services.
+                        </p>
+                        <p>
+                            LFi disclaims all liability for any losses or damages whatsoever, including but not limited to any direct, indirect, special, incidental, consequential, or punitive damages, arising out of or in connection with your use or reliance of the services offered by us.
+                        </p>
+                        <p>
+                            LFi makes no representations, warranties or guarantees of any kind, express or implied, about the completeness, accuracy, reliability, suitability, availability of any outcomes with respect to the usage of our services for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+                        </p>
+                        <p>
+                            By clicking 	&acute;Proceed&apos;, you will be confirming that you have read and agreed to the terms above.
+                        </p>
+                    </div>
+                    <div className="modalFoot text-right">
 
+                        <Button variant="primary" onClick={() => {
+                            handleLegalDesclaimerClose(true);
+                        }}>
+                            Proceed
+                        </Button>
+                    </div>
                 </Modal.Body>
-                <Modal.Footer>
-                   
-                    <Button variant="primary" onClick={() => {
-                        handleLegalDesclaimerClose(true);
-                    }}>
-                        Proceed
-                    </Button>
-                </Modal.Footer>
+
             </Modal>
 
             <Modal className="cookieModal" show={cookieShow} onHide={() => {
@@ -187,6 +206,7 @@ export default function Home() {
                             checked={isMarketingCookie}
                             onChange={(e) => {
                                 setIsMarketingCookie(e.target.checked);
+                                setMarketingCookie(`${e.target.checked}`);
                             }}
                         />
                         <Form.Check // prettier-ignore
@@ -195,7 +215,8 @@ export default function Home() {
                             label="Personalization"
                             checked={isPersonalizationCookie}
                             onChange={(e) => {
-                                setIsPersonalizationCookie(e.target.checked)
+                                setIsPersonalizationCookie(e.target.checked);
+                                setPersonalizationCookie(`${e.target.checked}`);
                             }}
                         />
                         <Form.Check // prettier-ignore
@@ -204,7 +225,8 @@ export default function Home() {
                             label="Analytics"
                             checked={isAnalysysCookie}
                             onChange={(e) => {
-                                setIsAnalysysCookie(e.target.checked)
+                                setIsAnalysysCookie(e.target.checked);
+                                setAnalyticsCookie(`${e.target.checked}`);
                             }}
                         />
                     </div>
@@ -218,6 +240,11 @@ export default function Home() {
                     </Button>
                 </Modal.Footer>
             </Modal>
+
+            <a href="" className="CookieChangeIcon" onClick={() => setCookieShow(true)}>
+                <CookieIcon />
+            </a>
+
 
             <Header />
 

@@ -15,7 +15,7 @@ import CLfiCoin from "../../public/img/clfi-token.svg";
 import VLfiCoin from "../../public/img/vlfi-token.svg";
 
 import blockchain from "../../public/img/blockchainbanner.png";
-import { getTermsAndCondition } from "./action";
+import { getTermsAndCondition, setTermsAndCondition } from "./actions";
 
 const Box = ({ speed }: any) => {
     const { scrollYProgress } = useScroll();
@@ -78,9 +78,19 @@ export default function Home() {
         offset: ["end end", "start start"]
     }).scrollYProgress;
     
-    const handleClose = () => {
-        setCookieShow(false)
+    const handleClose = (isAccept: boolean) => {
+        setCookieShow(false);
+        if(isAccept === true) {
+            setTermsAndCondition('true');
+        }
     };
+
+    const checkTermsAndCondition = async () => {
+        const isCheckTermsAndCondition = await getTermsAndCondition();
+        if (isCheckTermsAndCondition?.value !== 'true') {
+            setCookieShow(true);
+        }
+    }
     
     useEffect(() => {
         // console.log( isInMobileView, isInHardwareView, isInldaoView)
@@ -102,8 +112,7 @@ export default function Home() {
             setHardwareSecClass(false);
         }
 
-        setCookieShow(true);
-        console.log(getTermsAndCondition());
+        checkTermsAndCondition();
     }, [
         isInMobileView,
         isInHardwareView,
@@ -160,10 +169,10 @@ export default function Home() {
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="secondary" onClick={() => handleClose(false)}>
                         Reject
                     </Button>
-                    <Button variant="primary" onClick={handleClose} disabled={(!isMarketingCookie || !isPersonalizationCookie || !isAnalysysCookie) ? true : false}>
+                    <Button variant="primary" onClick={() => handleClose(true)} disabled={(!isMarketingCookie || !isPersonalizationCookie || !isAnalysysCookie) ? true : false}>
                         Accept
                     </Button>
                 </Modal.Footer>

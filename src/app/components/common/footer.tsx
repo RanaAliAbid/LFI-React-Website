@@ -89,15 +89,15 @@ export default function Footer() {
                                             </li>
 
                                             <li>
-                                                <a href="https://www.facebook.com/lfiecosystem/" target= "_blank"><i className="bi bi-facebook"></i></a>
+                                                <a href="https://www.facebook.com/lfiecosystem" target= "_blank"><i className="bi bi-facebook"></i></a>
                                             </li>
 
                                             <li>
-                                                <a href="https://www.instagram.com/lfioffic/" target= "_blank"><i className="bi bi-instagram"></i></a>
+                                                <a href="https://www.instagram.com/lfioffic" target= "_blank"><i className="bi bi-instagram"></i></a>
                                             </li>
 
                                             <li>
-                                                <a href="https://www.linkedin.com/company/lfiofficial/" target= "_blank"><i className="bi bi-linkedin"></i></a>
+                                                <a href="https://www.linkedin.com/company/lfiofficial" target= "_blank"><i className="bi bi-linkedin"></i></a>
                                             </li>
 
                                             <li>

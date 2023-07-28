@@ -93,7 +93,7 @@ export default function Tokens() {
                                     <div className="hero">
                                         <h1> vLFi Token </h1>
                                         <h3> vLFi holders will receive rewards, obtain discounts, get wider allocations in launchpad, and more.  </h3>
-                                        <Button as="a" variant="text" target= "_blank" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/vlfi-token">
+                                        <Button as="a" variant="primary" target= "_blank" href="https://white-paper.lfi.io/layer-1-blockchain-and-token/vlfi-token">
                                             More about vLFi
                                         </Button>
                                     </div>

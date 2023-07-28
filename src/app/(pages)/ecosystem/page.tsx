@@ -142,7 +142,7 @@ export default function Ecosystem() {
                             <figure className="visionProgressBar">
                                 <svg className="d-none d-sm-block" width="100%" height="100%" viewBox="0 0 1101 596" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
-                                        <linearGradient id="gradientttt" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <linearGradient id="vpgradientdesk" x1="0%" y1="0%" x2="0%" y2="100%">
                                             <stop offset="0%" stop-color="#070A0B" />
                                             {/* <stop offset="15%" stop-color="#464646" />  */}
                                             <stop offset="20%" stop-color="#464646" />
@@ -150,13 +150,13 @@ export default function Ecosystem() {
                                         </linearGradient>
                                     </defs>
                                     <path className="" d="M1 0.5V266.5C1 283.069 14.4315 296.5 31 296.5H1070C1086.57 296.5 1100 309.931 1100 326.5V565C1100 581.569 1086.57 595 1070 595H931.289H762.577" />
-                                    <motion.path stroke="url(#gradientttt)" className="aboutVMPath" d="M1 0.5V266.5C1 283.069 14.4315 296.5 31 296.5H1070C1086.57 296.5 1100 309.931 1100 326.5V565C1100 581.569 1086.57 595 1070 595H931.289H762.577" style={{ pathLength: scrollvisionProgressBar }} />
+                                    <motion.path stroke="url(#vpgradientdesk)" className="aboutVMPath" d="M1 0.5V266.5C1 283.069 14.4315 296.5 31 296.5H1070C1086.57 296.5 1100 309.931 1100 326.5V565C1100 581.569 1086.57 595 1070 595H931.289H762.577" style={{ pathLength: scrollvisionProgressBar }} />
 
                                 </svg>
 
                                 <svg className="d-block d-sm-none" width="100%" height="100%" viewBox="0 0 400 579" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
-                                        <linearGradient id="#gradientmob" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <linearGradient id="gradientmob" x1="0%" y1="0%" x2="0%" y2="100%">
                                             <stop offset="0%" stop-color="#070A0B" />
                                             {/* <stop offset="15%" stop-color="#464646" />  */}
                                             <stop offset="20%" stop-color="#464646" />
@@ -190,7 +190,7 @@ export default function Ecosystem() {
                             <Row className="rowText missionMob">
                                 <Col md="8" className="miPeraText">
                                     <div className="textBox text-right">
-                                        <h4>To empower individuals to take control of their wealth by providing accessible financial opportunities through a decentralized, transparent, and secure platform driven by a DAO community.</h4>
+                                        <h4>To empower individuals to take control of their wealth by providing accessible financial opportunities through a platform driven by a DAO community.</h4>
                                     </div>
                                 </Col>
                                 <Col md="4" className="miTitleText">

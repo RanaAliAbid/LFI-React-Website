@@ -110,7 +110,7 @@ export default function Lfione() {
             <section className="mobileNameHead">
                 <Container>
                     <Navbar className={`nameBar ${dynamicClass}`} >
-                        {/* <Navbar.Brand href="#">LFi One </Navbar.Brand> */}
+                        <Navbar.Brand href="#">LFi One </Navbar.Brand>
                         <Nav className="ms-auto">
                             <Nav.Link href="/lfione" className="active">Overview</Nav.Link>
                             <Nav.Link href="/techspecs">Tech Specs</Nav.Link>
@@ -485,12 +485,12 @@ export default function Lfione() {
                                     <li>
                                         <Ram />
                                         <h4> Memory </h4>
-                                        <h6> 12GB RAM / 256GB ROM </h6>
+                                        <h6> 12GB RAM / 256GB  </h6>
                                     </li>
                                     <li>
                                         <Operatingsystem />
-                                        <h4> Software  </h4>
-                                        <h6> LFi Software </h6>
+                                        <h4> OS / Android  </h4>
+                                        <h6> LFi LayerX </h6>
                                     </li>
                                     <li>
                                         <Size />

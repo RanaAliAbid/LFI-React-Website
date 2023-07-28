@@ -141,9 +141,9 @@ a:hover {
 .btn-text:hover,
 .btn-text:focus,
 .btn-text:active {
-    background-color: var(--black);
-    color: var(--white);
-    border: 1px solid var(--black);
+    background-color: #1b1b1b;
+    color: #ffffff;
+    border: 1px solid #141414;
 }
 
 .manifestoBtn {
@@ -393,6 +393,10 @@ section.herobanner {
     margin: 35px 0 45px;
 }
 
+.hero .btn {
+    margin-right: 10px;
+}
+
 .mobInfoText {
     padding: 0px 100px 0px 50px;
 }
@@ -417,9 +421,9 @@ section.herobanner {
     margin: 0 0 40px 0;
 }
 
-.infoText .d-sm-block {
+/* .infoText .d-sm-block {
     display: inline-block !important;
-}
+} */
 
 .mintTitle {
     text-align: center;
@@ -591,7 +595,7 @@ section.herobanner {
 }
 
 .aboutVMPath {
-    stroke: url(#gradientttt);
+    stroke: url(#vpgradientdesk);
     stroke-width: 2;
 }
 
@@ -1262,9 +1266,9 @@ section.herobanner {
 
 .mintInfoSec {
     background-image: url('../../../../public/img/mintToken.png');
-    background-position: center left;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 
@@ -1934,11 +1938,6 @@ p.note {
     margin-top: 25px;
 }
 
-.aboutVisionsec.visionSec .textBox {
-    padding: 15px 10px;
-
-} 
-
 .lfidappSec {
     padding: 80px 0;
 }
@@ -2008,6 +2007,25 @@ body.modal-open .CookieChangeIcon {
 
 }
 
+@media (min-width: 320px) and (max-width: 374px) {
+    .visionSec .titleBox h2 {
+        font-size: 26px;
+        line-height: 24px;
+        margin: 0;
+    }
+
+    .visionSec .titleBox h3 {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px 0 2px 0;
+    }
+
+    .visionSec .textBox h4 {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
 @media (max-width: 424px) {
 
     .visionSec .titleBox,
@@ -2015,6 +2033,12 @@ body.modal-open .CookieChangeIcon {
         padding: 7px 5px;
     }
 
+
+    .bussinessTabs.nav-tabs .nav-link {
+        font-size: 14px;
+        margin: 6px;
+        padding: 11px 18px;
+    }
    
     
     .navbar-nav {
@@ -2030,28 +2054,204 @@ body.modal-open .CookieChangeIcon {
     .stepSec .rowText .textBox {
         padding: 7px 11px;
     }
+
+    .visionSec .rowText {
+        padding: 18px 15px;
+    }
 } 
 
-@media (min-width: 321px) and (max-width: 374px) {
+@media (min-width: 321px) and (max-width: 340px) {
     .stepSec .rowText .textBox {
-        padding: 20px 15px;
+        padding: 11px 10px;
     }
-} 
-@media (min-width: 375px) and (max-width: 425px) {
+
+    .visionSec .rowText {
+        padding: 20px 15px;
+    } 
+}
+
+@media (min-width: 341px) and (max-width: 360px) {
     .stepSec .rowText .textBox {
-        padding: 25px 26px;
+        padding: 16px 10px;
+    }
+
+    .visionSec .rowText {
+        padding: 22px 15px;
+    } 
+}
+
+
+@media (min-width: 361px) and (max-width: 374px) {
+    .stepSec .rowText .textBox {
+        padding: 18px 20px;
+    }
+
+    .visionSec .rowText {
+        padding: 28px 20px;
+    } 
+}
+
+@media (min-width: 375px) and (max-width: 400px) {
+    .stepSec .rowText .textBox {
+        padding: 25px 25px;
+    }
+
+    .visionSec .rowText {
+        padding: 26px 20px;
+    } 
+
+    .visionSec .titleBox h2 {
+        font-size: 28px;
+        line-height: 28px;
+        margin: 0;
+    }
+
+    .visionSec .titleBox h3 {
+        font-size: 15px;
+        line-height: 22px;
+        margin: 0px 0 5px 0;
+    }
+
+    .visionSec .textBox h4 {
+        font-size: 14px;
+        line-height: 24px;
     }
 }
+
+@media (min-width: 401px) and (max-width: 424px) {
+    .stepSec .rowText .textBox {
+        padding: 25px 25px;
+    }
+
+    .visionSec .rowText {
+        padding: 26px 20px;
+    } 
+
+    .visionSec .titleBox h2 {
+        font-size: 30px;
+        line-height: 32px;
+        margin: 0;
+    }
+
+    .visionSec .titleBox h3 {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 0px 0 5px 0;
+    }
+
+    .visionSec .textBox h4 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 440px) {
+    .stepSec .rowText .textBox {
+        padding: 25px 25px;
+    }
+
+    .visionSec .rowText {
+        padding: 28px 20px;
+    } 
+
+    .visionSec .titleBox h2 {
+        font-size: 30px;
+        line-height: 32px;
+        margin: 0;
+    }
+
+    .visionSec .titleBox h3 {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 0px 0 5px 0;
+    }
+
+    .visionSec .textBox h4 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 441px) and (max-width: 460px) {
+    .stepSec .rowText .textBox {
+        padding: 25px 25px;
+    }
+
+    .visionSec .rowText {
+        padding: 25px 20px;
+    } 
+
+    .visionSec .titleBox h2 {
+        font-size: 30px;
+        line-height: 32px;
+        margin: 0;
+    }
+
+    .visionSec .titleBox h3 {
+        font-size: 16px;
+        line-height: 30px;
+        margin: 0px 0 5px 0;
+    }
+
+    .visionSec .textBox h4 {
+        font-size: 15px;
+        line-height: 26px;
+    }
+}
+
+@media (min-width: 461px) and (max-width: 490px) {
+    .stepSec .rowText .textBox {
+        padding: 25px 25px;
+    }
+
+    .visionSec .rowText.missionMob  {
+        padding: 45px 20px 25px 20px;
+
+    }
+
+    .visionSec .rowText {
+        padding: 25px 20px;
+    } 
+
+    .visionSec .titleBox h2 {
+        font-size: 30px;
+        line-height: 32px;
+        margin: 0;
+    }
+
+    .visionSec .titleBox h3 {
+        font-size: 16px;
+        line-height: 30px;
+        margin: 0px 0 5px 0;
+    }
+
+    .visionSec .textBox h4 {
+        font-size: 17px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 491px) and (max-width: 576px) {
+    .visionSec .rowText {
+        padding: 42px 50px;
+
+    } 
+}
+
+
+
 
 @media (min-width: 425px) and (max-width: 767px) {
 
     .visionSec .titleBox,
     .visionSec .textBox {
-        padding: 15px 20px;
+        padding: 10px 15px;
     }
-
-    .stepSec .rowText .textBox {
-        padding: 45px 30px;
+    
+    .bussinessTabs.nav-tabs .nav-link {
+        font-size: 16px;
+        margin: 8px;
+        padding: 12px 22px;
     }
 }
 
@@ -2231,7 +2431,7 @@ body.modal-open .CookieChangeIcon {
     .visionProgressBar {
         width: 90%;
         margin: 0 auto;
-        top: 2%;
+        top: -2%;
     }
 
     .visionProgressBar .desktopHide .btn {
@@ -2378,7 +2578,7 @@ body.modal-open .CookieChangeIcon {
 
 
     .transSec {
-        padding: 50px 50px 0px 25px;
+        padding: 50px 50px 0px 40px;
     }
 
     .ecosystemSec {
@@ -2460,11 +2660,7 @@ body.modal-open .CookieChangeIcon {
     }
 
 
-    .bussinessTabs.nav-tabs .nav-link {
-        font-size: 16px;
-        margin: 0 14px 0 0;
-    }
-
+   
     .bussinessTabs {
         margin-bottom: 40px;
     }

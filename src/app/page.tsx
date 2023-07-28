@@ -295,9 +295,11 @@ export default function Home() {
                         <Col md="6" className="orederTwo">
                             <div className="img-container">
                                 <Box speed={-10} />
-                                <Button as="a" variant="primary" className="d-block d-sm-none" href="/lfione">
-                                    Discover LFi One
-                                </Button>
+                                <div className="d-block d-sm-none">
+                                    <Button as="a" variant="primary" href="/lfione">
+                                        Discover LFi One
+                                    </Button>
+                                </div>
                             </div>
                         </Col>
                         <Col md="6" className="orederOne">
@@ -305,9 +307,11 @@ export default function Home() {
                                 <p> <span> Ecosystem </span>  Smartphone </p>
                                 <h2> LFi One </h2>
                                 <h3> A revolutionary smartphone that allows users to mint tokens and enter the crypto world seamlessly. </h3>
-                                <Button as="a" variant="primary" className="d-none d-sm-block" href="/lfione">
-                                    Discover LFi One
-                                </Button>
+                                <div className="d-none d-sm-block">
+                                    <Button as="a" variant="primary" href="/lfione">
+                                        Discover LFi One
+                                    </Button>
+                                </div>
                             </div>
                         </Col>
                     </Row>

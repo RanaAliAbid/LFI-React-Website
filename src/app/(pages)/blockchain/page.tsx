@@ -87,9 +87,9 @@ export default function Blockchain() {
                                         <div className="wrapTextBox">
                                             <h3> LFi Blockchain is our answer to common limitations: </h3>
                                             <ul className="list">
-                                                <li> The restrictiveness of a centralized blockchain with just 21 nodes </li>
-                                                <li> The bottleneck of 300 transactions per second </li>
-                                                <li> The absence of a DAO system to drive blockchain development </li>
+                                                <li> The restrictiveness of a centralized blockchain with just 21 nodes. </li>
+                                                <li> The bottleneck of 300 transactions per second. </li>
+                                                <li> The absence of a DAO system to drive blockchain development. </li>
                                             </ul>
                                         </div>
                                     </Col>
@@ -183,7 +183,7 @@ export default function Blockchain() {
                                 <article>
                                     <Image src={walletIcon.src} className="" />
                                     <h3> Software Wallet </h3>
-                                    <h5> Free, secure, and decentralized app that puts over 1,000 cryptocurrencies at your fingertips </h5>
+                                    <h5> Free, secure, and decentralized app that puts over 1,000 cryptocurrencies at your fingertips. </h5>
                                     <Button as="a" variant="text" href="software-wallet">
                                         Learn More
                                     </Button>

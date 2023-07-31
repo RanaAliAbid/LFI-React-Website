@@ -34,6 +34,9 @@ import pro03 from "../../../../public/img/pro3.png";
 import pro04 from "../../../../public/img/pro4.png";
 import pro05 from "../../../../public/img/pro5.png";
 
+import mintTokenMobile from "../../../../public/img/mintmobile.png";
+
+
 import Dimensions from "../../../../public/img/specsIcon/dimensions.svg";
 import Battery from "../../../../public/img/specsIcon/battery.svg";
 import Camera4kHD from "../../../../public/img/specsIcon/camera4kHD.svg";
@@ -144,8 +147,8 @@ export default function Lfione() {
                     <Row className="justify-content-center align-items-center">
 
                         <Col md="7" className="">
-                            <div className="img-container">
-                                {/* <Image src={mintToken.src} />  */}
+                            <div className="d-block d-sm-none img-container">
+                                <Image src={mintTokenMobile.src} /> 
                             </div>
                         </Col>
 

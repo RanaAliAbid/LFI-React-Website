@@ -148,6 +148,8 @@ a:hover {
 
 .manifestoBtn {
     margin-top: -30px;
+    z-index: 100;
+    position: relative;
 }
 
 .leagalModal.cookieModal .modal-dialog {
@@ -2005,6 +2007,8 @@ body.modal-open .CookieChangeIcon {
         height: auto;
     }
 
+    
+
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -2046,6 +2050,10 @@ body.modal-open .CookieChangeIcon {
         margin-left: 0 !important;
         display: flex !important;
         justify-content: space-between !important;
+    }
+
+    .mobileNameHead a.navbar-brand {
+        display: none;
     }
 
 }
@@ -2569,7 +2577,7 @@ body.modal-open .CookieChangeIcon {
 
     .transSec h2 {
         font-size: 61px;
-        margin: 0 0 -15px -30px;
+        margin: 0 0 -12px 0px;
     }
 
     .transSec h6 {
@@ -2578,7 +2586,7 @@ body.modal-open .CookieChangeIcon {
 
 
     .transSec {
-        padding: 50px 50px 0px 40px;
+        padding: 50px 20px 0px 20px;
     }
 
     .ecosystemSec {
@@ -2685,7 +2693,7 @@ body.modal-open .CookieChangeIcon {
     }
 
     .mintInfo {
-        padding: 300px 10px 10px 10px;
+        padding: 10px;
     }
 
     .mintInfo h2 {
@@ -2696,7 +2704,7 @@ body.modal-open .CookieChangeIcon {
     }
 
     .mintInfoSec {
-        background-position: center top;
+        background-image: none;        
     }
 
     .mintListItem li {
@@ -2967,11 +2975,10 @@ body.modal-open .CookieChangeIcon {
 
 
     .mobileNameHead .navbar-nav .nav-link {
-        /* font-size: 13px; */
-        display: inline-block;
-        /* padding: 10px 8px; */
+        
+        display: inline-block;        
         font-size: 14px;
-        padding: 4px 16px;
+        padding: 4px 10px;
         font-weight: 500;
     }
 
@@ -3035,7 +3042,7 @@ body.modal-open .CookieChangeIcon {
 
     }
 
-    .financialSec .align-items-center.row  {
+    .transparencySec .align-items-center.row  {
         flex-direction: column-reverse;   
     }
 

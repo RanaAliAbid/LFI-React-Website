@@ -109,7 +109,7 @@ export default function Ecosystem() {
                 </Container>
             </section>
 
-            <section className="aboutBeliveSec">
+            <section className="aboutBeliveSec transparencySec">
                 <Container>
                     <Row className="align-items-center">
                         <Col md="6">

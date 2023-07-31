@@ -18,13 +18,20 @@ const nextConfig = {
 				source: '/dapps',
 				destination: '/',
 				permanent: true,
-			},			
+			},
+			
+			{
+				source: '/dao',
+				destination: '/ldao',
+				permanent: true,
+			},
 
-			// {
-			// 	source: '/roadmap',
-			// 	destination: '/https://white-paper.lfi.io/introduction/roadmap',
-			// 	permanent: true,
-			// },
+			{
+				source: '/roadmap',
+				destination: 'https://white-paper.lfi.io/introduction/roadmap',
+				basePath: false,
+        		permanent: false,
+			},
 
 			{
 				source: '/phone/lfi-one',

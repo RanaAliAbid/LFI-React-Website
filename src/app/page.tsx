@@ -13,6 +13,17 @@ import VLfiCoin from "../../public/img/vlfi-token.svg";
 
 import CookieIcon from "../../public/img/cookies.svg";
 
+import logo1 from "../../public/img/logo-1.png";
+import logo2 from "../../public/img/logo-2.png";
+import logo3 from "../../public/img/logo-3.png";
+import logo4 from "../../public/img/logo-4.png";
+import logo5 from "../../public/img/logo-5.png";
+import logo6 from "../../public/img/logo-6.png";
+import logo7 from "../../public/img/logo-7.png";
+import logo8 from "../../public/img/logo-8.png";
+
+
+
 import blockchain from "../../public/img/blockchainbanner.png";
 import { getAnalyticsCookie, getLegalDesclaimerCookie, getMarketingCookie, getPersonalizationCookie, getTermsAndCondition, setAnalyticsCookie, setLegalDesclaimerCookie, setMarketingCookie, setPersonalizationCookie, setTermsAndCondition } from "./actions";
 import Link from "next/link";
@@ -248,7 +259,7 @@ export default function Home() {
 
             <Header />
 
-            <section className="wrapSection herosec herobanner fullView">
+            <section  id="top" className="wrapSection herosec herobanner fullView">
                 <Container>
                     <Row className="justify-content-center">
                         <Col xxl="8" xl="9" lg="9" md="10" xs="12">
@@ -281,6 +292,48 @@ export default function Home() {
                                     </Button>
                                 </motion.div>
                             </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
+            <section className="logosec">
+                <Container>
+                    <Row className="justify-content-center">
+                        <Col xxl="8" md="9" xs="12">
+                            <div className="infoText text-center mb-5">
+                                <h2> AS SEEN ON  </h2>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row className="">
+                        <Col md="12" className="">
+                            <ul className="logoList">
+                                <li>
+                                    <img src={logo1.src} alt="coinwire" />
+                                </li>
+                                <li>
+                                    <img src={logo2.src} alt="benzinga" />
+                                </li>
+                                <li>
+                                    <img src={logo3.src} alt="coinpedia" />
+                                </li>
+                                <li>
+                                    <img src={logo4.src} alt="marketwatch" />
+                                </li>
+                                <li>
+                                    <img src={logo5.src} alt="cryptodaily" />
+                                </li>
+                                <li>
+                                    <img src={logo6.src} alt="international business" />
+                                </li>
+                                <li>
+                                    <img src={logo7.src} alt="crypto news" />
+                                </li>
+                                <li>
+                                    <img src={logo8.src} alt="utoday" />
+                                </li>
+                            </ul>
                         </Col>
                     </Row>
                 </Container>
@@ -359,17 +412,22 @@ export default function Home() {
                             <div className="hero">
                                 <h1> LFi Blockchain </h1>
                                 <h3> An independent blockchain boasting Smart Contract capabilities, dApps and compatibility with the Ethereum Virtual Machine (EVM).</h3>
-                                <Button as="a" variant="primary" href="/blockchain">
-                                    Learn More
-                                </Button>
-                                {/* <Button as="a" variant="text" href="#bridgeText">
-                                    Learn More
-                                </Button> */}
+
+                                <div className="d-none d-sm-block">
+                                    <Button as="a" variant="primary" href="/blockchain">
+                                        Learn More
+                                    </Button>
+                                </div>
                             </div>
                         </Col>
                         <Col md="6" sm="6" xs="12">
                             <div className="text-center heroImg">
                                 <Image src={blockchain.src} className="rot" />
+                            </div>
+                            <div className="d-block d-sm-none text-center mt-4">
+                                <Button as="a" variant="primary" href="/blockchain">
+                                    Learn More
+                                </Button>
                             </div>
                         </Col>
                     </Row>

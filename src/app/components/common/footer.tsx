@@ -1,11 +1,15 @@
 'use client'
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Script from 'next/script'
 
 import { motion, useScroll, useSpring, useTransform, useInView } from "framer-motion";
 import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
 import WhiteLogo from "../../../../public/img/white-logo.svg";
+
+import ArrowUp from "../../../../public/img/up-arrow2.svg";
+
+
 
 export default function Footer() {
 
@@ -16,6 +20,27 @@ export default function Footer() {
         damping: 20,
         restDelta: 0.001
     });
+
+    const [dynamicClass, setDynamicClass] = useState('');
+    const changevalueonScroll=()=>{
+        const scrollvalue=document.documentElement.scrollTop;        
+        
+        if(scrollvalue > 70){
+            setDynamicClass('show');
+        }
+        else {
+            setDynamicClass('');
+        }
+    }
+
+    useEffect(() => {       
+        window.addEventListener('scroll', changevalueonScroll);
+        return ()=>{
+            window.removeEventListener('scroll', changevalueonScroll);
+        }
+        
+    },[]);
+
 
     return (
         <>
@@ -147,7 +172,10 @@ export default function Footer() {
                     </Row>
                 </Container>
             </div>
-
+            
+            <div className={`goToTop ${dynamicClass}`} >
+                <a href="#top"> <ArrowUp/> </a>
+            </div>
 
             <div className="container">
                 <Script src="https://www.googletagmanager.com/gtag/js?id=G-7VX26TY0MQ" />

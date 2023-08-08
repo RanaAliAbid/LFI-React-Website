@@ -278,8 +278,12 @@ a:hover {
     text-align: right;
 }
 
-.navbar {
+.navbar.mainHeader {
     padding: 15px 0;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(7 10 11 / 80%);
+    z-index: 80;
 }
 
 
@@ -698,7 +702,7 @@ section.herobanner {
             rgba(7, 10, 11, 0) 50%,
             rgba(7, 10, 11, 0.8) 76.88%,
             #070A0B 96.67%);
-    height: 50%;
+    height: 30%;
     width: 50%;
     position: absolute;
     top: auto;
@@ -726,7 +730,7 @@ section.herobanner {
             rgba(7, 10, 11, 0.3) 70%,
             rgba(7, 10, 11, 0.5) 80%,
             #070A0B 100%);
-    height: 50%;
+    height: 40%;
     width: 100%;
     position: absolute;
     top: auto;
@@ -1108,10 +1112,7 @@ section.herobanner {
     line-height: 65px;
 }
 
-.mintbtn {
-    z-index: 100;
-    position: relative;
-}
+
 
 .manifestoSection {
     padding: 100px 0;
@@ -1181,9 +1182,9 @@ section.herobanner {
 
 .mobileNameHead {
     position: sticky;
-    top: 0px;
+    top: 76px;
     background-color: rgb(7 10 11 / 80%);
-    z-index: 101;
+    z-index: 90;
 }
 
 .mobileNameHead .navbar-brand:hover,
@@ -1995,6 +1996,44 @@ body.modal-open .CookieChangeIcon {
     right: 18px;
 }
 
+.logosec {
+    padding: 80px 0;
+}
+
+.logoList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.logoList li {
+    list-style-type: none;
+    width: 25%;
+}
+
+.goToTop {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    display: none;
+    z-index: 10;
+}
+
+.goToTop.show {
+    display: block;
+}
+
+.goToTop svg path {
+    fill: var(--primary);
+}
+
+
+
+
+
 
 @media (max-height: 450px) {
 
@@ -2028,6 +2067,8 @@ body.modal-open .CookieChangeIcon {
         font-size: 13px;
         line-height: 22px;
     }
+
+  
 }
 
 @media (max-width: 424px) {
@@ -2324,6 +2365,16 @@ body.modal-open .CookieChangeIcon {
         background-size: 80%;
     }
 
+    .logoList li img {
+        width: 100%;
+    }
+
+
+    .logoList li {        
+        width:50%;
+        margin: 12px 0;
+    }
+
 
 
     section.wrapSection {
@@ -2361,6 +2412,8 @@ body.modal-open .CookieChangeIcon {
     .btn {
         font-size: 14px;
         line-height: 20px;
+        z-index: 10;
+        position: relative;
     }
 
     .ldaoBox .ldaoInnerBox {
@@ -2521,9 +2574,7 @@ body.modal-open .CookieChangeIcon {
     }
 
     .img-container .btn {
-        margin-top: 50px;
-        z-index: 100;
-        position: relative;
+        margin-top: 50px;                
     }
 
 
@@ -3093,7 +3144,7 @@ body.modal-open .CookieChangeIcon {
 
     .btn {
         font-size: 14px;
-        padding: 8px 22px;
+        padding: 8px 22px;        
     }
 
     .hero h3 {

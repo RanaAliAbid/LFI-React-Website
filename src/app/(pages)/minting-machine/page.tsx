@@ -8,6 +8,8 @@ import { motion, MotionValue, useScroll, useSpring, useTransform, useInView } fr
 import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
 import Minter1000 from "../../../../public/img/minter1000.png";
+// import Videov from "../../../../public/connect.mp4"; 
+
 
 
 export default function MintingMachine() {
@@ -76,7 +78,10 @@ export default function MintingMachine() {
                 <Container>
                     <Row className="justify-content-center align-items-center">
                         <Col md="10" className="text-center">
-                            <div
+                            {/* <video src={Videov.src} className="w-100" autoPlay loop muted>
+                               
+                            </video> */}
+                            {/* <div
                                 style={{
                                     height: "50vh",
                                     width: "100%",
@@ -99,7 +104,7 @@ export default function MintingMachine() {
                                         <Image src={Minter1000.src} alt='LFi' />
                                     </div>
                                 </motion.div>
-                            </div>
+                            </div> */}
                         </Col>
                     </Row>
                     <Row className="justify-content-center align-items-center">
@@ -108,7 +113,7 @@ export default function MintingMachine() {
                                 <h2> XLFi 1000 Minter  </h2>
                                 <p> <span> Mint </span> your way to a brighter future </p>
                                 <h3> Designed to provide you with a simple and hassle-free way to create LFi tokens right from the comfort of your own home </h3>
-                                <Button as="a" variant="primary"  target= "_blank" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-xlfi1000">
+                                <Button as="a" variant="primary" target="_blank" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-xlfi1000">
                                     Explore More
                                 </Button>
                             </div>
@@ -152,7 +157,7 @@ export default function MintingMachine() {
                                 <h2> XLFi 5000 Minter </h2>
                                 <p> Discover new possibilities and unlock your financial future </p>
                                 <h3> Access a range of exciting features and functions that will take your financial game to the next level. </h3>
-                                <Button as="a" variant="primary" target= "_blank" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-plus-xlfi5000">
+                                <Button as="a" variant="primary" target="_blank" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-plus-xlfi5000">
                                     Explore More
                                 </Button>
                             </div>

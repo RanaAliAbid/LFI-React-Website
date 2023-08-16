@@ -55,7 +55,7 @@ export default function Header() {
                             <Nav.Link href="/tokens" as={Link} className={pathname === "/tokens" ? "active" : ""}>Tokens</Nav.Link>
                             <Nav.Link href="/ecosystem" as={Link} className={pathname === "/ecosystem" ? "active" : ""}>Ecosystem</Nav.Link>
 
-                            <Button as="a" target="_blank" href="https://lyotechlabs.com/lfi-build-your-independence/" variant="primary" className="">
+                            <Button as="a" target="_blank" href="https://lyotechlabs.com" variant="primary" className="">
                                 Store
                             </Button>
 

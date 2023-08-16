@@ -34,7 +34,7 @@ export default function Header() {
                 <Container>
                     <Navbar.Brand href="/">	<WhiteLogo /> </Navbar.Brand>
                     <div>
-                        <Button as="a" target="_blank" href="https://lyotechlabs.com/lfi-build-your-independence/" variant="primary" className="mobbtn">
+                        <Button as="a" target="_blank" href="https://lyotechlabs.com" variant="primary" className="mobbtn">
                             Store
                         </Button>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />

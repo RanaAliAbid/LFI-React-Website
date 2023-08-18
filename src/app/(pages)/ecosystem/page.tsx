@@ -146,7 +146,7 @@ export default function Ecosystem() {
                                             <stop offset="0%" stop-color="#070A0B" />
                                             {/* <stop offset="15%" stop-color="#464646" />  */}
                                             <stop offset="20%" stop-color="#464646" />
-                                            <stop offset="100%" stop-color="#04FCA3" />
+                                            <stop offset="100%" stop-color="#72F4FA" />
                                         </linearGradient>
                                     </defs>
                                     <path className="" d="M1 0.5V266.5C1 283.069 14.4315 296.5 31 296.5H1070C1086.57 296.5 1100 309.931 1100 326.5V565C1100 581.569 1086.57 595 1070 595H931.289H762.577" />
@@ -160,7 +160,7 @@ export default function Ecosystem() {
                                             <stop offset="0%" stop-color="#070A0B" />
                                             {/* <stop offset="15%" stop-color="#464646" />  */}
                                             <stop offset="20%" stop-color="#464646" />
-                                            <stop offset="100%" stop-color="#04FCA3" />
+                                            <stop offset="100%" stop-color="#72F4FA" />
                                         </linearGradient>
                                     </defs>
                                     <path className="" d="M1 0.5V231.173C1 247.742 14.4315 261.173 31 261.173H369C385.569 261.173 399 274.605 399 291.173V548C399 564.569 385.569 578 369 578H337.902H276.803" />

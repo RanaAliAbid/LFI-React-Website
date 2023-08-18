@@ -33,10 +33,10 @@ const Box = ({ speed }: any) => {
     const yValue = useTransform(
         scrollYProgress,
         [0, 10],
-        [0, 100 * speed]
+        [0, 1 * speed]
     );
     return (
-        <Image src="/img/green-lfi-one.png" alt='LFi' />
+        <Image src="/img/blue-lfi-one.png" alt='LFi' />
     )
 }
 
@@ -435,6 +435,8 @@ export default function Home() {
             </section>
 
 
+
+
             <section className="wrapSection ldaosec">
                 <div className="height100" ref={ldolRef}></div>
                 <Container>
@@ -446,14 +448,15 @@ export default function Home() {
                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                                             <stop offset="10%" stop-color="#1F1F1F" />
                                             {/* <stop offset="15%" stop-color="#464646" />  */}
-                                            <stop offset="20%" stop-color="#464646" />
-                                            <stop offset="100%" stop-color="#04FCA3" />
+                                            <stop offset="50%" stop-color="#5EF8FF" />
+                                            <stop offset="100%" stop-color="#72F4FA" />
                                         </linearGradient>
                                     </defs>
                                     <path className="" d="M466 1H31C14.4315 1 1 14.4315 1 31V511C1 527.569 14.4315 541 31 541H466" />
                                     <motion.path className="ldaoPath" stroke="url(#gradient)" d="M466 1H31C14.4315 1 1 14.4315 1 31V511C1 527.569 14.4315 541 31 541H466" style={{ pathLength: ldoborders }} />
 
                                 </svg>
+
 
                                 <svg width="50%" height="100%" className="ldoBorder right" viewBox="0 0 466 542" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path className="" d="M0 1H435C451.569 1 465 14.4315 465 31V511C465 527.569 451.569 541 435 541H0" />

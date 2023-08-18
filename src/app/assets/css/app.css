@@ -26,7 +26,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #02ce83;
+    background-color: var(--primary);
     border-radius: 1px;
 }
 
@@ -80,7 +80,9 @@ h6 {
 p {
     margin: 0;
 }
-
+.mt-10{
+    margin-top: 60px;
+}
 
 .nav-link:focus,
 .nav-link:hover,
@@ -1319,7 +1321,7 @@ section.herobanner {
     line-height: 50px;
     font-weight: 700;
     margin-bottom: 0;
-    background: linear-gradient(325deg, #00FFA4 0%, #00C1FF 100%);
+    background: linear-gradient(325deg, #86f2f9 0%, #00C1FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1353,7 +1355,7 @@ section.herobanner {
 .specsSection .box3 .textWrap h2 {
     font-size: 58px;
     line-height: 70px;
-    background: linear-gradient(360deg, #00FFA4 0%, #00C1FF 100%);
+    background: linear-gradient(360deg, #86f2f9 0%, #00C1FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1406,7 +1408,7 @@ section.herobanner {
 .specsSection .box5 h4 {
     font-size: 30px;
     line-height: 36px;
-    background: linear-gradient(360deg, #00FFA4 0%, #00C1FF 100%);
+    background: linear-gradient(360deg, #86f2f9 0%, #00C1FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1528,7 +1530,7 @@ section.herobanner {
     font-size: 40px;
     line-height: 50px;
     font-weight: 600;
-    background: linear-gradient(0deg, #00FFA4 0%, #00C1FF 100%);
+    background: linear-gradient(0deg, #86f2f9 0%, #00C1FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     list-style-type: none;
@@ -1562,7 +1564,7 @@ section.herobanner {
     font-size: 40px;
     line-height: 50px;
     font-weight: 600;
-    background: linear-gradient(0deg, #00FFA4 0%, #00C1FF 100%);
+    background: linear-gradient(0deg, #86f2f9 0%, #00C1FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     list-style-type: none;
@@ -1588,7 +1590,7 @@ section.herobanner {
     font-size: 140px;
     line-height: 160px;
     font-weight: 700;
-    background: linear-gradient(0deg, #00FFA4 0%, #00C1FF 100%);
+    background: linear-gradient(0deg, #86f2f9 0%, #00C1FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     list-style-type: none;
@@ -1626,7 +1628,7 @@ section.herobanner {
     font-size: 52px;
     line-height: 65px;
     font-weight: 600;
-    background: linear-gradient(0deg, #00FFA4 0%, #00C1FF 100%);
+    background: linear-gradient(0deg, #86f2f9 0%, #00b9f5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     list-style-type: none;
@@ -1692,7 +1694,7 @@ section.herobanner {
     font-size: 54px;
     line-height: 50px;
     font-weight: 600;
-    background: linear-gradient(0deg, #00FFA4 0%, #00C1FF 100%);
+    background: linear-gradient(0deg, #86f2f9 0%, #00C1FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     list-style-type: none;

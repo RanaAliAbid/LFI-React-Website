@@ -81,7 +81,7 @@ export default function MintingMachine() {
                             {/* <video src={Videov.src} className="w-100" autoPlay loop muted>
                                
                             </video> */}
-                            {/* <div
+                            <div
                                 style={{
                                     height: "50vh",
                                     width: "100%",
@@ -104,7 +104,7 @@ export default function MintingMachine() {
                                         <Image src={Minter1000.src} alt='LFi' />
                                     </div>
                                 </motion.div>
-                            </div> */}
+                            </div>
                         </Col>
                     </Row>
                     <Row className="justify-content-center align-items-center">

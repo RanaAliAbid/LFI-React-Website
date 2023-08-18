@@ -40,7 +40,7 @@ export default function Launchpad() {
                 <Container>
                     <Row className="justify-content-center">
                         <Col md="10" xs="12">
-                            <div className="hero text-center">
+                            <div className="hero text-center mt-10">
                                 <motion.div
                                     transition={{ ease: "easeIn", duration: 0.5 }}
                                     initial={{ opacity: 0, scale: 0.5 }}

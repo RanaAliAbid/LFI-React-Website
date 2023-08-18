@@ -1,10 +1,10 @@
 :root {
-    --primary: #04FCA3;
+    --primary: #72F4FA;
     --black: #070A0B;
     --white: #F1F4F8;
     --gray-600: #919aa7;
     --gray-800: #79828B;
-    --btn-primary-hover: #00d386;
+    --btn-primary-hover: #59dbe2;
 }
 
 html,
@@ -220,8 +220,8 @@ a:hover {
 
 
 .cookieModal .form-check-input:checked {
-    background-color: #00a76a;
-    border-color: #00a76a;
+    background-color: #167a7f;
+    border-color: #167a7f;
 }
 
 .cookieModal .form-switch .form-check-input:focus {
@@ -234,8 +234,8 @@ a:hover {
 }
 
 .cookieModal .form-check-input:focus {
-    border-color: #00643f;
-    box-shadow: 0px 0px 3px 2px rgba(13, 253, 141, 0.25);
+    border-color: #16a0a7;
+    box-shadow: 0px 0px 3px 2px rgb(32 146 155 / 25%);
 }
 
 .cookieModal p {
@@ -1036,7 +1036,7 @@ section.herobanner {
 
 
 .bussinessTabssec .wrapTextBox:hover {
-    background-color: #011a11;
+    background-color: #032324;
 }
 
 .wrapTextBox svg {
@@ -1053,7 +1053,7 @@ section.herobanner {
 
 .frame .lines {
     background:
-        linear-gradient(to bottom, #00ffa2 1px, transparent 1px) 0 0, linear-gradient(to top, #00ffa2 1px, transparent 1px) 100% 100%;
+        linear-gradient(to bottom, #72F4FA 1px, transparent 1px) 0 0, linear-gradient(to top, #72F4FA 1px, transparent 1px) 100% 100%;
     background-repeat: no-repeat;
     background-size: 0px 0px;
     position: absolute;
@@ -1066,7 +1066,7 @@ section.herobanner {
 
 .frame .angles {
     background:
-        linear-gradient(to right, #00ffa2 1px, transparent 1px) 0 0, linear-gradient(to bottom, #00ffa2 1px, transparent 1px) 0 0, linear-gradient(to left, #00ffa2 1px, transparent 1px) 100% 100%, linear-gradient(to top, #00ffa2 1px, transparent 1px) 100% 100%;
+        linear-gradient(to right, #72F4FA 1px, transparent 1px) 0 0, linear-gradient(to bottom, #72F4FA 1px, transparent 1px) 0 0, linear-gradient(to left, #72F4FA 1px, transparent 1px) 100% 100%, linear-gradient(to top, #72F4FA 1px, transparent 1px) 100% 100%;
     background-repeat: no-repeat;
     background-size: 15px 15px;
     position: absolute;
@@ -1154,7 +1154,7 @@ section.herobanner {
     font-size: 120px;
     font-weight: 500;
     color: var(--black);
-    -webkit-text-stroke: 1px #04FCA340;
+    -webkit-text-stroke: 1px #04d8fc4a;
     -webkit-text-fill-color: var(--black);
     margin: 0 0 -20px 0;
 }

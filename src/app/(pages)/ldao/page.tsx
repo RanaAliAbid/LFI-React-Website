@@ -66,8 +66,8 @@ export default function MintingMachine() {
                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                                             <stop offset="1%" stop-color="#070A0B" />
                                             <stop offset="10%" stop-color="#0f1516" />
-                                            <stop offset="20%" stop-color="#464646" />
-                                            <stop offset="100%" stop-color="#04FCA3" />
+                                            <stop offset="20%" stop-color="#72F4FA" />
+                                            <stop offset="100%" stop-color="#72F4FA" />
                                         </linearGradient>
                                     </defs>
                                     <motion.path stroke="url(#gradient)" className="visionMissionPath" d="M473.5 0V73.5035C473.5 90.072 460.069 103.504 443.5 103.504H31C14.4315 103.504 1 116.935 1 133.504V292.011C1 308.579 14.4315 322.011 31 322.011H921.5C938.069 322.011 951.5 335.442 951.5 352.011V510.124C951.5 526.693 938.069 540.124 921.5 540.124H31C14.4315 540.124 1 553.556 1 570.124V726C1 742.569 14.4315 756 31 756H951.5" style={{ pathLength: scrollvisionProgressBar }} />

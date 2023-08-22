@@ -117,7 +117,7 @@ export default function Lfione() {
                         <Nav className="ms-auto">
                             <Nav.Link href="/lfione" className="active">Overview</Nav.Link>
                             <Nav.Link href="/techspecs">Tech Specs</Nav.Link>
-                            <Nav.Link href="https://lyotechlabs.com/product/lfi-smartphone/" className="buybtn" target= "_blank">Buy Now</Nav.Link>
+                            <Nav.Link href="https://lyotechlabs.com/co-products" className="buybtn" target= "_blank">Buy Now</Nav.Link>
                         </Nav>
                     </Navbar>
 

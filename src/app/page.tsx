@@ -113,6 +113,12 @@ export default function Home() {
         return () => clearInterval(interval);
     }, []);
 
+    useEffect(() => {
+        console.log('Caling');
+        fetchLfiMarketData();
+        fetchclfiMarketData();
+    }, []);
+
     const { scrollYProgress } = useScroll();
 
 

@@ -79,8 +79,8 @@ export default function MintingMachine() {
                                         <linearGradient id="gradienttt" x1="0%" y1="0%" x2="0%" y2="100%">
                                             <stop offset="1%" stop-color="#070A0B" />
                                             <stop offset="10%" stop-color="#0f1516" />
-                                            <stop offset="20%" stop-color="#464646" />
-                                            <stop offset="100%" stop-color="#04FCA3" />
+                                            <stop offset="20%" stop-color="#72F4FA" />
+                                            <stop offset="100%" stop-color="#72F4FA" />
                                         </linearGradient>
                                     </defs>
 

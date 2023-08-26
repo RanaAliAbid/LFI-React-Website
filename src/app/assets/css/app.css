@@ -532,6 +532,78 @@ section.herobanner {
 }
 
 
+.tradeBox {
+    border: 1px solid #2e2e2e;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.tradeBox .coindata {
+    display: flex;    
+    align-items: center;
+    gap: 25px;
+}
+
+.tradeBox .coindata {
+    border-bottom: 1px solid #2e2e2e;
+    padding-bottom: 25px;
+}
+
+.tradeBox .coindata:after {   
+    content:'';
+    background: linear-gradient(90deg, rgba(52, 52, 52, 0.00) 0%, #343434 52.60%, rgba(52, 52, 52, 0.00) 100%);
+}
+
+.tradeBox .coindata .img {
+    width: 25%;
+}
+
+.tradeBox .coindata .text h4 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.tradeBox .coindata .text h3 {
+    font-size: 26px;
+    line-height: 36px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.tradeBox .links {
+    padding-top: 25px;
+}
+
+.tradeBox .coindata .text p {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--gray-800);
+}
+
+.tradeBox .coindata .img img {
+    width: 100%;
+}
+
+.tradeOnSec .tradeList {
+    display: flex;    
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.tradeOnSec .tradeList li {
+    list-style-type: none;
+}
+
+.tradeList li img {
+    width: 100%;
+}
+
+
+.tradeBox .links p {
+    color: var(--gray-600);
+    margin-bottom: 8px;
+}
 
 
 .tokenText {
@@ -953,12 +1025,12 @@ section.herobanner {
 }
 
 .tokenTabs.nav-tabs .nav-link:hover {
-    background-color: #002D1D;
+    background-color: #004447;
     border-color: var(--primary);
 }
 
 .tokenTabs.nav-tabs .nav-link.active {
-    background-color: #002D1D;
+    background-color: #004447;
     border-color: var(--primary);
     color: var(--white);
 }
@@ -1209,6 +1281,7 @@ section.herobanner {
 .mobileNameHead .nav-link.buybtn {
     color: var(--primary);
     border-radius: 20px;
+    font-weight: 400;
 }
 
 .mobileNameHead .nav-link.buybtn:hover {
@@ -2035,8 +2108,6 @@ body.modal-open .CookieChangeIcon {
 
 
 
-
-
 @media (max-height: 450px) {
 
     .section.wrapSection {
@@ -2102,6 +2173,10 @@ body.modal-open .CookieChangeIcon {
 }
 
 @media (max-width: 320px) {
+    .stepSec .rowText {
+        padding: 25px;
+    }
+
     .stepSec .rowText .textBox {
         padding: 7px 11px;
     }
@@ -2112,6 +2187,11 @@ body.modal-open .CookieChangeIcon {
 } 
 
 @media (min-width: 321px) and (max-width: 340px) {
+
+    .stepSec .rowText {
+        padding: 25px;
+    }
+
     .stepSec .rowText .textBox {
         padding: 11px 10px;
     }
@@ -2122,6 +2202,11 @@ body.modal-open .CookieChangeIcon {
 }
 
 @media (min-width: 341px) and (max-width: 360px) {
+
+    .stepSec .rowText {
+        padding: 25px;
+    }
+
     .stepSec .rowText .textBox {
         padding: 16px 10px;
     }
@@ -2133,6 +2218,11 @@ body.modal-open .CookieChangeIcon {
 
 
 @media (min-width: 361px) and (max-width: 374px) {
+
+    .stepSec .rowText {
+        padding: 26px 30px;
+    }
+
     .stepSec .rowText .textBox {
         padding: 18px 20px;
     }
@@ -2143,6 +2233,10 @@ body.modal-open .CookieChangeIcon {
 }
 
 @media (min-width: 375px) and (max-width: 400px) {
+    .stepSec .rowText {
+        padding: 30px 20px;
+    }
+
     .stepSec .rowText .textBox {
         padding: 25px 25px;
     }
@@ -2170,8 +2264,13 @@ body.modal-open .CookieChangeIcon {
 }
 
 @media (min-width: 401px) and (max-width: 424px) {
+
+    .stepSec .rowText {
+        padding: 20px 20px;
+    }
+
     .stepSec .rowText .textBox {
-        padding: 25px 25px;
+        padding: 40px 25px;
     }
 
     .visionSec .rowText {
@@ -2197,8 +2296,15 @@ body.modal-open .CookieChangeIcon {
 }
 
 @media (min-width: 425px) and (max-width: 440px) {
+
+    .stepSec .rowText {
+        padding: 28px 30px;
+    }
+
+
+
     .stepSec .rowText .textBox {
-        padding: 25px 25px;
+        padding: 40px 25px;
     }
 
     .visionSec .rowText {
@@ -2224,8 +2330,14 @@ body.modal-open .CookieChangeIcon {
 }
 
 @media (min-width: 441px) and (max-width: 460px) {
+
+    .stepSec .rowText {
+        padding: 25px 30px;
+    }
+
+
     .stepSec .rowText .textBox {
-        padding: 25px 25px;
+        padding: 50px 25px;
     }
 
     .visionSec .rowText {
@@ -2251,8 +2363,14 @@ body.modal-open .CookieChangeIcon {
 }
 
 @media (min-width: 461px) and (max-width: 490px) {
+
+    .stepSec .rowText {
+        padding: 28px 40px;
+    }
+
+
     .stepSec .rowText .textBox {
-        padding: 25px 25px;
+        padding: 50px 25px;
     }
 
     .visionSec .rowText.missionMob  {
@@ -2283,8 +2401,18 @@ body.modal-open .CookieChangeIcon {
 }
 
 @media (min-width: 491px) and (max-width: 576px) {
+
+    
+    .stepSec .rowText {
+        padding: 28px 40px;
+    }
+
+    .stepSec .rowText .textBox {
+        padding: 60px 50px;
+    }    
+
     .visionSec .rowText {
-        padding: 42px 50px;
+        padding: 55px 50px;
 
     } 
 }
@@ -2322,6 +2450,10 @@ body.modal-open .CookieChangeIcon {
 
     .navbar-brand {
         padding-left: 15px;
+    }
+
+    .mobileNameHead {
+        top: 75px;
     }
 
     .navbar-nav .btn {
@@ -2506,6 +2638,11 @@ body.modal-open .CookieChangeIcon {
         width: 90%;
         margin: 0 auto;
         top: -15%;
+    }
+
+    .tradeBox {
+        padding: 15px 25px;
+        margin-bottom: 25px;
     }
 
    
@@ -3059,9 +3196,9 @@ body.modal-open .CookieChangeIcon {
         line-height: 22px;
     }
 
-    .stepSec .rowText {
+    /* .stepSec .rowText {
         padding: 25px;
-    }
+    } */
 
     .specList li.item .titleBox {
         width: 30%;
@@ -3282,6 +3419,15 @@ body.modal-open .CookieChangeIcon {
     }
 
     .mobilePhoneHero h3 {
+        width: 100%;
+    }
+
+    .logoList li {
+        width: 33.33333333%;
+        padding:5px;
+    }
+
+    .logoList li img {
         width: 100%;
     }
 

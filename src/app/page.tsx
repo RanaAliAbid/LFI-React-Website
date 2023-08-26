@@ -23,6 +23,22 @@ import logo7 from "../../public/img/logo-7.png";
 import logo8 from "../../public/img/logo-8.png";
 
 
+import lyotrade from "../../public/img/lyotrade.png";
+import lbank from "../../public/img/lbank.png";
+import bitmart from "../../public/img/bitmart.png";
+import bitforex from "../../public/img/bitforex.png";
+
+import tokenlfi from "../../public/img/token-lfi.png";
+import tokenclfi from "../../public/img/token-clfi.png";
+
+
+
+
+
+
+
+
+
 
 import blockchain from "../../public/img/blockchainbanner.png";
 import { getAnalyticsCookie, getLegalDesclaimerCookie, getMarketingCookie, getPersonalizationCookie, getTermsAndCondition, setAnalyticsCookie, setLegalDesclaimerCookie, setMarketingCookie, setPersonalizationCookie, setTermsAndCondition } from "./actions";
@@ -259,7 +275,7 @@ export default function Home() {
 
             <Header />
 
-            <section  id="top" className="wrapSection herosec herobanner fullView">
+            <section id="top" className="wrapSection herosec herobanner fullView">
                 <Container>
                     <Row className="justify-content-center">
                         <Col xxl="8" xl="9" lg="9" md="10" xs="12">
@@ -531,6 +547,110 @@ export default function Home() {
                     </Row>
                 </Container>
             </section>
+
+
+
+            <section className="wrapSection tradeOnSec">
+                <Container>
+
+                    <Row className="justify-content-center">
+                        <Col md="12">
+                            <div className="infoText text-center mb-5">
+                                <h2> Trade On </h2>
+                            </div>
+                        </Col>
+                    </Row>
+
+
+                    <Row>
+                        <Col md="6">
+                            <div className="tradeBox">
+                                <div className="coindata">
+                                    <div className="img">
+                                        <img src={tokenlfi.src} alt="tokenlfi" />
+                                    </div>
+
+                                    <div className="text">
+                                        <h4> LFi </h4>
+                                        <h3> 0.9272632141 </h3>
+                                        <p> 24H Vol: 1,573,567.06977 </p>
+                                    </div>
+                                </div>
+
+                                <div className="links">
+                                    <p> Trade On </p>
+                                    <ul className="tradeList">
+                                        <li>
+                                            <a href="https://www.lyotrade.com/en_US/trade/LFi_USDT" target="_blank">
+                                                <img src={lyotrade.src} alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.lbank.com/en-US/trade/lfi_usdt/" target="_blank">
+                                                <img src={lbank.src} alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.bitmart.com/trade/en-US?layout=pro&theme=dark&symbol=%24LFI_USDT" target="_blank">
+                                                <img src={bitmart.src} alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.bitforex.com/en/spot/lfi_usdt" target="_blank">
+                                                <img src={bitforex.src} alt="" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md="6">
+                        <div className="tradeBox">
+                                <div className="coindata">
+                                    <div className="img">
+                                        <img src={tokenclfi.src} alt="tokenlfi" />
+                                    </div>
+
+                                    <div className="text">
+                                        <h4> cLFi </h4>
+                                        <h3> 1.61109195 </h3>
+                                        <p> 24H Vol 4,241,657.62105 </p>
+                                    </div>
+                                </div>
+
+                                <div className="links">
+                                    <p> Trade On </p>
+                                    <ul className="tradeList">
+                                        <li>
+                                            <a href="https://www.lyotrade.com/en_US/trade/cLFi_USDT" target="_blank">
+                                                <img src={lyotrade.src} alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.lbank.com/en-US/trade/clfi_usdt/" target="_blank">
+                                                <img src={lbank.src} alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.bitmart.com/trade/en-US?layout=pro&theme=dark&symbol=CLFI_USDT" target="_blank">
+                                                <img src={bitmart.src} alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.bitforex.com/en/spot/clfi_usdt" target="_blank">
+                                                <img src={bitforex.src} alt="" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                   
+                </Container>
+            </section>
+
+
 
             <section className="wrapSection visionSec">
                 <div className="visionHeight" ref={buttRef} > </div>

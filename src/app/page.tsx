@@ -31,15 +31,6 @@ import bitforex from "../../public/img/bitforex.png";
 import tokenlfi from "../../public/img/token-lfi.png";
 import tokenclfi from "../../public/img/token-clfi.png";
 
-
-
-
-
-
-
-
-
-
 import blockchain from "../../public/img/blockchainbanner.png";
 import { getAnalyticsCookie, getLegalDesclaimerCookie, getMarketingCookie, getPersonalizationCookie, getTermsAndCondition, setAnalyticsCookie, setLegalDesclaimerCookie, setMarketingCookie, setPersonalizationCookie, setTermsAndCondition } from "./actions";
 import Link from "next/link";
@@ -56,6 +47,9 @@ const Box = ({ speed }: any) => {
     )
 }
 
+const formatNumbers = (number: any) => {
+    return new Intl.NumberFormat('en-US').format(number);
+}
 
 export default function Home() {
     // const ref = useRef(null);
@@ -81,6 +75,46 @@ export default function Home() {
     const isInHardwareView = useInView(hardwareRef);
     const isInldaoView = useInView(ldaoRef);
     const inHardwareTextView = useInView(hardwareImgRef);
+
+    const [lfiMarketData, setLfiMarketData] = useState({
+        price: "0.93201287",
+        volume: "1196460.02861854",
+    });
+    const [clfiMarketData, setClfiMarketData] = useState({
+        price: "1.61108608",
+        volume: "4223765.75395716",
+    });
+
+    const fetchLfiMarketData = async () => {
+        const resLfiTicker = await fetch('https://openapi.lyotrade.com/sapi/v1/ticker?symbol=lfi1usdt')
+        const lfiTickerData = await resLfiTicker.json() 
+        setLfiMarketData({
+            price: lfiTickerData.last,
+            volume: lfiTickerData.vol,
+        });
+    }
+
+    const fetchclfiMarketData = async () => {
+        const resLfiTicker = await fetch('https://openapi.lyotrade.com/sapi/v1/ticker?symbol=clfiusdt')
+        const clfiTickerData = await resLfiTicker.json() 
+        setClfiMarketData({
+            price: clfiTickerData.last,
+            volume: clfiTickerData.vol,
+        });
+    }
+  
+    useEffect(() => {
+  
+        //Implementing the setInterval method
+        const interval = setInterval(() => {
+            console.log('Calling interval');
+            fetchLfiMarketData();
+            fetchclfiMarketData();
+        }, 5000);
+  
+        //Clearing the interval
+        return () => clearInterval(interval);
+    }, []);
 
     const { scrollYProgress } = useScroll();
 
@@ -572,8 +606,8 @@ export default function Home() {
 
                                     <div className="text">
                                         <h4> LFi </h4>
-                                        <h3> 0.9272632141 </h3>
-                                        <p> 24H Vol: 1,573,567.06977 </p>
+                                        <h3> {lfiMarketData.price} </h3>
+                                        <p> 24H Vol: {formatNumbers(lfiMarketData.volume)} </p>
                                     </div>
                                 </div>
 
@@ -613,8 +647,8 @@ export default function Home() {
 
                                     <div className="text">
                                         <h4> cLFi </h4>
-                                        <h3> 1.61109195 </h3>
-                                        <p> 24H Vol 4,241,657.62105 </p>
+                                        <h3> {clfiMarketData.price} </h3>
+                                        <p> 24H Vol {formatNumbers(clfiMarketData.volume)} </p>
                                     </div>
                                 </div>
 

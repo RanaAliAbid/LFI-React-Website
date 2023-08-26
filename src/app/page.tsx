@@ -114,7 +114,6 @@ export default function Home() {
     }, []);
 
     useEffect(() => {
-        console.log('Caling');
         fetchLfiMarketData();
         fetchclfiMarketData();
     }, []);

@@ -104,13 +104,10 @@ export default function Home() {
     }
   
     useEffect(() => {
-  
-        //Implementing the setInterval method
         const interval = setInterval(() => {
-            console.log('Calling interval');
             fetchLfiMarketData();
             fetchclfiMarketData();
-        }, 5000);
+        }, 10000);
   
         //Clearing the interval
         return () => clearInterval(interval);

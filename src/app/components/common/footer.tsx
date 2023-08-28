@@ -113,7 +113,7 @@ export default function Footer() {
                                         <h3>Social accounts </h3>
                                         <ul className="socialLink">
                                             <li>
-                                                <a href="https://twitter.com/lfioff" target= "_blank" className="xtwitter">
+                                                <a href="https://twitter.com/lfiecosystem" target= "_blank" className="xtwitter">
                                                     <Xtwitter/>
                                                 </a>
                                             </li>
@@ -127,7 +127,7 @@ export default function Footer() {
                                             </li>
 
                                             <li>
-                                                <a href="https://www.linkedin.com/lfiofficial" target= "_blank"><i className="bi bi-linkedin"></i></a>
+                                                <a href="https://www.linkedin.com/company/lfiofficial" target= "_blank"><i className="bi bi-linkedin"></i></a>
                                             </li>
 
                                             <li>

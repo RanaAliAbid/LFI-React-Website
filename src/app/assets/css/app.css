@@ -293,8 +293,7 @@ a:hover {
     color: var(--white);
 }
 
-.navbar-brand:hover svg path,
-.footBox:hover svg path {
+.navbar-brand:hover svg path {
     fill: var(--primary);
 }
 
@@ -904,6 +903,12 @@ section.herobanner {
     font-size: 20px;
 }
 
+.footerSec .logo:hover path {
+    fill: var(--primary);
+}
+
+
+
 .copyright {
     padding: 5px 0 15px 0;
 }
@@ -935,6 +940,10 @@ section.herobanner {
 .footerSec .footBox ul li a:hover,
 .copyright .copyLinks ul li a:hover {
     color: var(--primary);
+}
+
+.footerSec .footBox ul li .xtwitter:hover svg path {
+    fill: var(--primary);
 }
 
 

@@ -48,7 +48,7 @@ const Box = ({ speed }: any) => {
 }
 
 const formatNumbers = (number: any) => {
-    return new Intl.NumberFormat('en-US').format(number);
+    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumSignificantDigits: 8 }).format(number);
 }
 
 export default function Home() {
@@ -608,7 +608,7 @@ export default function Home() {
 
                                     <div className="text">
                                         <h4> LFi </h4>
-                                        <h3> {lfiMarketData.price} </h3>
+                                        <h3> {formatNumbers(lfiMarketData.price)} </h3>
                                         <p> 24H Vol: {formatNumbers(lfiMarketData.volume)} </p>
                                     </div>
                                 </div>
@@ -649,7 +649,7 @@ export default function Home() {
 
                                     <div className="text">
                                         <h4> cLFi </h4>
-                                        <h3> {clfiMarketData.price} </h3>
+                                        <h3> {formatNumbers(clfiMarketData.price)} </h3>
                                         <p> 24H Vol {formatNumbers(clfiMarketData.volume)} </p>
                                     </div>
                                 </div>

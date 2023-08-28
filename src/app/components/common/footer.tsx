@@ -8,6 +8,9 @@ import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } fr
 import WhiteLogo from "../../../../public/img/white-logo.svg";
 
 import ArrowUp from "../../../../public/img/up-arrow2.svg";
+import Xtwitter from "../../../../public/img/x-twitter.svg";
+
+
 
 
 
@@ -110,7 +113,9 @@ export default function Footer() {
                                         <h3>Social accounts </h3>
                                         <ul className="socialLink">
                                             <li>
-                                                <a href="https://twitter.com/lfioff" target= "_blank"><i className="bi bi-twitter"></i></a>
+                                                <a href="https://twitter.com/lfioff" target= "_blank" className="xtwitter">
+                                                    <Xtwitter/>
+                                                </a>
                                             </li>
 
                                             <li>
@@ -118,15 +123,15 @@ export default function Footer() {
                                             </li>
 
                                             <li>
-                                                <a href="https://www.instagram.com/lfioffic" target= "_blank"><i className="bi bi-instagram"></i></a>
+                                                <a href="https://instagram.com/lfiecosystem" target= "_blank"><i className="bi bi-instagram"></i></a>
                                             </li>
 
                                             <li>
-                                                <a href="https://www.linkedin.com/company/lfiofficial" target= "_blank"><i className="bi bi-linkedin"></i></a>
+                                                <a href="https://www.linkedin.com/lfiofficial" target= "_blank"><i className="bi bi-linkedin"></i></a>
                                             </li>
 
                                             <li>
-                                                <a href="https://www.youtube.com/@lfiofficial" target= "_blank"><i className="bi bi-youtube"></i></a>
+                                                <a href="https://youtube.com/@lfiofficial" target= "_blank"><i className="bi bi-youtube"></i></a>
                                             </li>
 
                                             <li>

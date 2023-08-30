@@ -169,8 +169,8 @@ export default function MintingMachine() {
                         <Col md="6" className="">
                             <div className="infoText text-center">
                                 <h2> xLFi 1000 </h2>
-                                <p> Upgrade your level with more power </p>
-                                
+                                <p> <span> Mint </span> your way to a brighter future </p>
+                                <h3> Designed to provide you with a simple and hassle-free way to create LFi tokens right from the comfort of your own home </h3>
                                 <Button as="a" variant="primary" target="_blank" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-xlfi1000">
                                     Explore More
                                 </Button>
@@ -223,8 +223,8 @@ export default function MintingMachine() {
                         <Col md="6" className="">
                             <div className="infoText text-center">
                                 <h2> xLFi 5000 </h2>
-                                <p> You chose to be a protagonist in the LFi Projects </p>
-                                
+                                <p> Discover new possibilities and unlock your financial future </p>
+                                <h3> Access a range of exciting features and functions that will take your financial game to the next level. </h3>
                                 <Button as="a" variant="primary" target="_blank" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-plus-xlfi5000">
                                     Explore More
                                 </Button>

@@ -316,7 +316,7 @@ export default function MintingMachine() {
                         <Col md="6" className="">
                             <div className="infoText text-center">
                                 <h2> xLFi Validator </h2>
-                                <p> When power it's not enough and you want to rule the LFi Game: be a validator </p>
+                                <p> When power it&apos;s not enough and you want to rule the LFi Game: be a validator </p>
                                 
                                 <Button as="a" variant="primary" href="#">
                                     Coming Soon

@@ -8,6 +8,13 @@ import { motion, MotionValue, useScroll, useSpring, useTransform, useInView } fr
 import { Container, Form, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
 
 import Minter1000 from "../../../../public/img/minter1000.png";
+
+import Minting500 from "../../../../public/img/500-minting.png";
+import Minting1000 from "../../../../public/img/1000-minting.png";
+import Minting10000 from "../../../../public/img/10000-minting.png";
+import Minting5000 from "../../../../public/img/5000-minting.png";
+import ValidatorMinting from "../../../../public/img/validator-minting.png";
+
 // import Videov from "../../../../public/connect.mp4"; 
 
 
@@ -74,13 +81,260 @@ export default function MintingMachine() {
             </section>
 
 
-            <section className="wrapSection minter">
+
+<section className="wrapSection minter">
                 <Container>
                     <Row className="justify-content-center align-items-center">
                         <Col md="10" className="text-center">
                             {/* <video src={Videov.src} className="w-100" autoPlay loop muted>
                                
                             </video> */}
+                            <div
+                                style={{
+                                    height: "50vh",
+                                    width: "100%",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    position: "sticky",
+                                    top: "0px",
+                                }}
+                            >
+
+                                <motion.div
+                                    className="child"
+                                    style={{
+                                        scale: scaleRight,
+                                        y: yRight,
+                                        x: xRight,
+                                    }}
+                                >
+                                    <div className="img">
+                                        <Image src={Minting500.src} alt='LFi' />
+                                    </div>
+                                </motion.div>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center align-items-center">
+                        <Col md="6" className="">
+                            <div className="infoText text-center">
+                                <h2> xLFi 500 </h2>
+                                <p> Start the journey as a LFi Computer </p>
+                                
+                                <Button as="a" variant="primary" href="#">
+                                    Coming Soon
+                                </Button>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
+
+
+<section className="wrapSection minter">
+                <Container>
+                    <Row className="justify-content-center align-items-center">
+                        <Col md="10" className="text-center">
+                            {/* <video src={Videov.src} className="w-100" autoPlay loop muted>
+                               
+                            </video> */}
+                            <div
+                                style={{
+                                    height: "50vh",
+                                    width: "100%",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    position: "sticky",
+                                    top: "0px",
+                                }}
+                            >
+
+                                <motion.div
+                                    className="child"
+                                    style={{
+                                        scale: scaleRight,
+                                        y: yRight,
+                                        x: xRight,
+                                    }}
+                                >
+                                    <div className="img">
+                                        <Image src={Minting1000.src} alt='LFi' />
+                                    </div>
+                                </motion.div>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center align-items-center">
+                        <Col md="6" className="">
+                            <div className="infoText text-center">
+                                <h2> xLFi 1000 </h2>
+                                <p> Upgrade your level with more power </p>
+                                
+                                <Button as="a" variant="primary" target="_blank" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-xlfi1000">
+                                    Explore More
+                                </Button>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
+
+
+
+            
+
+
+<section className="wrapSection minter">
+                <Container>
+                    <Row className="justify-content-center align-items-center">
+                        <Col md="10" className="text-center">
+                            {/* <video src={Videov.src} className="w-100" autoPlay loop muted>
+                               
+                            </video> */}
+                            <div
+                                style={{
+                                    height: "50vh",
+                                    width: "100%",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    position: "sticky",
+                                    top: "0px",
+                                }}
+                            >
+
+                                <motion.div
+                                    className="child"
+                                    style={{
+                                        scale: scaleRight,
+                                        y: yRight,
+                                        x: xRight,
+                                    }}
+                                >
+                                    <div className="img">
+                                        <Image src={Minting5000.src} alt='LFi' />
+                                    </div>
+                                </motion.div>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center align-items-center">
+                        <Col md="6" className="">
+                            <div className="infoText text-center">
+                                <h2> xLFi 5000 </h2>
+                                <p> You chose to be a protagonist in the LFi Projects </p>
+                                
+                                <Button as="a" variant="primary" target="_blank" href="https://white-paper.lfi.io/layer-2-iop-and-hardware/hardware/miner-plus-xlfi5000">
+                                    Explore More
+                                </Button>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
+
+
+            <section className="wrapSection minter">
+                <Container>
+                    <Row className="justify-content-center align-items-center">
+                        <Col md="10" className="text-center">
+                            <div
+                                style={{
+                                    height: "50vh",
+                                    width: "100%",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    position: "sticky",
+                                    top: "0px",
+                                }}
+                            >
+
+                                <motion.div
+                                    className="child"
+                                    style={{
+                                        scale: scaleRight,
+                                        y: yRight,
+                                        x: xRight,
+                                    }}
+                                >
+                                    <div className="img">
+                                        <Image src={Minting10000.src} alt='LFi' />
+                                    </div>
+                                </motion.div>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center align-items-center">
+                        <Col md="6" className="">
+                            <div className="infoText text-center">
+                                <h2> xLFi 10000 </h2>
+                                <p> Bring the game to another level and raise your LFi power </p>
+                                
+                                <Button as="a" variant="primary" href="#">
+                                    Coming Soon
+                                </Button>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
+
+            <section className="wrapSection minter">
+                <Container>
+                    <Row className="justify-content-center align-items-center">
+                        <Col md="10" className="text-center">
+                            <div
+                                style={{
+                                    height: "50vh",
+                                    width: "100%",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    position: "sticky",
+                                    top: "0px",
+                                }}
+                            >
+
+                                <motion.div
+                                    className="child"
+                                    style={{
+                                        scale: scaleRight,
+                                        y: yRight,
+                                        x: xRight,
+                                    }}
+                                >
+                                    <div className="img">
+                                        <Image src={ValidatorMinting.src} alt='LFi' />
+                                    </div>
+                                </motion.div>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center align-items-center">
+                        <Col md="6" className="">
+                            <div className="infoText text-center">
+                                <h2> xLFi Validator </h2>
+                                <p> When power it's not enough and you want to rule the LFi Game: be a validator </p>
+                                
+                                <Button as="a" variant="primary" href="#">
+                                    Coming Soon
+                                </Button>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
+
+
+{/* 
+            <section className="wrapSection minter">
+                <Container>
+                    <Row className="justify-content-center align-items-center">
+                        <Col md="10" className="text-center">
+                         
                             <div
                                 style={{
                                     height: "50vh",
@@ -164,7 +418,7 @@ export default function MintingMachine() {
                         </Col>
                     </Row>
                 </Container>
-            </section>
+            </section> */}
 
             <Footer />
 

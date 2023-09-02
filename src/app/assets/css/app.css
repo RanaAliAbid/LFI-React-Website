@@ -2116,6 +2116,196 @@ body.modal-open .CookieChangeIcon {
 
 
 
+/* Ali Abid Career CSS start */
+
+.bg-career {
+    background-image: url('../../../../public/img/careerBanner.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 9% 0;
+}
+
+.careerSec h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 20px 0 80px;
+}
+
+.vacancyInfo h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.vacancyInfo h3 span {
+    color: var(--gray-600);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.vacancyInfo p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 26px;
+    color: #D6F9FB;
+    margin-top: 15px;
+}
+
+.vacancyInfo h4 {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 30px 0 0;
+}
+
+.vacancyType {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    border-bottom: 1px solid #262626;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+.vacancyType .vacancyInfo {
+    max-width: 900px;
+}
+
+.vacancyAction a {
+    margin-top: 40px;
+}
+
+.careerSubBanner{
+    background-image: url('../../../../public/img/careerSubBanner.png');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 8% 0;
+}
+.careerSubBanner h2{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.careerSubBanner h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.btn-black {
+    background: #050E0F;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contactFormWrap h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 38px;
+}
+
+section.contactFormWrap input, section.contactFormWrap textarea {
+    background: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    border: 1px solid #2B2B2B;
+    color: #7A7A7A;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+section.contactFormWrap .form-control:focus {
+    color: #7A7A7A;
+    background-color: transparent;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+section.contactFormWrap .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #7A7A7A;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #7A7A7A;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #7A7A7A;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+section.contactFormWrap  button{
+    max-width: 160px;
+    margin: 0 auto;
+}
+.contentHeading h3{
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--white);
+}
+.compareMinterItem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 40px;
+    margin: 20px 0;
+}
+
+.compareMinterItem  h3 {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.form-select{
+    background-color: #070A0B;
+    padding: 15px 20px;
+    border-radius: 4px;
+    border: 1px solid #7A7A7A;
+    color: #7A7A7A;
+    font-size: 16px;
+    margin-bottom: 40px;
+    background-size: 22px;
+}
+section.specTable h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+section.specTable table {
+    background: transparent;
+    background-color: transparent;
+}
+
+section.specTable td {
+    background: transparent;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #C4D0E1;
+    border-color: #2c2c2c;
+}
+/* Ali Abid Career CSS End */
+
+
 
 @media (max-height: 450px) {
 

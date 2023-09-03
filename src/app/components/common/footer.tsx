@@ -165,11 +165,11 @@ export default function Footer() {
                           FAQ
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a target="_blank" href="/career">
                           Career
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </Col>
@@ -178,9 +178,9 @@ export default function Footer() {
                   <div className="footBox contFoot">
                     <h3>Contact us</h3>
                     <ul className="footLink">
-                      <li>
+                      {/* <li>
                         <a href="/contact">Contact Us</a>
-                      </li>
+                      </li> */}
                       <li>
                         <a href="mailto:support@lfi.io">support@lfi.io</a>
                       </li>

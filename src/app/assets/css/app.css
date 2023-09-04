@@ -1109,7 +1109,7 @@ section.herobanner {
 }
 
 .bussinessTabs.nav-tabs .nav-link:hover {
-    background-color: #00e796;
+    background-color: var(--btn-primary-hover);
     border-color: var(--primary);
     color: var(--black);
 }

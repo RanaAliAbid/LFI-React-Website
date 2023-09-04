@@ -173,9 +173,9 @@ export default function CompareSpec() {
           </Row>
 
           <Row>
-            <Col md="4"></Col>
+            <Col  md="12" lg="4"></Col>
 
-            <Col md="4">
+            <Col sm="6" md="6" lg="4">
               <div className="compareMinterItem text-center">
 
                 <Image src={firstMinters?.[selectedFirstMinter]?.src} />
@@ -194,7 +194,7 @@ export default function CompareSpec() {
               </div>
             </Col>
 
-            <Col md="4">
+            <Col sm="6" md="6" lg="4">
               <div className="compareMinterItem text-center">
 
               <Image src={secondMinters?.[selectedSecondMinter]?.src} />

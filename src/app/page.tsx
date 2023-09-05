@@ -13,14 +13,15 @@ import VLfiCoin from "../../public/img/vlfi-token.svg";
 
 import CookieIcon from "../../public/img/cookies.svg";
 
-import logo1 from "../../public/img/logo-1.png";
-import logo2 from "../../public/img/logo-2.png";
-import logo3 from "../../public/img/logo-3.png";
-import logo4 from "../../public/img/logo-4.png";
-import logo5 from "../../public/img/logo-5.png";
-import logo6 from "../../public/img/logo-6.png";
-import logo7 from "../../public/img/logo-7.png";
-import logo8 from "../../public/img/logo-8.png";
+import utoday from "../../public/img/seenOn/utoday.png";
+import coingap from "../../public/img/seenOn/coingap.png";
+import techBulliontransparent from "../../public/img/seenOn/techBulliontransparent.png";
+import techtimes from "../../public/img/seenOn/tech-times.png";
+import coinpedia from "../../public/img/seenOn/coin-pedia.png";
+import cryptodotnews from "../../public/img/seenOn/cryptonews.png";
+import coincodex from "../../public/img/seenOn/coincodex.png";
+import blockonomi from "../../public/img/seenOn/blockonomi.png";
+
 
 
 import lyotrade from "../../public/img/lyotrade.png";
@@ -87,7 +88,7 @@ export default function Home() {
 
     const fetchLfiMarketData = async () => {
         const resLfiTicker = await fetch('https://openapi.lyotrade.com/sapi/v1/ticker?symbol=lfi1usdt')
-        const lfiTickerData = await resLfiTicker.json() 
+        const lfiTickerData = await resLfiTicker.json()
         setLfiMarketData({
             price: lfiTickerData.last,
             volume: lfiTickerData.vol,
@@ -96,19 +97,19 @@ export default function Home() {
 
     const fetchclfiMarketData = async () => {
         const resLfiTicker = await fetch('https://openapi.lyotrade.com/sapi/v1/ticker?symbol=clfiusdt')
-        const clfiTickerData = await resLfiTicker.json() 
+        const clfiTickerData = await resLfiTicker.json()
         setClfiMarketData({
             price: clfiTickerData.last,
             volume: clfiTickerData.vol,
         });
     }
-  
+
     useEffect(() => {
         const interval = setInterval(() => {
             fetchLfiMarketData();
             fetchclfiMarketData();
         }, 10000);
-  
+
         //Clearing the interval
         return () => clearInterval(interval);
     }, []);
@@ -351,41 +352,61 @@ export default function Home() {
 
             <section className="logosec">
                 <Container>
-                    <Row className="justify-content-center">
-                        <Col xxl="8" md="9" xs="12">
-                            <div className="infoText text-center mb-5">
-                                <h2> AS SEEN ON  </h2>
-                            </div>
-                        </Col>
-                    </Row>
                     <Row className="">
                         <Col md="12" className="">
+                            <div className="infoText text-center">
+                                <h2> AS SEEN ON  </h2>
+                            </div>
+
                             <ul className="logoList">
                                 <li>
-                                    <img src={logo1.src} alt="coinwire" />
+                                    <a href="https://u.today/exploring-the-three-layers-of-lfi-and-its-benefits-for-crypto-users" target="_blank">
+                                        <img src={utoday.src} alt="utoday" />
+                                    </a>
                                 </li>
                                 <li>
-                                    <img src={logo2.src} alt="benzinga" />
+                                    <a href="https://coingape.com/sponsored/building-a-brighter-financial-future-with-lfis-ecosystem-what-why-and-how/" target="_blank">
+                                        <img src={coingap.src} alt="coingap" />
+                                    </a>
                                 </li>
                                 <li>
-                                    <img src={logo3.src} alt="coinpedia" />
+                                    <a href="https://techbullion.com/lfi-partners-with-lyotech-labs-to-create-lfi-one-a-smartphone-to-mint-tokens/" target="_blank">
+                                        <img src={techBulliontransparent.src} alt="techBulliontransparent" />
+                                    </a>
                                 </li>
                                 <li>
-                                    <img src={logo4.src} alt="marketwatch" />
+                                    <a href="https://www.techtimes.com/articles/289211/20230322/minting-device-put-pocket-smartphone.htm" target="_blank">
+                                        <img src={techtimes.src} alt="techtimes" />
+                                    </a>
                                 </li>
                                 <li>
-                                    <img src={logo5.src} alt="cryptodaily" />
+                                    <a href="https://coinpedia.org/sponsored/everything-you-need-to-know-about-lfi-the-peoples-platform/" target="_blank">
+                                        <img src={coinpedia.src} alt="coinpedia" />
+                                    </a>
                                 </li>
                                 <li>
-                                    <img src={logo6.src} alt="international business" />
+                                    <a href="https://crypto.news/lfi-one-launched-a-smartphone-and-minting-device/" target="_blank">
+                                        <img src={cryptodotnews.src} alt="cryptodotnews" />
+                                    </a>
                                 </li>
                                 <li>
-                                    <img src={logo7.src} alt="crypto news" />
+                                    <a href="https://coincodex.com/article/27604/exploring-every-layer-of-lfi-the-decentralized-network-for-the-people/" target="_blank">
+                                        <img src={coincodex.src} alt="coincodex" />
+                                    </a>
                                 </li>
                                 <li>
-                                    <img src={logo8.src} alt="utoday" />
+                                    <a href="https://blockonomi.com/the-different-modes-of-minting-by-lfi/" target="_blank">
+                                        <img src={blockonomi.src} alt="blockonomi" />
+                                    </a>
                                 </li>
                             </ul>
+
+                            <div className="text-center">
+                                <Button as="a" variant="primary" href="/seen-on">
+                                    As Seen On
+                                </Button>
+                            </div>
+
                         </Col>
                     </Row>
                 </Container>
@@ -641,7 +662,7 @@ export default function Home() {
                             </div>
                         </Col>
                         <Col md="6">
-                        <div className="tradeBox">
+                            <div className="tradeBox">
                                 <div className="coindata">
                                     <div className="img">
                                         <img src={tokenclfi.src} alt="tokenlfi" />
@@ -682,7 +703,7 @@ export default function Home() {
                             </div>
                         </Col>
                     </Row>
-                   
+
                 </Container>
             </section>
 

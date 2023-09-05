@@ -182,7 +182,7 @@ export default function Footer() {
                         <a href="/contact">Contact Us</a>
                       </li> */}
                       <li>
-                        <a href="mailto:support@lfi.io">Help Center</a>
+                        <a href="https://support.lfi.io">Help & Support</a>
                       </li>
                     </ul>
                   </div>

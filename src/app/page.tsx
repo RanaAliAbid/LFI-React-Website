@@ -355,7 +355,7 @@ export default function Home() {
                     <Row className="">
                         <Col md="12" className="">
                             <div className="infoText text-center">
-                                <h2> AS SEEN ON  </h2>
+                                <h2> As Seen On  </h2>
                             </div>
 
                             <ul className="logoList">
@@ -403,7 +403,7 @@ export default function Home() {
 
                             <div className="text-center">
                                 <Button as="a" variant="primary" href="/seen-on">
-                                    As Seen On
+                                    View More
                                 </Button>
                             </div>
 

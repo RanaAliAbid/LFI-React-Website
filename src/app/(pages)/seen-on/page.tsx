@@ -61,7 +61,7 @@ export default function AsSeenOn() {
                     <Row className="">
                         <Col md="12" className="">
                             <div className="infoText text-center">
-                                <h2> AS SEEN ON  </h2>
+                                <h2> As Seen On  </h2>
                             </div>
 
                             <ul className="logoList">

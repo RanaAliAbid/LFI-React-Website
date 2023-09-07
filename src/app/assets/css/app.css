@@ -2684,6 +2684,16 @@ section.specTable table tr td:first-child {
 
 @media (max-width: 767px) {
 
+
+    .fullView {
+        height: calc(100vh - 80px) !important;        
+    }
+    
+    .logosec {
+        padding: 0 0 50px 0;
+    }
+
+
     .mobileHide {
         display: none;
     }
@@ -2749,12 +2759,12 @@ section.specTable table tr td:first-child {
 
     .logoList {
         gap: 14px;
-        margin: 0;
+        margin: 0 0 20px 0;
         justify-content: center;
     }
 
     .logoList li img {
-        width: 100%;
+        width: 90%;
         object-fit: contain;
         height: 42px;
     }

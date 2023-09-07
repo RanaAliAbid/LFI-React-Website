@@ -401,7 +401,7 @@ export default function Home() {
                                 </li>
                             </ul>
 
-                            <div className="text-center">
+                            <div className="text-center ">
                                 <Button as="a" variant="primary" href="/seen-on">
                                     View More
                                 </Button>

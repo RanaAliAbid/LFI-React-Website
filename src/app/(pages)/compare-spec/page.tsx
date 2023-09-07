@@ -133,27 +133,15 @@ export default function CompareSpec() {
           <Row className="justify-content-center">
             <Col md="10" xs="12">
               <div className="hero text-center mt-10 mb-10">
-                <motion.div
-                  transition={{ ease: "easeIn", duration: 0.5 }}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
-                  viewport={{ once: true }}
-                >
+              
                   <h1> Compare Specifications </h1>
-                </motion.div>
+              
 
-                <motion.div
-                  transition={{ ease: "easeIn", duration: 0.5, delay: 0.2 }}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                >
+              
                   <h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    et massa mi. Aliquam in hendrerit urna. Pellentesque sit
-                    amet sapien fringilla, mattis ligula consectetur.
+                  Effortlessly Compare Price, Performance, and Potential — Find the Perfect Minter to Unlock your Maximum Power"
                   </h3>
-                </motion.div>
+              
 
                 <Image src={CompareBannerDevices.src} />
               </div>

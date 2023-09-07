@@ -139,7 +139,7 @@ export default function CompareSpec() {
 
               
                   <h3>
-                  Effortlessly Compare Price, Performance, and Potential — Find the Perfect Minter to Unlock your Maximum Power"
+                  Effortlessly Compare Price, Performance, and Potential — Find the Perfect Minter to Unlock your Maximum Power
                   </h3>
               
 

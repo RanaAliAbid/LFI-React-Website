@@ -1,6 +1,6 @@
 export const metadata = {
     title: {
-        default: 'LFi Tokens'
+        default: 'As Seen On'
     },
 }
 
@@ -11,7 +11,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      
+      <head>
+        
+      </head>
       <body>{children}</body>
     </html>
   )

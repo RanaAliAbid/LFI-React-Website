@@ -31,10 +31,10 @@ export default function Tokens() {
 
     return (
         <>
-             <Head>
+             {/* <Head>
                 <title> Tokens page </title>
                 
-            </Head>
+            </Head> */}
             <Header/>
 
             <section className="herosec tokenSec">

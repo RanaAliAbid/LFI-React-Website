@@ -2315,6 +2315,7 @@ section.specTable h4 {
 section.specTable table {
     background: transparent;
     background-color: transparent;
+    min-width: 600px;
 }
 
 section.specTable td {
@@ -2346,6 +2347,21 @@ section.specTable table tr td:first-child {
 .compareLink:hover{
     opacity: 0.90;
     color: var(--black);
+}
+
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(48, 48, 48);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 1px;
 }
 /* Ali Abid Career CSS End */
 

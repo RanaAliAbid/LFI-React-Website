@@ -2095,16 +2095,16 @@ body.modal-open .CookieChangeIcon {
 .logoList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 25px;
-    margin: 55px 0;
+    margin: 55px 0 0 0;
     padding: 0;
 }
 
 .logoList li {
     list-style-type: none;
-    width: 23.5%;
+    width: 22.5555%;
     border: 1px solid #202020;
     border-radius: 10px;
     text-align: center;
@@ -3796,6 +3796,21 @@ section.specTable table tr td:first-child {
 
     .hero {
         padding: 0%;
+    }
+
+    .logosec {
+        padding: 100px 0 0 0;
+    }
+
+    .logoList li {
+        width: 22.33333333%;
+        padding: 15px;
+    }
+
+    .logoList li img {
+        width: 100%;
+        object-fit: contain;
+        height: 35px;
     }
 
 

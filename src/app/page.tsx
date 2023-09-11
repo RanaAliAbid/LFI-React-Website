@@ -13,14 +13,18 @@ import VLfiCoin from "../../public/img/vlfi-token.svg";
 
 import CookieIcon from "../../public/img/cookies.svg";
 
+
+import bitcoinist from "../../public/img/seenOn/bitcoinist.png";
+import cnnGreece from "../../public/img/seenOn/cnn-greece.png";
+import coinmarketcap from "../../public/img/seenOn/coinmarketcap.png";
+import cryptopotato from "../../public/img/seenOn/cryptopotato.png";
+import newsbtc from "../../public/img/seenOn/newsbtc.png";
+
+
 import utoday from "../../public/img/seenOn/utoday.png";
 import coingap from "../../public/img/seenOn/coingap.png";
 import techBulliontransparent from "../../public/img/seenOn/techBulliontransparent.png";
-import techtimes from "../../public/img/seenOn/tech-times.png";
-import coinpedia from "../../public/img/seenOn/coin-pedia.png";
-import cryptodotnews from "../../public/img/seenOn/cryptonews.png";
-import coincodex from "../../public/img/seenOn/coincodex.png";
-import blockonomi from "../../public/img/seenOn/blockonomi.png";
+
 
 
 
@@ -360,6 +364,31 @@ export default function Home() {
 
                             <ul className="logoList">
                                 <li>
+                                    <a href="https://coinmarketcap.com/community/articles/64dc8b5bd0391c502518b395/" target="_blank">
+                                        <img src={coinmarketcap.src} alt="coinmarketcap" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.newsbtc.com/press-releases/lfi-unveils-lfi-smartphone-providing-unprecedented-access-to-decentralized-financial-opportunities/" target="_blank">
+                                        <img src={newsbtc.src} alt="newsbtc" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.cnn.gr/oikonomia/epixeiriseis/story/378570/synergasia-lfi-lyotech-labs-gia-ti-dimiourgia-tou-lfi-one-enos-smartphone-gia-minting-tokens" target="_blank">
+                                        <img src={cnnGreece.src} alt="cnnGreece" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://bitcoinist.com/luiz-goes-ceo-of-lfi-shares-his-vision-for-the-future-of-blockchain-technology/" target="_blank">
+                                        <img src={bitcoinist.src} alt="bitcoinist" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://cryptopotato.com/lyotech-labs-celebrates-the-first-150-recipients-of-the-lfi-one-smartphone/" target="_blank">
+                                        <img src={cryptopotato.src} alt="cryptopotato" />
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="https://u.today/exploring-the-three-layers-of-lfi-and-its-benefits-for-crypto-users" target="_blank">
                                         <img src={utoday.src} alt="utoday" />
                                     </a>
@@ -373,32 +402,7 @@ export default function Home() {
                                     <a href="https://techbullion.com/lfi-partners-with-lyotech-labs-to-create-lfi-one-a-smartphone-to-mint-tokens/" target="_blank">
                                         <img src={techBulliontransparent.src} alt="techBulliontransparent" />
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.techtimes.com/articles/289211/20230322/minting-device-put-pocket-smartphone.htm" target="_blank">
-                                        <img src={techtimes.src} alt="techtimes" />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://coinpedia.org/sponsored/everything-you-need-to-know-about-lfi-the-peoples-platform/" target="_blank">
-                                        <img src={coinpedia.src} alt="coinpedia" />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://crypto.news/lfi-one-launched-a-smartphone-and-minting-device/" target="_blank">
-                                        <img src={cryptodotnews.src} alt="cryptodotnews" />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://coincodex.com/article/27604/exploring-every-layer-of-lfi-the-decentralized-network-for-the-people/" target="_blank">
-                                        <img src={coincodex.src} alt="coincodex" />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://blockonomi.com/the-different-modes-of-minting-by-lfi/" target="_blank">
-                                        <img src={blockonomi.src} alt="blockonomi" />
-                                    </a>
-                                </li>
+                                </li>                                
                             </ul>
 
                             <div className="text-center ">

@@ -1,17 +1,11 @@
 'use client'
 import React from "react";
 import Head from "next/head";
-
-import { Metadata } from 'next';
-
 import Header from "@/app/components/common/header";
 import Footer from "@/app/components/common/footer";
-
-import { useRef, useEffect } from "react";
-import { motion, MotionValue, useScroll, useSpring, useTransform, useInView } from "framer-motion";
-import { Container, Tab, Tabs, Nav, Navbar, NavDropdown, Button, Image, Row, Col } from 'react-bootstrap';
-
-
+import { useRef} from "react";
+import { useScroll, useSpring, } from "framer-motion";
+import { Container, Row, Col } from 'react-bootstrap';
 
 import utoday from "../../../../public/img/seenOn/utoday.png";
 import coingap from "../../../../public/img/seenOn/coingap.png";
@@ -34,20 +28,14 @@ import bscnews from "../../../../public/img/seenOn/bsc-news.png";
 import finbold from "../../../../public/img/seenOn/finbold.png";
 import newsonjapan from "../../../../public/img/seenOn/newsonjapan.png";
 import coinpaper from "../../../../public/img/seenOn/coinpaper.png";
+import bitcoinist from "../../../../public/img/seenOn/bitcoinist.png";
+import cnnGreece from "../../../../public/img/seenOn/cnn-greece.png";
+import coinmarketcap from "../../../../public/img/seenOn/coinmarketcap.png";
+import cryptopotato from "../../../../public/img/seenOn/cryptopotato.png";
+import newsbtc from "../../../../public/img/seenOn/newsbtc.png";
 
 
-
-
-export default function AsSeenOn() {
-    const buttRef = useRef(null);
-    const { scrollYProgress } = useScroll();
-
-    // top progressbar animation
-    const scaleX = useSpring(scrollYProgress, {
-        stiffness: 100,
-        damping: 20,
-        restDelta: 0.001
-    });
+export default function AsSeenOn() {   
 
     return (
         <>
@@ -55,7 +43,6 @@ export default function AsSeenOn() {
                 <title> Tokens page </title>
             </Head>
             <Header />
-
             <section className="logosec">
                 <Container>
                     <Row className="">
@@ -65,6 +52,32 @@ export default function AsSeenOn() {
                             </div>
 
                             <ul className="logoList">
+                                <li>
+                                    <a href="https://coinmarketcap.com/community/articles/64dc8b5bd0391c502518b395/" target="_blank">
+                                        <img src={coinmarketcap.src} alt="coinmarketcap" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.newsbtc.com/press-releases/lfi-unveils-lfi-smartphone-providing-unprecedented-access-to-decentralized-financial-opportunities/" target="_blank">
+                                        <img src={newsbtc.src} alt="newsbtc" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.cnn.gr/oikonomia/epixeiriseis/story/378570/synergasia-lfi-lyotech-labs-gia-ti-dimiourgia-tou-lfi-one-enos-smartphone-gia-minting-tokens" target="_blank">
+                                        <img src={cnnGreece.src} alt="cnnGreece" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://bitcoinist.com/luiz-goes-ceo-of-lfi-shares-his-vision-for-the-future-of-blockchain-technology/" target="_blank">
+                                        <img src={bitcoinist.src} alt="bitcoinist" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://cryptopotato.com/lyotech-labs-celebrates-the-first-150-recipients-of-the-lfi-one-smartphone/" target="_blank">
+                                        <img src={cryptopotato.src} alt="cryptopotato" />
+                                    </a>
+                                </li>
+
                                 <li>
                                     <a href="https://u.today/exploring-the-three-layers-of-lfi-and-its-benefits-for-crypto-users" target="_blank">
                                         <img src={utoday.src} alt="utoday" />
@@ -183,7 +196,6 @@ export default function AsSeenOn() {
                     </Row>
                 </Container>
             </section>
-
             <Footer />
         </>
     )

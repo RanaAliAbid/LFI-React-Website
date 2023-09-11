@@ -34,8 +34,8 @@ export default function Header() {
                 <Container>
                     <Navbar.Brand href="/">	<WhiteLogo /> </Navbar.Brand>
                     <div>
-                        <Button as="a" target="_blank" href="https://lyotechlabs.com" variant="primary" className="mobbtn">
-                            Store
+                        <Button as="a" target="_blank" href="https://sandbox-app.lfi.io/auth" variant="primary" className="mobbtn">
+                            Go To App
                         </Button>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     </div>
@@ -55,8 +55,10 @@ export default function Header() {
                             <Nav.Link href="/tokens" as={Link} className={pathname === "/tokens" ? "active" : ""}>Tokens</Nav.Link>
                             <Nav.Link href="/ecosystem" as={Link} className={pathname === "/ecosystem" ? "active" : ""}>Ecosystem</Nav.Link>
 
-                            <Button as="a" target="_blank" href="https://lyotechlabs.com" variant="primary" className="">
-                                Store
+                            <Nav.Link href="https://lyotechlabs.com" as={Link} > Store </Nav.Link>
+
+                            <Button as="a" target="_blank" href="https://sandbox-app.lfi.io/auth" variant="primary" className="">
+                                Go To App
                             </Button>
 
                         </Nav>

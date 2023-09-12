@@ -33,12 +33,12 @@ export default function Header() {
             <Navbar expand="lg" className="mainHeader">
                 <Container>
                     <Navbar.Brand href="/">	<WhiteLogo /> </Navbar.Brand>
-                    <div>
+                    {/* <div>
                         <Button as="a" target="_blank" href="#" variant="primary" className="mobbtn">
                             Go To App
                         </Button>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    </div>
+                    </div> */}
 
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
@@ -57,7 +57,7 @@ export default function Header() {
 
                             <Nav.Link href="https://lyotechlabs.com" as={Link} > Store </Nav.Link>
 
-                            <Button 
+                            {/* <Button 
                                 as="a" 
                                 target="_blank" 
                                 // href="https://sandbox-app.lfi.io/auth" 
@@ -66,7 +66,7 @@ export default function Header() {
                                 className=""
                             >
                                 Go To App
-                            </Button>
+                            </Button> */}
 
                         </Nav>
                     </Navbar.Collapse>

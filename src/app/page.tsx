@@ -90,6 +90,16 @@ export default function Home() {
         volume: "4223765.75395716",
     });
 
+    const [clfiCoingecoMarketData, setClfiCoingecoMarketData] = useState({
+        price: "0",
+        volume: "0",
+    });
+
+    const [lfiCoingecoMarketData, setlfiCoingecoMarketData] = useState({
+        price: "0",
+        volume: "0",
+    });
+
     const fetchLfiMarketData = async () => {
         const resLfiTicker = await fetch('https://openapi.lyotrade.com/sapi/v1/ticker?symbol=lfi1usdt')
         const lfiTickerData = await resLfiTicker.json()
@@ -97,6 +107,36 @@ export default function Home() {
             price: lfiTickerData.last,
             volume: lfiTickerData.vol,
         });
+    }
+
+    const fetchcLfiCoingecoMarketData = async () => {
+        const rescLfiCoingecoTicker = await fetch('https://api.lfi.io/public/get-clfi-rates')
+        const clfiCoingecoTickerData = await rescLfiCoingecoTicker.json()
+        if (clfiCoingecoTickerData.status === 200) {
+            for (let clfiCongeco of clfiCoingecoTickerData.data) {
+                setClfiCoingecoMarketData({
+                    price: `${parseFloat(clfiCongeco.price)}`,
+                    volume: `${parseFloat(clfiCongeco.volume)}`,
+                });
+            }
+        }
+    }
+
+    const fetchLfiCoingecoMarketData = async () => {
+        const rescLfiCoingecoTicker = await fetch('https://api.lfi.io/public/get-lfi-rates')
+        const clfiCoingecoTickerData = await rescLfiCoingecoTicker.json()
+        if (clfiCoingecoTickerData.status === 200) {
+            let _price = 0;
+            let _volume = 0;
+            for (let clfiCongeco of clfiCoingecoTickerData.data) {
+                _price = _price + parseFloat(clfiCongeco.price);
+                _volume = _volume + parseFloat(clfiCongeco.volume);
+            }
+            setlfiCoingecoMarketData({
+                price: `${_price}`,
+                volume: `${_volume}`,
+            });
+        }
     }
 
     const fetchclfiMarketData = async () => {
@@ -112,6 +152,8 @@ export default function Home() {
         const interval = setInterval(() => {
             fetchLfiMarketData();
             fetchclfiMarketData();
+            fetchcLfiCoingecoMarketData();
+            fetchLfiCoingecoMarketData();
         }, 10000);
 
         //Clearing the interval
@@ -121,6 +163,8 @@ export default function Home() {
     useEffect(() => {
         fetchLfiMarketData();
         fetchclfiMarketData();
+        fetchcLfiCoingecoMarketData();
+        fetchLfiCoingecoMarketData();
     }, []);
 
     const { scrollYProgress } = useScroll();
@@ -634,7 +678,7 @@ export default function Home() {
                                     <div className="text">
                                         <h4> LFi </h4>
                                         <h3> {formatNumbers(lfiMarketData.price)} </h3>
-                                        <p> 24H Vol: {formatNumbers(lfiMarketData.volume)} </p>
+                                        <p> 24H Vol: {formatNumbers(parseFloat(lfiMarketData.volume)+parseFloat(lfiCoingecoMarketData.volume))} </p>
                                     </div>
                                 </div>
 
@@ -675,7 +719,7 @@ export default function Home() {
                                     <div className="text">
                                         <h4> cLFi </h4>
                                         <h3> {formatNumbers(clfiMarketData.price)} </h3>
-                                        <p> 24H Vol {formatNumbers(clfiMarketData.volume)} </p>
+                                        <p> 24H Vol {formatNumbers(parseFloat(clfiMarketData.volume) + parseFloat(clfiCoingecoMarketData.volume))} </p>
                                     </div>
                                 </div>
 

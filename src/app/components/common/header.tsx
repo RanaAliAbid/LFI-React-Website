@@ -33,12 +33,24 @@ export default function Header() {
             <Navbar expand="lg" className="mainHeader">
                 <Container>
                     <Navbar.Brand href="/">	<WhiteLogo /> </Navbar.Brand>
-                    {/* <div>
-                        <Button as="a" target="_blank" href="#" variant="primary" className="mobbtn">
+                    <div>
+                        {/* <Button as="a" target="_blank" href="#" variant="primary" className="mobbtn">
                             Go To App
+                        </Button> */}
+
+                        <Button
+                            as="a"
+                            target="_blank"
+                            href="https://lyotechlabs.com"
+                            variant="primary"
+                            className=""
+                        >
+                            Store
                         </Button>
+
+
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    </div> */}
+                    </div>
 
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
@@ -55,7 +67,19 @@ export default function Header() {
                             <Nav.Link href="/tokens" as={Link} className={pathname === "/tokens" ? "active" : ""}>Tokens</Nav.Link>
                             <Nav.Link href="/ecosystem" as={Link} className={pathname === "/ecosystem" ? "active" : ""}>Ecosystem</Nav.Link>
 
-                            <Nav.Link href="https://lyotechlabs.com" as={Link} > Store </Nav.Link>
+                            {/* <Nav.Link href="https://lyotechlabs.com" as={Link} > Store </Nav.Link> */}
+
+                            <Button
+                                as="a"
+                                target="_blank"
+                                href="https://lyotechlabs.com"
+                                variant="primary"
+                                className=""
+                            >
+                                Store
+                            </Button>
+
+
 
                             {/* <Button 
                                 as="a" 

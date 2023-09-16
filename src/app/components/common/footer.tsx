@@ -128,7 +128,7 @@ export default function Footer() {
                       <li>
                         <a
                           target="_blank"
-                          href="https://docs.lfi.io/legal-documents/terms-and-conditions"
+                          href="https://docs.app.lfi.io/terms/terms-and-condition"
                         >
                           Legal
                         </a>

@@ -120,7 +120,7 @@ export default function Footer() {
                       <li>
                         <a
                           target="_blank"
-                          href="https://docs.lfi.io/introduction/manifesto"
+                          href="https://docs.lfi.io/introduction/lfi-ecosystem"
                         >
                           Docs{" "}
                         </a>
@@ -144,7 +144,7 @@ export default function Footer() {
                       <li>
                         <a
                           target="_blank"
-                          href="https://docs.lfi.io/v/lfi-technical-docs/"
+                          href="https://docs.lfi.io/project-info/lfi-technical-docs"
                         >
                           Technical Docs
                         </a>

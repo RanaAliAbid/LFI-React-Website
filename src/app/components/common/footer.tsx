@@ -128,7 +128,7 @@ export default function Footer() {
                       <li>
                         <a
                           target="_blank"
-                          href="https://docs.lfi.io/legal-documents/terms-and-conditions"
+                          href="https://docs.app.lfi.io/terms/terms-and-condition"
                         >
                           Legal
                         </a>
@@ -279,7 +279,7 @@ export default function Footer() {
                       Privacy & Cookie{" "}
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="https://docs.lfi.io/legal-documents/minting-terms-and-condition"
                       target="_blank"
@@ -296,7 +296,7 @@ export default function Footer() {
                       {" "}
                       cLFi Terms{" "}
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="https://docs.lfi.io/legal-documents/disclaimer"

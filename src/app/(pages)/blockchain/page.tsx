@@ -48,7 +48,7 @@ export default function Blockchain() {
                         </Col>
                         <Col md="6" sm="6" xs="12">
                             <div className="text-center heroImg">
-                                <Image src={blockchain.src} className="rot" />
+                                <Image src={blockchain.src} className="rot" alt="blockchain" />
                             </div>
                         </Col>
                     </Row>
@@ -95,7 +95,7 @@ export default function Blockchain() {
                                     </Col>
                                     <Col md="6">
                                         <div className="text-center">
-                                            <Image src={BlockLimit.src} className="rot" />
+                                            <Image src={BlockLimit.src} className="rot" alt="BlockLimit" />
                                         </div>
                                     </Col>
                                 </Row>
@@ -136,7 +136,7 @@ export default function Blockchain() {
                                 <div className="lines"></div>
                                 <div className="angles"></div>
                                 <article>
-                                    <Image src={ldaoIcon.src} className="" />
+                                    <Image src={ldaoIcon.src} className="" alt="ldao" />
                                     <h3> L-DAO </h3>
                                     <h5> Enjoy complete autonomy. L-DAO is an ecosystem that is built for you, controlled by you, and owned by you.</h5>
                                     <Button as="a" variant="text" href="/ldao">
@@ -151,7 +151,7 @@ export default function Blockchain() {
                                 <div className="lines"></div>
                                 <div className="angles"></div>
                                 <article>
-                                    <Image src={bridgeIcon.src} className="" />
+                                    <Image src={bridgeIcon.src} className="" alt="bridge" />
                                     <h3> Bridge </h3>
                                     <h5> Connecting multiple blockchains to bring more users together. </h5>
                                     <Button as="a" variant="text" href="/bridge">
@@ -166,7 +166,7 @@ export default function Blockchain() {
                                 <div className="lines"></div>
                                 <div className="angles"></div>
                                 <article>
-                                    <Image src={launchpadIcon.src} className="" />
+                                    <Image src={launchpadIcon.src} className="" alt="launchpad"/>
                                     <h3> Launchpad </h3>
                                     <h5> If you own a token, propel your business to new levels by utilizing the LFi Launchpad. </h5>
                                     <Button as="a" variant="text" href="/launchpad">
@@ -181,7 +181,7 @@ export default function Blockchain() {
                                 <div className="lines"></div>
                                 <div className="angles"></div>
                                 <article>
-                                    <Image src={walletIcon.src} className="" />
+                                    <Image src={walletIcon.src} className="" alt="Wallet"/>
                                     <h3> Software Wallet </h3>
                                     <h5> Free, secure, and decentralized app that puts over 1,000 cryptocurrencies at your fingertips. </h5>
                                     <Button as="a" variant="text" href="software-wallet">

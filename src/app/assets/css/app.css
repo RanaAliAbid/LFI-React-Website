@@ -908,6 +908,7 @@ section.herobanner {
 
 .footerSec .footBox .socialLink li a {
     font-size: 20px;
+    vertical-align: middle;
 }
 
 .footerSec .logo:hover path {

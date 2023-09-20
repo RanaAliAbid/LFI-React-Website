@@ -131,7 +131,7 @@ export default function Lfione() {
                             <div className="text-center">
                                 <div className="mobilePhone">
                                     <div className="overlay"></div>
-                                    <Image src={lfiPhone.src} />
+                                    <Image src={lfiPhone.src} alt="lfi phone" />
                                     <h1> LFi One </h1>
                                 </div>
                                 <h2> Web3 in your pocket </h2>
@@ -148,7 +148,7 @@ export default function Lfione() {
 
                         <Col md="7" className="">
                             <div className="d-block d-sm-none img-container">
-                                <Image src={mintTokenMobile.src} /> 
+                                <Image src={mintTokenMobile.src} alt="mint Token" /> 
                             </div>
                         </Col>
 
@@ -174,7 +174,7 @@ export default function Lfione() {
                         <Col md="4" className="">
                             <div className="specsBox box1">
                                 <h2> Ultra Smooth Display </h2>
-                                <Image src={smoothDisplay.src} />
+                                <Image src={smoothDisplay.src} alt="LFi phone"/>
                             </div>
                         </Col>
 
@@ -184,7 +184,7 @@ export default function Lfione() {
                                     <h2> Powerful </h2>
                                     <h3> Processor </h3>
                                 </div>
-                                <Image src={octacoreCpu.src} />
+                                <Image src={octacoreCpu.src} alt="LFi phone"/>
                             </div>
 
                             <div className="specsBox box4">
@@ -192,7 +192,7 @@ export default function Lfione() {
                                     <h2> 5G </h2>
                                     <h3> Network </h3>
                                 </div>
-                                <Image src={network.src} />
+                                <Image src={network.src} alt="LFi phone"/>
                             </div>
                         </Col>
                         <Col md="4" className="">
@@ -201,7 +201,7 @@ export default function Lfione() {
                                     <h2> 64 MP </h2>
                                     <h3> Main camera </h3>
                                 </div>
-                                <Image src={mainCam.src} />
+                                <Image src={mainCam.src} alt="LFi phone"/>
                             </div>
                         </Col>
                     </Row>
@@ -213,7 +213,7 @@ export default function Lfione() {
                                     <h2> Wireless </h2>
                                     <h4> Charger </h4>
                                 </div>
-                                <Image src={wirelessCharger.src} />
+                                <Image src={wirelessCharger.src} alt="LFi phone"/>
                             </div>
                         </Col>
 
@@ -225,7 +225,7 @@ export default function Lfione() {
                                         <h3> Long lasting battery </h3>
                                     </div>
                                     <div className="wrapImg">
-                                        <Image src={battery.src} />
+                                        <Image src={battery.src} alt="LFi phone"/>
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +247,7 @@ export default function Lfione() {
 
                         <Col md="12" className="fhdspec">
                             <div className="wrapImg">
-                                <Image src={fhdphone.src} />
+                                <Image src={fhdphone.src} alt="LFi phone"/>
                             </div>
                             <ul>
                                 <li> IPS 6.78 </li>
@@ -301,7 +301,7 @@ export default function Lfione() {
             </section>
 
             <section className="ramBannerImg">
-                <Image src={rambanner.src} />
+                <Image src={rambanner.src} alt="LFi phone"/>
             </section>
 
             <section className="specsSection">
@@ -313,7 +313,7 @@ export default function Lfione() {
                                 <h4> Large Storage </h4>
                             </div>
                             <div className="ImageWrap">
-                                <Image src={qubeimg.src} />
+                                <Image src={qubeimg.src} alt="LFi phone"/>
                             </div>
                         </Col>
                     </Row>
@@ -324,7 +324,7 @@ export default function Lfione() {
                                     <h2> Fast Side Fingerprint </h2>
                                     <h3> Faster then you think </h3>
                                 </div>
-                                <Image src={fingerprint.src} />
+                                <Image src={fingerprint.src} alt="LFi phone"/>
                             </div>
                         </Col>
                         <Col md="6" className="">
@@ -332,7 +332,7 @@ export default function Lfione() {
                                 <div className="textWrap">
                                     <h2> Deep Audio System </h2>
                                 </div>
-                                <Image src={audiosystem.src} />
+                                <Image src={audiosystem.src} alt="LFi phone"/>
                             </div>
                         </Col>
                     </Row>
@@ -390,13 +390,13 @@ export default function Lfione() {
                     <Row>
                         <Col md="6">
                             <div className="wrapImg">
-                                <Image src={nightview01.src} />
+                                <Image src={nightview01.src} alt="LFi phone"/>
                             </div>
                         </Col>
 
                         <Col md="6">
                             <div className="wrapImg">
-                                <Image src={nightview02.src} />
+                                <Image src={nightview02.src} alt="LFi phone"/>
                             </div>
                         </Col>
                     </Row>
@@ -408,7 +408,7 @@ export default function Lfione() {
                     <h2>  Wide-angle distortion algorithm </h2>
                 </div>
                 <div className="wrapImg">
-                    <Image src={wideangle.src} />
+                    <Image src={wideangle.src} alt="LFi phone"/>
                 </div>
             </section>
 
@@ -422,7 +422,7 @@ export default function Lfione() {
                             </div>
 
                             <div className="wrapImg">
-                                <Image src={continuousShots.src} />
+                                <Image src={continuousShots.src} alt="LFi phone"/>
                             </div>
                         </Col>
                     </Row>
@@ -442,19 +442,19 @@ export default function Lfione() {
                 </Container>
                 <OwlCarousel loop={true} responsive={Responsive}>
                     <div className="item">
-                        <Image src={pro01.src} />
+                        <Image src={pro01.src} alt="LFi phone"/>
                     </div>
                     <div className="item">
-                        <Image src={pro02.src} />
+                        <Image src={pro02.src} alt="LFi phone"/>
                     </div>
                     <div className="item">
-                        <Image src={pro03.src} />
+                        <Image src={pro03.src} alt="LFi phone"/>
                     </div>
                     <div className="item">
-                        <Image src={pro04.src} />
+                        <Image src={pro04.src} alt="LFi phone"/>
                     </div>
                     <div className="item">
-                        <Image src={pro05.src} />
+                        <Image src={pro05.src} alt="LFi phone"/>
                     </div>
                 </OwlCarousel>
             </section>
@@ -551,7 +551,7 @@ export default function Lfione() {
                             <div className="text-center mt-5">
 
                                 <div className="powerImg mb-5">
-                                    <Image src={lyotechlabs.src} />
+                                    <Image src={lyotechlabs.src} alt="LFi phone"/>
                                 </div>
 
                                 <Button as="a" variant="primary" href="https://lyotechlabs.com/product/lfi-smartphone/" target= "_blank">

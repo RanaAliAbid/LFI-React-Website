@@ -45,7 +45,7 @@ export default function Bridge() {
                         </Col>
                         <Col md="6" xs="12">
                             <div className="text-center heroImg">
-                                <Image src={bridge.src} className="rot" />
+                                <Image src={bridge.src} className="rot" alt="bridge" />
                             </div>
                         </Col>
                     </Row>
@@ -69,7 +69,7 @@ export default function Bridge() {
                                     </Col>
                                     <Col md="6">
                                         <div className="text-center">
-                                            <Image src={switchBlockchain.src} className="rot" />
+                                            <Image src={switchBlockchain.src} className="rot" alt="switchBlockchain" />
                                         </div>
                                     </Col>
                                 </Row>
@@ -79,7 +79,7 @@ export default function Bridge() {
                                 <Row className="align-items-center">
                                     <Col md="6">
                                         <div className="text-center">
-                                            <Image src={bridgingImg.src} className="rot" />
+                                            <Image src={bridgingImg.src} className="rot" alt="bridging" />
                                         </div>
                                     </Col>
                                     <Col md="6">
@@ -101,7 +101,7 @@ export default function Bridge() {
                                     </Col>
                                     <Col md="6">
                                         <div className="text-center">
-                                            <Image src={protectionImg.src} className="rot" />
+                                            <Image src={protectionImg.src} className="rot" alt="protection" />
                                         </div>
                                     </Col>
                                 </Row>
@@ -111,7 +111,7 @@ export default function Bridge() {
                                 <Row className="align-items-center">
                                     <Col md="6">
                                         <div className="text-center">
-                                            <Image src={whyBridgeImg.src} className="rot" />
+                                            <Image src={whyBridgeImg.src} className="rot" alt="why Bridge" />
                                         </div>
                                     </Col>
                                     <Col md="6">

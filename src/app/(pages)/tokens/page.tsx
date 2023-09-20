@@ -61,7 +61,7 @@ export default function Tokens() {
                                 </Col>
                                 <Col md="6" xs="12">
                                     <div className="text-center tokenImg">
-                                        <Image src={tokenlfi.src} />                                        
+                                        <Image src={tokenlfi.src} alt="lfi" />                                        
                                     </div>
                                 </Col>
                             </Row>
@@ -82,7 +82,7 @@ export default function Tokens() {
                                 </Col>
                                 <Col md="6" xs="12">
                                     <div className="text-center tokenImg">
-                                        <Image src={tokenclfi.src} />                                        
+                                        <Image src={tokenclfi.src} alt="clfi" />                                        
                                     </div>
                                 </Col>
                             </Row>
@@ -100,7 +100,7 @@ export default function Tokens() {
                                 </Col>
                                 <Col md="6" xs="12">
                                     <div className="text-center tokenImg">
-                                        <Image src={tokenvlfi.src} />                                        
+                                        <Image src={tokenvlfi.src} alt="vlfi" />                                        
                                     </div>
                                 </Col>
                             </Row>

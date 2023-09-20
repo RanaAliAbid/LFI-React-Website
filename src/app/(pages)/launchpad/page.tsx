@@ -59,7 +59,7 @@ export default function Launchpad() {
                                     <h3> If you own a token, propel your business to new levels by utilizing the LFi Launchpad. For those seeking new tokens and projects, this is your ideal platform for selection.</h3>
                                 </motion.div>
 
-                                <Image src={launchpadbanner.src} />
+                                <Image src={launchpadbanner.src} alt="launchpad" />
                             </div>
                         </Col>
                     </Row>

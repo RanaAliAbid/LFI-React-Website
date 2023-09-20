@@ -543,7 +543,7 @@ export default function Home() {
                         </Col>
                         <Col md="6" sm="6" xs="12">
                             <div className="text-center heroImg">
-                                <Image src={blockchain.src} className="rot" />
+                                <Image src={blockchain.src} className="rot" alt="blockchain" />
                             </div>
                             <div className="d-block d-sm-none text-center mt-4">
                                 <Button as="a" variant="primary" href="/blockchain">
@@ -589,7 +589,7 @@ export default function Home() {
                                 <div className="ldaoInnerBox">
                                     <div className="textInfo">
                                         <h4> LFi Blockchain </h4>
-                                        <Image src="/img/dApps.svg" />
+                                        <Image src="/img/dApps.svg" alt="dapps" />
                                         <h3>Decentralized applications running on our own proprietary LFi Blockchain and public networks.</h3>
                                         <Button as="a" variant="primary" href="/blockchain#lfidappSec">
                                             Learn More
@@ -687,22 +687,22 @@ export default function Home() {
                                     <ul className="tradeList">
                                         <li>
                                             <a href="https://www.lyotrade.com/en_US/trade/LFi_USDT" target="_blank">
-                                                <img src={lyotrade.src} alt="" />
+                                                <img src={lyotrade.src} alt="lyotrade" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://www.lbank.com/en-US/trade/lfi_usdt/" target="_blank">
-                                                <img src={lbank.src} alt="" />
+                                                <img src={lbank.src} alt="lbank" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://www.bitmart.com/trade/en-US?layout=pro&theme=dark&symbol=%24LFI_USDT" target="_blank">
-                                                <img src={bitmart.src} alt="" />
+                                                <img src={bitmart.src} alt="bitmart" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://www.bitforex.com/en/spot/lfi_usdt" target="_blank">
-                                                <img src={bitforex.src} alt="" />
+                                                <img src={bitforex.src} alt="bitforex" />
                                             </a>
                                         </li>
                                     </ul>
@@ -728,22 +728,22 @@ export default function Home() {
                                     <ul className="tradeList">
                                         <li>
                                             <a href="https://www.lyotrade.com/en_US/trade/cLFi_USDT" target="_blank">
-                                                <img src={lyotrade.src} alt="" />
+                                                <img src={lyotrade.src} alt="lyotrade" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://www.lbank.com/en-US/trade/clfi_usdt/" target="_blank">
-                                                <img src={lbank.src} alt="" />
+                                                <img src={lbank.src} alt="lbank" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://www.bitmart.com/trade/en-US?layout=pro&theme=dark&symbol=CLFI_USDT" target="_blank">
-                                                <img src={bitmart.src} alt="" />
+                                                <img src={bitmart.src} alt="bitmart" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://www.bitforex.com/en/spot/clfi_usdt" target="_blank">
-                                                <img src={bitforex.src} alt="" />
+                                                <img src={bitforex.src} alt="bitforex" />
                                             </a>
                                         </li>
                                     </ul>

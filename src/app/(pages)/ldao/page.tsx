@@ -49,7 +49,7 @@ export default function MintingMachine() {
                         </Col>
                         <Col md="6" xs="12">
                             <div className="text-center">
-                                <Image src={ldoImg.src} />
+                                <Image src={ldoImg.src} alt="ldoImg"/>
                             </div>
                         </Col>
                     </Row>
@@ -131,7 +131,7 @@ export default function MintingMachine() {
                     <Row className="justify-content-center">
                         <Col md="4">
                             <div className="ldoIconBox">
-                                <Image src={ecosystem.src} />
+                                <Image src={ecosystem.src} alt="ecosystem"/>
                             </div>
                             <div className="greenGrad"> </div>
                             <div className="ldoBoxWrap greenBorder">
@@ -142,7 +142,7 @@ export default function MintingMachine() {
 
                         <Col md="4">
                             <div className="ldoIconBox">
-                                <Image src={smartContarct.src} />
+                                <Image src={smartContarct.src} alt="smartContarct"/>
                             </div>
                             <div className="ldoBoxWrap greenBorder">
                                 <h3> Voting  </h3>
@@ -152,7 +152,7 @@ export default function MintingMachine() {
 
                         <Col md="4">
                             <div className="ldoIconBox">
-                                <Image src={power.src} />
+                                <Image src={power.src}  alt="power"/>
                             </div>
                             <div className="ldoBoxWrap greenBorder">
                                 <h3> You have the power  </h3>

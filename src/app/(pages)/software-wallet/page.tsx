@@ -71,7 +71,7 @@ export default function softwareWallet() {
                                 <div className="lines"></div>
                                 <div className="angles"></div>
                                 <article>
-                                    <Image src={decentralizedIcon.src} className="rot" />
+                                    <Image src={decentralizedIcon.src} className="rot" alt="decentralized" />
                                     <h3> Decentralized </h3>
                                     <h5> Your control, your way. Create or import a wallet via mnemonic phrase, private key, keystore, or observation mode.</h5>
                                 </article>
@@ -83,7 +83,7 @@ export default function softwareWallet() {
                                 <div className="lines"></div>
                                 <div className="angles"></div>
                                 <article>
-                                    <Image src={securenetworkIcon.src} className="rot" />
+                                    <Image src={securenetworkIcon.src} className="rot" alt="securenetwork" />
                                     <h3> Secure </h3>
                                     <h5> Peace of mind, always. We have got you covered with passphrase protection, security passwords, and even fingerprint and pattern locks.</h5>
                                 </article>
@@ -95,7 +95,7 @@ export default function softwareWallet() {
                                 <div className="lines"></div>
                                 <div className="angles"></div>
                                 <article>
-                                    <Image src={userfriendlyIcon.src} className="rot" />
+                                    <Image src={userfriendlyIcon.src} className="rot" alt="userfriendly" />
                                     <h3> User-Friendly </h3>
                                     <h5> Cryptocurrency, simplified. With our intuitive interface, managing cryptocurrencies has never been easier.</h5>
                                 </article>
@@ -107,7 +107,7 @@ export default function softwareWallet() {
                                 <div className="lines"></div>
                                 <div className="angles"></div>
                                 <article>
-                                    <Image src={swapIcon.src} className="rot" />
+                                    <Image src={swapIcon.src} className="rot" alt="swap" />
                                     <h3> Swap/Exchange </h3>
                                     <h5> Freedom of choice. Instantly swap and exchange one cryptocurrency for another.</h5>
                                 </article>
@@ -119,7 +119,7 @@ export default function softwareWallet() {
                                 <div className="lines"></div>
                                 <div className="angles"></div>
                                 <article>
-                                    <Image src={earningsIcon.src} className="rot" />
+                                    <Image src={earningsIcon.src} className="rot" alt="earnings" />
                                     <h3> Earn </h3>
                                     <h5> Profit from your passion. Take advantage of the best APY from a powerful DeFi and CeFi aggregator.</h5>
                                 </article>
@@ -131,7 +131,7 @@ export default function softwareWallet() {
                                 <div className="lines"></div>
                                 <div className="angles"></div>
                                 <article>
-                                    <Image src={dappsaccessIcon.src} className="rot" />
+                                    <Image src={dappsaccessIcon.src} className="rot" alt="dappsaccess" />
                                     <h3> Dapps Access </h3>
                                     <h5> Your Dapps, all in one place. Store and access your favorite Dapps across various blockchains.</h5>
                                 </article>
@@ -142,7 +142,7 @@ export default function softwareWallet() {
                                 <div className="lines"></div>
                                 <div className="angles"></div>
                                 <article>
-                                    <Image src={miningIcon.src} className="rot" />
+                                    <Image src={miningIcon.src} className="rot" alt="mining" />
                                     <h3> Minting </h3>
                                     <h5> Increase your assets. Issue new LFI tokens into the circulating supply and reap the rewards.</h5>
                                 </article>

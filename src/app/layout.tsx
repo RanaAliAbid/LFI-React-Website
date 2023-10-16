@@ -1,5 +1,9 @@
 import Script from 'next/script';
-import './globals.css'
+import './globals.css';
+
+import featureBanner from "../../public/img/feature-banner/build-your-independence.jpg";
+
+
 
 export const metadata = {
     title: {
@@ -19,6 +23,10 @@ export default function RootLayout({
             <head>
                     <meta name="description" content="LFi is a decentralized platform designed to provide equal opportunities for wealth generation and financial independence through crypto."/>
                     <meta name="keywords" content="Decentralized network, Decentralized network blockchain, Decentralized wireless network, Mint crypto, Smart phone for token minting crypto, Web3 smartphone, Crypto mobile, Smart phone for token minting crypto, Crypto Smart phone, Web3 android device, LFi crypto smartphone, LFi decentralized network, Mint An NFT On LFi Phone"/>
+
+                    <meta property="og:image" content={featureBanner.src}/>
+
+
                     <meta name="title" content="LFi Dapps | Web3 SmartPhone | LFi One"/>
                         {/* <!-- Google Tag Manager --> */}
                         <Script id="google-tag-manager">

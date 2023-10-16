@@ -1,7 +1,10 @@
+import featureBanner from "../../public/img/feature-banner/lfi-minting-machine.jpg";
+
+
 export const metadata = {
-    title: {
-        default: 'LFi Minting Machine'
-    },
+  title: {
+    default: 'LFi Minting Machine'
+  },
 }
 
 export default function RootLayout({
@@ -11,6 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+
+        <meta property="og:image" content={featureBanner.src} />
+      </head>
       <body>{children}</body>
     </html>
   )

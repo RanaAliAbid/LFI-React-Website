@@ -1,3 +1,5 @@
+import featureBanner from "../../public/img/feature-banner/lfi-launchpad.jpg";
+
 export const metadata = {
     title: {
         default:'LFi Launchpad | Tokens | dApps'
@@ -15,6 +17,8 @@ export default function RootLayout({
       <head>
         <meta name="description" content="LFi Launchpad - Igniting innovation and supporting visionary projects. Explore a platform for groundbreaking ideas."/>
         <meta name="keywords" content="launchpad, LFi launchpad, tokens, cryptos, dapps" />
+        <meta property="og:image" content={featureBanner.src} />
+
       </head>
       <body>{children}</body>
     </html>

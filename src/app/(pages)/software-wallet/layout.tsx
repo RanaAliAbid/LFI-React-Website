@@ -1,4 +1,4 @@
-import featureBanner from "../../public/img/feature-banner/lfi-software-wallet.jpg";
+import featureBanner from "../../../../public/img/feature-banner/lfi-software-wallet.jpg";
 
 export const metadata = {
   title: {

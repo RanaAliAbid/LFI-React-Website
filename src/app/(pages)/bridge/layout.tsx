@@ -1,4 +1,4 @@
-import featureBanner from "../../public/img/feature-banner/lfi-bridge.jpg";
+import featureBanner from "../../../../public/img/feature-banner/lfi-bridge.jpg";
 
 
 export const metadata = {

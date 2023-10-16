@@ -1,4 +1,4 @@
-import featureBanner from "../../public/img/feature-banner/lfi-ldao.jpg";
+import featureBanner from "../../../../public/img/feature-banner/lfi-ldao.jpg";
 
 
 export const metadata = {

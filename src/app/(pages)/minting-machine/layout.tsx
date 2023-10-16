@@ -1,4 +1,4 @@
-import featureBanner from "../../public/img/feature-banner/lfi-minting-machine.jpg";
+import mintingmachine from '../../../../public/img/feature-banner/lfi-minting-machine.jpg';  
 
 
 export const metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
 
-        <meta property="og:image" content={featureBanner.src} />
+        <meta property="og:image" content={mintingmachine.src} />
       </head>
       <body>{children}</body>
     </html>

@@ -1,4 +1,4 @@
-import featureBanner from "../../public/img/feature-banner/lfi-launchpad.jpg";
+import featureBanner from "../../../../public/img/feature-banner/lfi-launchpad.jpg";
 
 export const metadata = {
     title: {
